@@ -575,7 +575,8 @@ const statCards = [
               { id: 'Iim0XWCyd8A', client: 'True Organic', label: 'Hers' },
               { id: 'lajBr7Uc9B8', client: 'True Organic', label: 'His' },
               { id: 'N15hc2WlgHY', client: 'Sizzles',      label: 'Smash Burger' },
-              { id: 'l_HrGP0kO5w', client: 'Onikuma',      label: 'Gaming Headset' },
+              { id: 'l_HrGP0kO5w', client: 'Onikuma',         label: 'Gaming Headset' },
+              { id: 'bv-1yxtq8iY', client: 'Marcos Jewellers', label: 'Luxury Diamond Ring' },
             ].map((video) => (
               <div class="group w-[72vw] max-w-[260px] shrink-0 [scroll-snap-align:start] sm:w-[38vw] lg:w-[22%]">
                 <div
@@ -612,7 +613,7 @@ const statCards = [
 
           <!-- Scroll dots -->
           <div id="carousel-dots" class="mt-5 flex justify-center gap-2" aria-hidden="true">
-            {[0,1,2,3].map((i) => (
+            {[0,1,2,3,4].map((i) => (
               <button
                 data-dot={i}
                 class={`carousel-dot h-1.5 rounded-full transition-all duration-300 ${i === 0 ? 'w-6 bg-electric' : 'w-1.5 bg-navy/20'}`}
