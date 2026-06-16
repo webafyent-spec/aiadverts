@@ -555,11 +555,12 @@ const statCards = [
               >
                 <!-- Poster thumbnail (YouTube max-res) -->
                 <img
-                  src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`}
+                  src={`https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`}
                   alt={`${video.client} ${video.label} — AI video advert by Aiadverts`}
                   class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                   decoding="async"
+                  onerror={`this.onerror=null;this.src='https://i.ytimg.com/vi/${video.id}/sddefault.jpg'`}
                 />
                 <!-- Dark gradient overlay -->
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
