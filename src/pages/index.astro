@@ -59,12 +59,11 @@ const steps = [
 ]
 
 const portfolio = [
-  { name: 'Scentimental',    industry: 'Fragrance' },
-  { name: 'True Organic',    industry: 'Skincare',  embedUrl: 'https://www.youtube.com/embed/Iim0XWCyd8A' },
-  { name: 'Onikuma',         industry: 'Gaming' },
-  { name: 'Pizza Boyz',      industry: 'Food' },
-  { name: 'Cubed Coffee',    industry: 'Food and Beverage' },
-  { name: 'Marcos Jewellers',industry: 'Jewellery' }
+  { name: 'His Rejuvenating Cream',   category: 'True Organic',  tag: 'Rich Organic Textures',    img: '/portfolio/hisad2.webp' },
+  { name: 'True Cleanser',            category: 'True Organic',  tag: 'Active Botanical Ingredients', img: '/portfolio/to3.webp' },
+  { name: 'Youth Rejuvenating Cream', category: 'True Organic',  tag: 'True Organic Youth',       img: '/portfolio/to4.webp' },
+  { name: 'Premium Botanical Serum',  category: 'True Organic',  tag: 'Studio Close-Up',          img: '/portfolio/to5.webp' },
+  { name: 'Hydration Booster',        category: 'True Organic',  tag: 'Pristine Natural Light',   img: '/portfolio/toad.webp' },
 ]
 
 const pricing = [
@@ -461,64 +460,119 @@ const statCards = [
           </p>
         </div>
 
-        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {portfolio.map((item) => (
-            <article
-              aria-label={`${item.name} — ${item.industry} AI advert by Aiadverts South Africa`}
-              class="group relative aspect-[4/5] overflow-hidden rounded-2xl bg-bg-dark"
-            >
-              {item.embedUrl ? (
-                /* ---- YouTube embed card ---- */
-                <>
-                  <iframe
-                    src={item.embedUrl}
-                    title={`${item.name} — ${item.industry} AI advert by Aiadverts`}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                    loading="lazy"
-                    class="absolute inset-0 h-full w-full border-0"
-                  ></iframe>
-                  {/* Industry badge */}
-                  <div class="pointer-events-none absolute left-4 top-4 z-10">
-                    <span class="rounded-full border border-white/10 bg-black/50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white/80 backdrop-blur-sm">
-                      {item.industry}
-                    </span>
-                  </div>
-                  {/* Name label */}
-                  <div class="pointer-events-none absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-black/70 to-transparent p-5">
-                    <p class="text-lg font-bold text-text-light">{item.name}</p>
-                  </div>
-                </>
-              ) : (
-                /* ---- Shimmer placeholder card ---- */
-                <>
-                  <div class="portfolio-shimmer absolute inset-0"></div>
-                  <div class="absolute inset-0 bg-gradient-to-t from-bg-dark/90 via-transparent to-bg-dark/20"></div>
-                  <div class="absolute inset-0 grid place-items-center">
-                    <span class="grid h-16 w-16 place-items-center rounded-full border border-white/20 bg-white/10 backdrop-blur-sm transition-all duration-300 group-hover:scale-110 group-hover:border-electric group-hover:bg-electric/80">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
-                        <path d="M8 5v14l11-7z"/>
-                      </svg>
-                    </span>
-                  </div>
-                  <div class="absolute left-4 top-4">
-                    <span class="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white/80 backdrop-blur-sm">
-                      {item.industry}
-                    </span>
-                  </div>
-                  <div class="absolute inset-x-0 bottom-0 p-5">
-                    <p class="text-lg font-bold text-text-light">{item.name}</p>
-                  </div>
-                  <div class="absolute inset-0 grid place-items-center bg-electric/90 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <span class="flex items-center gap-2 text-lg font-bold text-text-light">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                      View Project
-                    </span>
-                  </div>
-                </>
-              )}
-            </article>
-          ))}
+        <!-- Masonry tile grid — mirrors the varied-size tile layout -->
+        <div class="mt-14 grid auto-rows-[260px] grid-cols-2 gap-4 lg:grid-cols-3 lg:auto-rows-[280px]">
+
+          <!-- Tile 1 — tall left (spans 2 rows) -->
+          <article
+            aria-label="True Organic His Rejuvenating Cream AI advert by Aiadverts South Africa"
+            class="group relative col-span-1 row-span-2 overflow-hidden rounded-2xl bg-bg-dark"
+          >
+            <img
+              src={portfolio[0].img}
+              alt="True Organic His Rejuvenating Facial Cream — AI product advert by Aiadverts"
+              class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              loading="eager"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-5">
+              <p class="text-xs font-bold uppercase tracking-widest text-electric">{portfolio[0].tag}</p>
+              <p class="mt-1 text-lg font-bold text-white">{portfolio[0].name}</p>
+            </div>
+          </article>
+
+          <!-- Tile 2 — top right (normal) -->
+          <article
+            aria-label="True Organic True Cleanser AI advert by Aiadverts South Africa"
+            class="group relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-bg-dark"
+          >
+            <img
+              src={portfolio[1].img}
+              alt="True Organic True Cleanser — AI product advert by Aiadverts"
+              class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-4">
+              <p class="text-xs font-bold uppercase tracking-widest text-electric">{portfolio[1].tag}</p>
+              <p class="mt-0.5 text-base font-bold text-white">{portfolio[1].name}</p>
+            </div>
+          </article>
+
+          <!-- Tile 3 — middle right (normal) -->
+          <article
+            aria-label="True Organic Youth Rejuvenating Cream AI advert by Aiadverts South Africa"
+            class="group relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-bg-dark"
+          >
+            <img
+              src={portfolio[2].img}
+              alt="True Organic Youth Rejuvenating Facial Cream — AI product advert by Aiadverts"
+              class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-4">
+              <p class="text-xs font-bold uppercase tracking-widest text-electric">{portfolio[2].tag}</p>
+              <p class="mt-0.5 text-base font-bold text-white">{portfolio[2].name}</p>
+            </div>
+          </article>
+
+          <!-- Tile 4 — bottom left wide (spans 2 cols on lg) -->
+          <article
+            aria-label="True Organic Premium Botanical Serum AI advert by Aiadverts South Africa"
+            class="group relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-bg-dark lg:col-span-2"
+          >
+            <img
+              src={portfolio[3].img}
+              alt="True Organic Premium Botanical Serum — AI product advert by Aiadverts"
+              class="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-5">
+              <p class="text-xs font-bold uppercase tracking-widest text-electric">{portfolio[3].tag}</p>
+              <p class="mt-1 text-lg font-bold text-white">{portfolio[3].name}</p>
+            </div>
+          </article>
+
+          <!-- Tile 5 — bottom right -->
+          <article
+            aria-label="True Organic Hydration Booster AI advert by Aiadverts South Africa"
+            class="group relative col-span-1 row-span-1 overflow-hidden rounded-2xl bg-bg-dark"
+          >
+            <img
+              src={portfolio[4].img}
+              alt="True Organic Hydration Booster — AI product advert by Aiadverts"
+              class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-4">
+              <p class="text-xs font-bold uppercase tracking-widest text-electric">{portfolio[4].tag}</p>
+              <p class="mt-0.5 text-base font-bold text-white">{portfolio[4].name}</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- YouTube short below the grid -->
+        <div class="mt-6 overflow-hidden rounded-2xl">
+          <div class="relative mx-auto aspect-[9/16] max-w-xs overflow-hidden rounded-2xl bg-bg-dark sm:aspect-video sm:max-w-none">
+            <iframe
+              src="https://www.youtube.com/embed/Iim0XWCyd8A"
+              title="True Organic — AI video advert by Aiadverts South Africa"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"
+              class="absolute inset-0 h-full w-full border-0"
+            ></iframe>
+          </div>
+          <p class="mt-3 text-center text-sm font-medium text-text-dark/50">True Organic · AI Video Advert</p>
         </div>
       </div>
     </section>
