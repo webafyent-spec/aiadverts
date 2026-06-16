@@ -540,46 +540,86 @@ const statCards = [
 
         </div>
 
-        <!-- Video shorts — facade pattern: poster shown, iframe loads on play -->
-        <div class="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-3">
-          {[
-            { id: 'Iim0XWCyd8A', client: 'True Organic', label: 'Hers' },
-            { id: 'lajBr7Uc9B8', client: 'True Organic', label: 'His' },
-            { id: 'N15hc2WlgHY', client: 'Sizzles',      label: 'Smash Burger' },
-          ].map((video) => (
-            <div class="group flex flex-col gap-3">
-              <div
-                class="yt-facade relative aspect-[9/16] cursor-pointer overflow-hidden rounded-2xl bg-bg-dark"
-                data-id={video.id}
-                data-title={`${video.client} — ${video.label} AI advert by Aiadverts South Africa`}
+        <!-- Video carousel -->
+        <div class="mt-14">
+          <div class="mb-6 flex items-center justify-between">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-electric">Video Adverts</span>
+              <p class="mt-1 text-lg font-bold text-navy">Cinematic AI films, ready to post</p>
+            </div>
+            <!-- Prev / Next arrows -->
+            <div class="flex gap-2">
+              <button
+                id="carousel-prev"
+                aria-label="Previous video"
+                class="grid h-10 w-10 place-items-center rounded-full border border-navy/15 bg-text-light text-navy shadow-sm transition-all hover:border-electric hover:text-electric"
               >
-                <!-- Poster thumbnail (YouTube max-res) -->
-                <img
-                  src={`https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`}
-                  alt={`${video.client} ${video.label} — AI video advert by Aiadverts`}
-                  class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                  decoding="async"
-                  onerror={`this.onerror=null;this.src='https://i.ytimg.com/vi/${video.id}/sddefault.jpg'`}
-                />
-                <!-- Dark gradient overlay -->
-                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
-                <!-- Custom play button -->
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <span class="flex h-16 w-16 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-md transition-all duration-300 group-hover:scale-110 group-hover:border-white/50 group-hover:bg-white/20">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="white" aria-hidden="true" style="margin-left:3px">
-                      <path d="M8 5v14l11-7z"/>
-                    </svg>
-                  </span>
-                </div>
-                <!-- Label bottom -->
-                <div class="absolute inset-x-0 bottom-0 p-5">
-                  <p class="text-xs font-bold uppercase tracking-widest text-electric">{video.client}</p>
-                  <p class="mt-0.5 text-base font-bold text-white">{video.label}</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <button
+                id="carousel-next"
+                aria-label="Next video"
+                class="grid h-10 w-10 place-items-center rounded-full border border-navy/15 bg-text-light text-navy shadow-sm transition-all hover:border-electric hover:text-electric"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Scrollable track -->
+          <div
+            id="video-carousel"
+            class="flex gap-4 overflow-x-auto pb-4 [scrollbar-width:none] [scroll-snap-type:x_mandatory] [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:hidden"
+          >
+            {[
+              { id: 'Iim0XWCyd8A', client: 'True Organic', label: 'Hers' },
+              { id: 'lajBr7Uc9B8', client: 'True Organic', label: 'His' },
+              { id: 'N15hc2WlgHY', client: 'Sizzles',      label: 'Smash Burger' },
+              { id: 'l_HrGP0kO5w', client: 'Onikuma',      label: 'Gaming Headset' },
+            ].map((video) => (
+              <div class="group w-[72vw] max-w-[260px] shrink-0 [scroll-snap-align:start] sm:w-[38vw] lg:w-[22%]">
+                <div
+                  class="yt-facade relative aspect-[9/16] cursor-pointer overflow-hidden rounded-2xl bg-bg-dark"
+                  data-id={video.id}
+                  data-title={`${video.client} — ${video.label} AI advert by Aiadverts South Africa`}
+                >
+                  <img
+                    src={`https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`}
+                    alt={`${video.client} ${video.label} — AI video advert by Aiadverts`}
+                    class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
+                    onerror={`this.onerror=null;this.src='https://i.ytimg.com/vi/${video.id}/sddefault.jpg'`}
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/5 to-transparent"></div>
+                  <!-- Play button -->
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <span class="flex h-14 w-14 items-center justify-center rounded-full border border-white/25 bg-white/10 backdrop-blur-md transition-all duration-300 group-hover:scale-110 group-hover:border-white/60 group-hover:bg-white/25">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white" aria-hidden="true" style="margin-left:3px">
+                        <path d="M8 5v14l11-7z"/>
+                      </svg>
+                    </span>
+                  </div>
+                  <!-- Labels -->
+                  <div class="absolute inset-x-0 bottom-0 p-4">
+                    <p class="text-xs font-bold uppercase tracking-widest text-electric">{video.client}</p>
+                    <p class="mt-0.5 text-sm font-bold text-white">{video.label}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          <!-- Scroll dots -->
+          <div id="carousel-dots" class="mt-5 flex justify-center gap-2" aria-hidden="true">
+            {[0,1,2,3].map((i) => (
+              <button
+                data-dot={i}
+                class={`carousel-dot h-1.5 rounded-full transition-all duration-300 ${i === 0 ? 'w-6 bg-electric' : 'w-1.5 bg-navy/20'}`}
+                aria-label={`Go to video ${i + 1}`}
+              ></button>
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -876,6 +916,43 @@ const statCards = [
       btn.setAttribute('aria-expanded', String(!isOpen))
     })
   })
+
+  // ---- Video carousel ----
+  const carousel = document.getElementById('video-carousel')
+  const prevBtn  = document.getElementById('carousel-prev')
+  const nextBtn  = document.getElementById('carousel-next')
+  const dots     = document.querySelectorAll<HTMLElement>('.carousel-dot')
+
+  function getCardWidth(): number {
+    const first = carousel?.querySelector<HTMLElement>('[data-dot]') ??
+                  carousel?.firstElementChild as HTMLElement | null
+    const card  = carousel?.querySelector<HTMLElement>('.shrink-0')
+    return card ? card.offsetWidth + 16 : 280
+  }
+
+  function updateDots() {
+    if (!carousel) return
+    const idx = Math.round(carousel.scrollLeft / getCardWidth())
+    dots.forEach((d, i) => {
+      d.classList.toggle('w-6',   i === idx)
+      d.classList.toggle('bg-electric', i === idx)
+      d.classList.toggle('w-1.5', i !== idx)
+      d.classList.toggle('bg-navy/20',  i !== idx)
+    })
+  }
+
+  prevBtn?.addEventListener('click', () => {
+    carousel?.scrollBy({ left: -getCardWidth(), behavior: 'smooth' })
+  })
+  nextBtn?.addEventListener('click', () => {
+    carousel?.scrollBy({ left: getCardWidth(), behavior: 'smooth' })
+  })
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      carousel?.scrollTo({ left: getCardWidth() * i, behavior: 'smooth' })
+    })
+  })
+  carousel?.addEventListener('scroll', updateDots, { passive: true })
 
   // ---- YouTube facade: swap poster for iframe on click ----
   document.querySelectorAll<HTMLElement>('.yt-facade').forEach((facade) => {
