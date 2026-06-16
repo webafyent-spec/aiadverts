@@ -10,7 +10,8 @@
       "Bash(git -c user.name=\"webafyent\" -c user.email=\"webafyent@gmail.com\" commit -m \"Initial build — Aiadverts website\")",
       "Bash(git push *)",
       "Bash(git -c user.name=\"webafyent\" -c user.email=\"webafyent@gmail.com\" commit -m \"Connect WhatsApp number and vip@webafy.co.za email to CTAs\")",
-      "Bash(git -c user.name=\"webafyent\" -c user.email=\"webafyent@gmail.com\" commit -m \"Add floating WhatsApp button\")"
+      "Bash(git -c user.name=\"webafyent\" -c user.email=\"webafyent@gmail.com\" commit -m \"Add floating WhatsApp button\")",
+      "Bash(git -c user.name=\"webafyent\" -c user.email=\"webafyent@gmail.com\" commit -m \"Apply full aesthetic upgrade — gradients, waves, animations, typography\")"
     ]
   }
 }

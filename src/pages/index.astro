@@ -2,16 +2,16 @@
 import Layout from '../layouts/Layout.astro'
 
 const navLinks = [
-  { href: '#home', label: 'Home' },
-  { href: '#services', label: 'Services' },
+  { href: '#home',      label: 'Home' },
+  { href: '#services',  label: 'Services' },
   { href: '#portfolio', label: 'Portfolio' },
-  { href: '#pricing', label: 'Pricing' },
-  { href: '#faq', label: 'FAQ' },
-  { href: '#contact', label: 'Contact' }
+  { href: '#pricing',   label: 'Pricing' },
+  { href: '#faq',       label: 'FAQ' },
+  { href: '#contact',   label: 'Contact' }
 ]
 
 const WHATSAPP = 'https://wa.me/27695600708'
-const EMAIL = 'mailto:vip@webafy.co.za'
+const EMAIL    = 'mailto:vip@webafy.co.za'
 
 const marqueeBrands = [
   'Scentimental',
@@ -59,12 +59,12 @@ const steps = [
 ]
 
 const portfolio = [
-  { name: 'Scentimental', industry: 'Fragrance' },
-  { name: 'True Organic', industry: 'Skincare' },
-  { name: 'Onikuma', industry: 'Gaming' },
-  { name: 'Pizza Boyz', industry: 'Food' },
-  { name: 'Cubed Coffee', industry: 'Food and Beverage' },
-  { name: 'Marcos Jewellers', industry: 'Jewellery' }
+  { name: 'Scentimental',    industry: 'Fragrance' },
+  { name: 'True Organic',    industry: 'Skincare' },
+  { name: 'Onikuma',         industry: 'Gaming' },
+  { name: 'Pizza Boyz',      industry: 'Food' },
+  { name: 'Cubed Coffee',    industry: 'Food and Beverage' },
+  { name: 'Marcos Jewellers',industry: 'Jewellery' }
 ]
 
 const pricing = [
@@ -72,7 +72,7 @@ const pricing = [
     name: 'Starter',
     price: 'From R1,500',
     blurb: 'Perfect for a single cinematic AI advert package.',
-    features: ['1 AI Video Advert', '3 AI Images', '2 Revisions', 'Delivered in 3-5 days'],
+    features: ['1 AI Video Advert', '3 AI Images', '2 Revisions', 'Delivered in 3–5 days'],
     popular: false
   },
   {
@@ -93,13 +93,10 @@ const pricing = [
 
 const whyItems = [
   { title: 'Faster than traditional production', body: 'Days, not weeks.' },
-  { title: 'A fraction of the cost', body: 'Professional quality at South African prices.' },
-  { title: 'Cinematic quality', body: 'Your brand deserves to look incredible.' },
-  { title: 'AI powered — future proof', body: 'The most advanced AI advertising technology.' },
-  {
-    title: 'South African — we understand your market',
-    body: 'We know Durban, Johannesburg and Cape Town consumer behaviour — built into every advert.'
-  },
+  { title: 'A fraction of the cost',             body: 'Professional quality at South African prices.' },
+  { title: 'Cinematic quality',                  body: 'Your brand deserves to look incredible.' },
+  { title: 'AI powered — future proof',           body: 'The most advanced AI advertising technology.' },
+  { title: 'South African — we get your market', body: 'Durban, Johannesburg and Cape Town consumer behaviour built into every advert.' },
   { title: 'No contracts — start small, scale fast', body: 'Try one advert. If you love it, we grow together.' }
 ]
 
@@ -129,6 +126,12 @@ const faqs = [
     a: 'We serve businesses across all of South Africa including Durban, Johannesburg, Cape Town, Pietermaritzburg and Pretoria. All work delivered digitally so location is never a barrier.'
   }
 ]
+
+const statCards = [
+  { icon: '💸', stat: 'R15,000+', label: 'Average traditional video shoot cost' },
+  { icon: '⚡', stat: '3–5 Days', label: 'Our average delivery time' },
+  { icon: '📉', stat: '70%',      label: 'Average cost saving vs traditional' }
+]
 ---
 
 <Layout>
@@ -144,27 +147,27 @@ const faqs = [
   <header class="fixed inset-x-0 top-0 z-50">
     <nav
       aria-label="Primary navigation"
-      class="mx-auto flex max-w-7xl items-center justify-between gap-4 border-b border-white/10 bg-bg-dark/70 px-5 py-3 backdrop-blur-xl sm:px-8"
+      class="mx-auto flex max-w-7xl items-center justify-between gap-4 border-b border-white/10 bg-bg-dark/75 px-5 py-3 backdrop-blur-xl sm:px-8"
     >
-      <a href="#home" aria-label="Aiadverts home" class="text-xl font-extrabold tracking-tight text-electric">
-        AIADVERTS
+      <!-- Logo -->
+      <a href="#home" aria-label="Aiadverts home" class="flex items-center gap-2">
+        <span class="grid h-8 w-8 place-items-center rounded-lg bg-electric text-xs font-black text-white">A</span>
+        <span class="text-lg font-extrabold tracking-tight text-electric">AIADVERTS</span>
       </a>
 
       <!-- Desktop links -->
       <ul class="hidden items-center gap-7 lg:flex">
-        {
-          navLinks.map((link) => (
-            <li>
-              <a
-                href={link.href}
-                aria-label={`Go to ${link.label} section`}
-                class="text-sm font-medium text-text-light/80 transition-colors hover:text-electric"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))
-        }
+        {navLinks.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              aria-label={`Go to ${link.label} section`}
+              class="nav-link text-sm font-medium text-text-light/80 transition-colors hover:text-electric"
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
       </ul>
 
       <div class="flex items-center gap-2">
@@ -173,12 +176,12 @@ const faqs = [
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Get a free demo advert from Aiadverts"
-          class="hidden rounded-full bg-electric px-5 py-2.5 text-sm font-semibold text-text-light shadow-lg shadow-electric/30 transition-transform hover:scale-105 sm:inline-block"
+          class="hidden rounded-full bg-electric px-5 py-2.5 text-sm font-semibold text-text-light shadow-lg shadow-electric/30 transition-all hover:scale-105 hover:shadow-electric/50 sm:inline-block"
         >
           Get a Free Demo
         </a>
 
-        <!-- Hamburger (mobile) -->
+        <!-- Hamburger -->
         <button
           id="menu-toggle"
           type="button"
@@ -188,37 +191,29 @@ const faqs = [
           class="grid h-11 w-11 place-items-center rounded-lg text-text-light lg:hidden"
         >
           <svg id="menu-open-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
           </svg>
           <svg id="menu-close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-            <line x1="6" y1="18" x2="18" y2="6"></line>
+            <line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/>
           </svg>
         </button>
       </div>
     </nav>
 
     <!-- Mobile menu -->
-    <div
-      id="mobile-menu"
-      class="hidden border-b border-white/10 bg-bg-dark/95 backdrop-blur-xl lg:hidden"
-    >
+    <div id="mobile-menu" class="hidden border-b border-white/10 bg-bg-dark/95 backdrop-blur-xl lg:hidden">
       <ul class="mx-auto flex max-w-7xl flex-col gap-1 px-5 py-4">
-        {
-          navLinks.map((link) => (
-            <li>
-              <a
-                href={link.href}
-                aria-label={`Go to ${link.label} section`}
-                class="mobile-link block rounded-lg px-3 py-3 text-base font-medium text-text-light/90 transition-colors hover:bg-white/5 hover:text-electric"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))
-        }
+        {navLinks.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              aria-label={`Go to ${link.label} section`}
+              class="mobile-link block rounded-lg px-3 py-3 text-base font-medium text-text-light/90 transition-colors hover:bg-white/5 hover:text-electric"
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
         <li class="pt-2">
           <a
             href={WHATSAPP}
@@ -236,10 +231,7 @@ const faqs = [
 
   <main id="main">
     <!-- ============ HERO ============ -->
-    <section
-      id="home"
-      class="hero-gradient relative flex min-h-[100svh] items-center overflow-hidden"
-    >
+    <section id="home" class="hero-gradient relative flex min-h-[100svh] items-center overflow-hidden">
       <!-- Particles -->
       <div aria-hidden="true" class="pointer-events-none absolute inset-0">
         <span class="particle" style="width:10px;height:10px;left:8%;top:22%;animation-delay:0s"></span>
@@ -250,29 +242,42 @@ const faqs = [
         <span class="particle" style="width:18px;height:18px;left:85%;top:60%;animation-delay:4s"></span>
         <span class="particle" style="width:9px;height:9px;left:90%;top:35%;animation-delay:1.1s"></span>
         <span class="particle" style="width:12px;height:12px;left:48%;top:50%;animation-delay:2.8s"></span>
+        <span class="particle" style="width:7px;height:7px;left:62%;top:18%;animation-delay:3.6s"></span>
+        <span class="particle" style="width:13px;height:13px;left:30%;top:80%;animation-delay:0.4s"></span>
       </div>
 
-      <div class="relative mx-auto w-full max-w-5xl px-5 py-28 text-center sm:px-8">
-        <span
-          class="mb-6 inline-block rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-text-light/80 backdrop-blur"
-        >
+      <div class="relative mx-auto w-full max-w-5xl px-5 py-32 text-center sm:px-8">
+        <!-- Label pill -->
+        <span class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-text-light/80 backdrop-blur">
+          <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-electric"></span>
           AI Advertising Agency · South Africa 🇿🇦
         </span>
 
-        <h1 class="mx-auto max-w-4xl text-4xl font-extrabold leading-[1.08] text-text-light sm:text-6xl lg:text-7xl">
-          AI Adverts That Make Your Brand Impossible to Ignore
+        <!-- H1 with gradient on key phrase -->
+        <h1 class="mx-auto max-w-4xl text-4xl font-black leading-[1.06] tracking-tight text-text-light sm:text-6xl lg:text-7xl">
+          AI Adverts That Make Your Brand
+          <span class="text-gradient block sm:inline"> Impossible to Ignore</span>
         </h1>
 
-        <p class="mx-auto mt-6 max-w-2xl text-base text-text-light/70 sm:text-xl">
+        <p class="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-text-light/65 sm:text-xl">
           We create cinematic AI-generated video and image adverts for South African businesses —
           in days, not weeks, at a fraction of traditional costs.
         </p>
+
+        <!-- Stats row -->
+        <div class="mx-auto mt-10 flex flex-wrap items-center justify-center gap-6 text-sm text-text-light/60">
+          <span class="flex items-center gap-1.5"><span class="text-electric font-bold">70%</span> cost saving</span>
+          <span class="h-4 w-px bg-white/20" aria-hidden="true"></span>
+          <span class="flex items-center gap-1.5"><span class="text-electric font-bold">3–5</span> day delivery</span>
+          <span class="h-4 w-px bg-white/20" aria-hidden="true"></span>
+          <span class="flex items-center gap-1.5"><span class="text-electric font-bold">100%</span> AI-generated</span>
+        </div>
 
         <div class="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
           <a
             href="#portfolio"
             aria-label="See our portfolio of AI adverts"
-            class="w-full rounded-full bg-electric px-8 py-4 text-base font-semibold text-text-light shadow-xl shadow-electric/30 transition-transform hover:scale-105 sm:w-auto"
+            class="w-full rounded-full bg-electric px-8 py-4 text-base font-semibold text-text-light shadow-xl shadow-electric/40 transition-all hover:scale-105 hover:shadow-electric/60 sm:w-auto"
           >
             See Our Work
           </a>
@@ -281,45 +286,63 @@ const faqs = [
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Contact Aiadverts on WhatsApp"
-            class="w-full rounded-full border-2 border-white/40 px-8 py-4 text-base font-semibold text-text-light transition-colors hover:border-white hover:bg-white/10 sm:w-auto"
+            class="w-full rounded-full border-2 border-white/30 px-8 py-4 text-base font-semibold text-text-light backdrop-blur transition-all hover:border-white/70 hover:bg-white/10 sm:w-auto"
           >
-            WhatsApp Us Now
+            💬 WhatsApp Us Now
           </a>
         </div>
 
-        <!-- Crawlable hidden location text -->
-        <span class="sr-only">
-          AI advertising agency serving Durban, Johannesburg, Cape Town and all of South Africa
-        </span>
+        <!-- Scroll hint -->
+        <div aria-hidden="true" class="mt-16 flex flex-col items-center gap-2 opacity-40">
+          <span class="text-xs uppercase tracking-widest text-text-light">Scroll</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="animate-bounce text-text-light">
+            <path d="M12 5v14M5 12l7 7 7-7"/>
+          </svg>
+        </div>
+
+        <span class="sr-only">AI advertising agency serving Durban, Johannesburg, Cape Town and all of South Africa</span>
       </div>
     </section>
 
+    <!-- Wave divider: hero → social proof -->
+    <div aria-hidden="true" class="wave-divider -mt-1 bg-bg-light">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,0 C360,60 1080,0 1440,60 L1440,60 L0,60 Z" fill="#0A0A0A"/>
+      </svg>
+    </div>
+
     <!-- ============ SOCIAL PROOF BAR ============ -->
     <section aria-label="Trusted by South African businesses" class="bg-bg-light py-12">
-      <p class="px-5 text-center text-lg font-semibold text-navy sm:text-xl">
+      <p class="px-5 text-center text-sm font-bold uppercase tracking-widest text-navy/50">
         Trusted by businesses across South Africa 🇿🇦
       </p>
       <div class="marquee-wrap mt-8 overflow-hidden" aria-hidden="true">
-        <div class="marquee-track gap-12 pr-12">
-          {
-            [...marqueeBrands, ...marqueeBrands].map((brand) => (
-              <span class="whitespace-nowrap text-xl font-bold tracking-tight text-navy/50 sm:text-2xl">
-                {brand}
-              </span>
-            ))
-          }
+        <div class="marquee-track gap-14 pr-14">
+          {[...marqueeBrands, ...marqueeBrands].map((brand) => (
+            <span class="whitespace-nowrap text-xl font-extrabold tracking-tight text-navy/30 sm:text-2xl">
+              {brand}
+            </span>
+          ))}
         </div>
       </div>
     </section>
 
+    <!-- Wave divider: social proof → about -->
+    <div aria-hidden="true" class="wave-divider bg-text-light">
+      <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,50 C480,0 960,50 1440,0 L1440,50 L0,50 Z" fill="#F8F8F8"/>
+      </svg>
+    </div>
+
     <!-- ============ PROBLEM & SOLUTION ============ -->
     <section id="about" class="bg-text-light py-20 sm:py-28">
-      <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-16">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20">
         <div>
-          <h2 class="text-3xl font-extrabold leading-tight text-navy sm:text-4xl">
-            Traditional Advertising is Broken
+          <span class="text-xs font-bold uppercase tracking-widest text-electric">The Problem</span>
+          <h2 class="mt-3 text-3xl font-black leading-tight text-navy sm:text-4xl">
+            Traditional Advertising<br />is Broken
           </h2>
-          <div class="mt-6 space-y-4 text-base leading-relaxed text-text-dark/70 sm:text-lg">
+          <div class="mt-6 space-y-4 text-base leading-relaxed text-text-dark/65 sm:text-lg">
             <p>
               Most South African businesses face the same problem. Professional video production
               costs R15,000 to R40,000 per shoot. Takes weeks to deliver. And the result? Content
@@ -330,23 +353,19 @@ const faqs = [
               scroll-stopping adverts for businesses in Durban, Johannesburg, Cape Town,
               Pietermaritzburg and across South Africa.
             </p>
-            <p class="font-semibold text-navy">Faster. More affordable. More creative.</p>
+            <p class="font-bold text-navy">Faster. More affordable. More creative.</p>
           </div>
         </div>
 
+        <!-- Enhanced stat cards with icons -->
         <div class="grid gap-5 sm:grid-cols-3 lg:grid-cols-1">
-          {
-            [
-              { stat: 'R15,000+', label: 'Average traditional video shoot cost' },
-              { stat: '3-5 Days', label: 'Our average delivery time' },
-              { stat: '70%', label: 'Average cost saving vs traditional' }
-            ].map((card) => (
-              <div class="rounded-2xl bg-electric p-6 text-text-light shadow-xl shadow-electric/20">
-                <p class="text-3xl font-extrabold sm:text-4xl">{card.stat}</p>
-                <p class="mt-2 text-sm font-medium text-text-light/85">{card.label}</p>
-              </div>
-            ))
-          }
+          {statCards.map((card) => (
+            <div class="group rounded-2xl bg-electric p-6 text-text-light shadow-xl shadow-electric/20 transition-transform hover:-translate-y-1 hover:shadow-electric/35">
+              <div class="stat-icon text-xl" aria-hidden="true">{card.icon}</div>
+              <p class="text-3xl font-black sm:text-4xl">{card.stat}</p>
+              <p class="mt-1.5 text-sm font-medium text-text-light/80">{card.label}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -354,106 +373,136 @@ const faqs = [
     <!-- ============ SERVICES ============ -->
     <section id="services" class="bg-bg-light py-20 sm:py-28">
       <div class="mx-auto max-w-7xl px-5 sm:px-8">
-        <h2 class="text-center text-3xl font-extrabold text-navy sm:text-4xl">
-          What We Create For Your Business
-        </h2>
+        <div class="text-center">
+          <span class="text-xs font-bold uppercase tracking-widest text-electric">What We Do</span>
+          <h2 class="mt-3 text-3xl font-black text-navy sm:text-4xl">
+            What We Create For Your Business
+          </h2>
+        </div>
+
         <div class="mt-14 grid gap-8 md:grid-cols-3">
-          {
-            services.map((service) => (
-              <article class="group rounded-2xl bg-text-light p-8 shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-electric/25">
-                <div class="text-4xl" aria-hidden="true">{service.icon}</div>
-                <h3 class="mt-5 text-xl font-bold text-navy">{service.title}</h3>
-                <p class="mt-3 text-base leading-relaxed text-text-dark/70">{service.body}</p>
-                <a
-                  href="#contact"
-                  aria-label={`Learn more about ${service.title}`}
-                  class="mt-5 inline-flex items-center gap-1 font-semibold text-electric transition-colors group-hover:gap-2"
-                >
-                  Learn more →
-                </a>
-              </article>
-            ))
-          }
+          {services.map((service) => (
+            <article class="group rounded-2xl bg-text-light p-8 shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-electric/20">
+              <!-- Gradient icon circle -->
+              <div class="icon-circle" aria-hidden="true">{service.icon}</div>
+              <h3 class="mt-5 text-xl font-bold text-navy">{service.title}</h3>
+              <p class="mt-3 text-base leading-relaxed text-text-dark/65">{service.body}</p>
+              <a
+                href="#contact"
+                aria-label={`Learn more about ${service.title}`}
+                class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-electric transition-all group-hover:gap-3"
+              >
+                Learn more <span aria-hidden="true">→</span>
+              </a>
+            </article>
+          ))}
         </div>
       </div>
     </section>
+
+    <!-- Wave divider: services → how it works -->
+    <div aria-hidden="true" class="wave-divider bg-bg-dark">
+      <svg viewBox="0 0 1440 55" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,0 C360,55 1080,0 1440,55 L1440,55 L0,55 Z" fill="#F8F8F8"/>
+      </svg>
+    </div>
 
     <!-- ============ HOW IT WORKS ============ -->
     <section aria-labelledby="how-heading" class="bg-bg-dark py-20 sm:py-28">
       <div class="mx-auto max-w-7xl px-5 sm:px-8">
-        <h2 id="how-heading" class="text-center text-3xl font-extrabold text-text-light sm:text-4xl">
-          How It Works
-        </h2>
-
-        <div class="relative mt-16 grid gap-12 md:grid-cols-3 md:gap-8">
-          <!-- Connecting line (desktop) -->
-          <div
-            aria-hidden="true"
-            class="absolute left-0 right-0 top-7 hidden h-px bg-gradient-to-r from-transparent via-electric/40 to-transparent md:block"
-          >
-          </div>
-          {
-            steps.map((step) => (
-              <div class="relative text-center md:text-left">
-                <div class="mx-auto grid h-14 w-14 place-items-center rounded-full bg-electric text-lg font-extrabold text-text-light md:mx-0">
-                  {step.num}
-                </div>
-                <h3 class="mt-5 text-xl font-bold text-text-light">{step.title}</h3>
-                <p class="mt-3 text-base leading-relaxed text-text-light/65">{step.body}</p>
-              </div>
-            ))
-          }
+        <div class="text-center">
+          <span class="text-xs font-bold uppercase tracking-widest text-electric">The Process</span>
+          <h2 id="how-heading" class="mt-3 text-3xl font-black text-text-light sm:text-4xl">
+            How It Works
+          </h2>
         </div>
 
-        <p class="mt-14 text-center text-lg font-semibold text-amber">
-          No long contracts. No complicated briefs. No waiting months.
-        </p>
+        <div class="relative mt-16 grid gap-12 md:grid-cols-3 md:gap-8">
+          <!-- Connecting line -->
+          <div aria-hidden="true" class="absolute left-0 right-0 top-7 hidden h-px bg-gradient-to-r from-transparent via-electric/40 to-transparent md:block"></div>
+
+          {steps.map((step, i) => (
+            <div class="relative text-center md:text-left">
+              <div class="mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-electric/15 border border-electric/30 text-lg font-black text-electric md:mx-0">
+                {step.num}
+              </div>
+              <h3 class="mt-5 text-xl font-bold text-text-light">{step.title}</h3>
+              <p class="mt-3 text-base leading-relaxed text-text-light/60">{step.body}</p>
+            </div>
+          ))}
+        </div>
+
+        <div class="mt-14 rounded-2xl border border-amber/20 bg-amber/10 py-5 px-6 text-center">
+          <p class="text-base font-semibold text-amber sm:text-lg">
+            ✦ No long contracts &nbsp;·&nbsp; No complicated briefs &nbsp;·&nbsp; No waiting months
+          </p>
+        </div>
       </div>
     </section>
+
+    <!-- Wave divider: how it works → portfolio -->
+    <div aria-hidden="true" class="wave-divider bg-text-light">
+      <svg viewBox="0 0 1440 55" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,55 C480,0 960,55 1440,0 L1440,55 L0,55 Z" fill="#0A0A0A"/>
+      </svg>
+    </div>
 
     <!-- ============ PORTFOLIO ============ -->
     <section id="portfolio" class="bg-text-light py-20 sm:py-28">
       <div class="mx-auto max-w-7xl px-5 sm:px-8">
-        <h2 class="text-center text-3xl font-extrabold text-navy sm:text-4xl">
-          Real Adverts. Real Brands. Real Results.
-        </h2>
-        <p class="mx-auto mt-4 max-w-2xl text-center text-base text-text-dark/65 sm:text-lg">
-          Every advert below was created entirely using our proprietary AI technology — no cameras,
-          no studios, no traditional costs.
-        </p>
+        <div class="text-center">
+          <span class="text-xs font-bold uppercase tracking-widest text-electric">Our Work</span>
+          <h2 class="mt-3 text-3xl font-black text-navy sm:text-4xl">
+            Real Adverts. Real Brands. Real Results.
+          </h2>
+          <p class="mx-auto mt-4 max-w-2xl text-base text-text-dark/60 sm:text-lg">
+            Every advert below was created entirely using our proprietary AI technology — no cameras,
+            no studios, no traditional costs.
+          </p>
+        </div>
 
         <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {
-            portfolio.map((item) => (
-              <article
-                aria-label={`${item.name} — ${item.industry} AI advert by Aiadverts South Africa`}
-                class="group relative aspect-[4/5] overflow-hidden rounded-2xl bg-bg-dark"
-              >
-                <!-- Dark placeholder backdrop -->
-                <div class="absolute inset-0 bg-gradient-to-br from-navy/60 via-bg-dark to-bg-dark"></div>
+          {portfolio.map((item) => (
+            <article
+              aria-label={`${item.name} — ${item.industry} AI advert by Aiadverts South Africa`}
+              class="group relative aspect-[4/5] overflow-hidden rounded-2xl bg-bg-dark"
+            >
+              <!-- Shimmer skeleton while no real media -->
+              <div class="portfolio-shimmer absolute inset-0"></div>
 
-                <!-- Play button -->
-                <div class="absolute inset-0 grid place-items-center">
-                  <span class="grid h-16 w-16 place-items-center rounded-full bg-white/10 backdrop-blur transition-transform duration-300 group-hover:scale-110">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </span>
-                </div>
+              <!-- Gradient overlay -->
+              <div class="absolute inset-0 bg-gradient-to-t from-bg-dark/90 via-transparent to-bg-dark/20"></div>
 
-                <!-- Labels -->
-                <div class="absolute inset-x-0 bottom-0 p-5">
-                  <p class="text-lg font-bold text-text-light">{item.name}</p>
-                  <p class="text-sm font-medium text-text-light/60">{item.industry}</p>
-                </div>
+              <!-- Play button -->
+              <div class="absolute inset-0 grid place-items-center">
+                <span class="grid h-16 w-16 place-items-center rounded-full border border-white/20 bg-white/10 backdrop-blur-sm transition-all duration-300 group-hover:scale-110 group-hover:bg-electric/80 group-hover:border-electric">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </span>
+              </div>
 
-                <!-- Hover overlay -->
-                <div class="absolute inset-0 grid place-items-center bg-electric/90 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <span class="text-lg font-bold text-text-light">View Project</span>
-                </div>
-              </article>
-            ))
-          }
+              <!-- Industry badge -->
+              <div class="absolute left-4 top-4">
+                <span class="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white/80 backdrop-blur-sm border border-white/10">
+                  {item.industry}
+                </span>
+              </div>
+
+              <!-- Labels -->
+              <div class="absolute inset-x-0 bottom-0 p-5">
+                <p class="text-lg font-bold text-text-light">{item.name}</p>
+              </div>
+
+              <!-- Hover overlay -->
+              <div class="absolute inset-0 grid place-items-center bg-electric/90 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <span class="flex items-center gap-2 text-lg font-bold text-text-light">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  View Project
+                </span>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>
@@ -461,120 +510,146 @@ const faqs = [
     <!-- ============ PRICING ============ -->
     <section id="pricing" class="bg-bg-light py-20 sm:py-28">
       <div class="mx-auto max-w-7xl px-5 sm:px-8">
-        <h2 class="text-center text-3xl font-extrabold text-navy sm:text-4xl">
-          Transparent Pricing for Every Budget
-        </h2>
-        <p class="mx-auto mt-4 max-w-2xl text-center text-base text-text-dark/65 sm:text-lg">
-          Every South African business deserves world-class advertising regardless of size or budget.
-        </p>
+        <div class="text-center">
+          <span class="text-xs font-bold uppercase tracking-widest text-electric">Pricing</span>
+          <h2 class="mt-3 text-3xl font-black text-navy sm:text-4xl">
+            Transparent Pricing for Every Budget
+          </h2>
+          <p class="mx-auto mt-4 max-w-2xl text-base text-text-dark/60 sm:text-lg">
+            Every South African business deserves world-class advertising regardless of size or budget.
+          </p>
+        </div>
 
-        <div class="mt-14 grid items-start gap-8 lg:grid-cols-3">
-          {
-            pricing.map((plan) => (
-              <div
-                class={`relative rounded-2xl bg-text-light p-8 shadow-md ${
+        <div class="mt-14 grid items-center gap-8 lg:grid-cols-3">
+          {pricing.map((plan) => (
+            <div class={`relative rounded-2xl p-8 transition-transform ${
+              plan.popular
+                ? 'pricing-popular lg:-translate-y-5'
+                : 'bg-text-light shadow-md'
+            }`}>
+              {plan.popular && (
+                <span class="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-amber px-5 py-1.5 text-xs font-black uppercase tracking-wide text-text-dark shadow-lg">
+                  ✦ Most Popular
+                </span>
+              )}
+
+              <h3 class={`text-sm font-bold uppercase tracking-widest ${plan.popular ? 'text-electric' : 'text-navy/60'}`}>
+                {plan.name}
+              </h3>
+              <p class={`mt-3 text-4xl font-black ${plan.popular ? 'text-text-light' : 'text-navy'}`}>
+                {plan.price}
+              </p>
+              <p class={`mt-3 text-sm leading-relaxed ${plan.popular ? 'text-text-light/65' : 'text-text-dark/60'}`}>
+                {plan.blurb}
+              </p>
+
+              <div class={`my-6 h-px ${plan.popular ? 'bg-white/10' : 'bg-navy/10'}`}></div>
+
+              <ul class="space-y-3">
+                {plan.features.map((feature) => (
+                  <li class={`feature-text flex items-center gap-2.5 text-sm ${plan.popular ? 'text-text-light/85' : 'text-text-dark/75'}`}>
+                    <svg class="shrink-0 text-electric" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+
+              <a
+                href={WHATSAPP}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Get started with the ${plan.name} plan`}
+                class={`mt-8 block rounded-full px-6 py-3.5 text-center text-base font-bold transition-all hover:scale-105 ${
                   plan.popular
-                    ? 'ring-2 ring-electric shadow-2xl shadow-electric/25 lg:-translate-y-4'
-                    : ''
+                    ? 'bg-electric text-text-light shadow-xl shadow-electric/40 hover:shadow-electric/60'
+                    : 'border-2 border-electric text-electric hover:bg-electric hover:text-text-light'
                 }`}
               >
-                {plan.popular && (
-                  <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-amber px-4 py-1 text-xs font-bold uppercase tracking-wide text-text-dark">
-                    Most Popular
-                  </span>
-                )}
-                <h3 class="text-xl font-bold text-navy">{plan.name}</h3>
-                <p class="mt-3 text-3xl font-extrabold text-navy">{plan.price}</p>
-                <p class="mt-3 text-sm text-text-dark/65">{plan.blurb}</p>
-                <ul class="mt-6 space-y-3">
-                  {plan.features.map((feature) => (
-                    <li class="flex items-start gap-2 text-sm text-text-dark/80">
-                      <svg class="mt-0.5 shrink-0 text-electric" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href={WHATSAPP}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Get started with the ${plan.name} plan`}
-                  class={`mt-8 block rounded-full px-6 py-3.5 text-center text-base font-semibold transition-transform hover:scale-105 ${
-                    plan.popular
-                      ? 'bg-electric text-text-light shadow-lg shadow-electric/40'
-                      : 'border-2 border-electric text-electric hover:bg-electric hover:text-text-light'
-                  }`}
-                >
-                  Get Started
-                </a>
-              </div>
-            ))
-          }
+                Get Started
+              </a>
+            </div>
+          ))}
         </div>
       </div>
     </section>
+
+    <!-- Wave divider: pricing → why -->
+    <div aria-hidden="true" class="wave-divider bg-bg-dark">
+      <svg viewBox="0 0 1440 55" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,0 C360,55 1080,0 1440,55 L1440,55 L0,55 Z" fill="#F8F8F8"/>
+      </svg>
+    </div>
 
     <!-- ============ WHY AIADVERTS ============ -->
     <section aria-labelledby="why-heading" class="bg-bg-dark py-20 sm:py-28">
       <div class="mx-auto max-w-7xl px-5 sm:px-8">
-        <h2 id="why-heading" class="text-center text-3xl font-extrabold text-text-light sm:text-4xl">
-          Why South African Businesses Choose Aiadverts
-        </h2>
+        <div class="text-center">
+          <span class="text-xs font-bold uppercase tracking-widest text-electric">Why Us</span>
+          <h2 id="why-heading" class="mt-3 text-3xl font-black text-text-light sm:text-4xl">
+            Why South African Businesses Choose Aiadverts
+          </h2>
+        </div>
 
-        <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {
-            whyItems.map((item) => (
-              <div class="flex gap-4">
-                <svg class="mt-1 shrink-0 text-electric" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12" />
+        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {whyItems.map((item) => (
+            <div class="group rounded-2xl border border-white/5 bg-white/3 p-6 transition-all hover:border-electric/30 hover:bg-white/5">
+              <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-electric/15 border border-electric/20">
+                <svg class="text-electric" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
                 </svg>
-                <div>
-                  <h3 class="text-lg font-bold text-text-light">{item.title}</h3>
-                  <p class="mt-1 text-base text-text-light/65">{item.body}</p>
-                </div>
               </div>
-            ))
-          }
+              <h3 class="text-base font-bold text-text-light">{item.title}</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-text-light/55">{item.body}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
 
+    <!-- Wave divider: why → FAQ -->
+    <div aria-hidden="true" class="wave-divider bg-text-light">
+      <svg viewBox="0 0 1440 55" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,55 C480,0 960,55 1440,0 L1440,55 L0,55 Z" fill="#0A0A0A"/>
+      </svg>
+    </div>
+
     <!-- ============ FAQ ============ -->
     <section id="faq" class="bg-text-light py-20 sm:py-28">
       <div class="mx-auto max-w-3xl px-5 sm:px-8">
-        <h2 class="text-center text-3xl font-extrabold text-navy sm:text-4xl">
-          Frequently Asked Questions
-        </h2>
+        <div class="text-center">
+          <span class="text-xs font-bold uppercase tracking-widest text-electric">FAQ</span>
+          <h2 class="mt-3 text-3xl font-black text-navy sm:text-4xl">
+            Frequently Asked Questions
+          </h2>
+        </div>
 
-        <div class="mt-12 space-y-4">
-          {
-            faqs.map((faq, i) => (
-              <div class="accordion-item overflow-hidden rounded-2xl border border-navy/10 bg-bg-light" data-open="false">
-                <h3>
-                  <button
-                    type="button"
-                    class="accordion-trigger flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
-                    aria-expanded="false"
-                    aria-controls={`faq-panel-${i}`}
-                    id={`faq-trigger-${i}`}
-                  >
-                    <span class="text-base font-semibold text-navy sm:text-lg">{faq.q}</span>
-                    <svg class="accordion-icon shrink-0 text-electric transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
-                      <line x1="12" y1="5" x2="12" y2="19" />
-                      <line x1="5" y1="12" x2="19" y2="12" />
-                    </svg>
-                  </button>
-                </h3>
-                <div id={`faq-panel-${i}`} role="region" aria-labelledby={`faq-trigger-${i}`} class="accordion-panel">
-                  <div>
-                    <p class="px-6 pb-5 text-base leading-relaxed text-text-dark/70">{faq.a}</p>
-                  </div>
+        <div class="mt-12 space-y-3">
+          {faqs.map((faq, i) => (
+            <div class="accordion-item overflow-hidden rounded-2xl border border-navy/8 bg-bg-light transition-all" data-open="false">
+              <h3>
+                <button
+                  type="button"
+                  class="accordion-trigger flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
+                  aria-expanded="false"
+                  aria-controls={`faq-panel-${i}`}
+                  id={`faq-trigger-${i}`}
+                >
+                  <span class="text-base font-semibold text-navy sm:text-lg">{faq.q}</span>
+                  <svg class="accordion-icon shrink-0 text-electric transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                    <line x1="12" y1="5" x2="12" y2="19"/>
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                  </svg>
+                </button>
+              </h3>
+              <div id={`faq-panel-${i}`} role="region" aria-labelledby={`faq-trigger-${i}`} class="accordion-panel">
+                <div>
+                  <p class="px-6 pb-6 text-base leading-relaxed text-text-dark/65">{faq.a}</p>
                 </div>
               </div>
-            ))
-          }
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -582,10 +657,11 @@ const faqs = [
     <!-- ============ CONTACT ============ -->
     <section id="contact" class="bg-bg-dark py-20 sm:py-28">
       <div class="mx-auto max-w-3xl px-5 text-center sm:px-8">
-        <h2 class="text-3xl font-extrabold text-text-light sm:text-4xl">
-          Ready to See What AI Can Do For Your Brand?
+        <span class="text-xs font-bold uppercase tracking-widest text-electric">Let's Talk</span>
+        <h2 class="mt-3 text-3xl font-black text-text-light sm:text-4xl">
+          Ready to See What AI Can Do<br class="hidden sm:block"/> For Your Brand?
         </h2>
-        <p class="mx-auto mt-5 max-w-2xl text-base text-text-light/75 sm:text-lg">
+        <p class="mx-auto mt-5 max-w-xl text-base text-text-light/65 sm:text-lg">
           Get a free demo advert created for your business before you spend a single rand.
         </p>
 
@@ -595,26 +671,24 @@ const faqs = [
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Contact Aiadverts on WhatsApp"
-            class="w-full rounded-full bg-electric px-8 py-4 text-base font-semibold text-text-light shadow-xl shadow-electric/30 transition-transform hover:scale-105 sm:w-auto"
+            class="w-full rounded-full bg-electric px-8 py-4 text-base font-bold text-text-light shadow-xl shadow-electric/30 transition-all hover:scale-105 hover:shadow-electric/55 sm:w-auto"
           >
             💬 WhatsApp Us Now
           </a>
           <a
             href={EMAIL}
             aria-label="Send Aiadverts an email"
-            class="w-full rounded-full border-2 border-white/40 px-8 py-4 text-base font-semibold text-text-light transition-colors hover:border-white hover:bg-white/10 sm:w-auto"
+            class="w-full rounded-full border-2 border-white/25 px-8 py-4 text-base font-bold text-text-light transition-all hover:border-white/60 hover:bg-white/8 sm:w-auto"
           >
             ✉️ Send Us an Email
           </a>
         </div>
 
-        <p class="mt-6 text-sm text-text-light/55">
-          No commitment. No cost. Just see what is possible.
-        </p>
+        <p class="mt-6 text-sm text-text-light/40">No commitment. No cost. Just see what is possible.</p>
 
         <span class="sr-only">
-          Aiadverts — AI Advertising Agency, Durban, KwaZulu-Natal, South Africa. Serving
-          Johannesburg, Cape Town, Pietermaritzburg and all of South Africa.
+          Aiadverts — AI Advertising Agency, Durban, KwaZulu-Natal, South Africa.
+          Serving Johannesburg, Cape Town, Pietermaritzburg and all of South Africa.
         </span>
       </div>
     </section>
@@ -625,71 +699,75 @@ const faqs = [
     <div class="mx-auto max-w-7xl px-5 sm:px-8">
       <div class="grid gap-10 md:grid-cols-3">
         <div>
-          <p class="text-xl font-extrabold tracking-tight text-electric">AIADVERTS</p>
-          <p class="mt-3 text-base font-medium text-text-light/80">
+          <div class="flex items-center gap-2">
+            <span class="grid h-8 w-8 place-items-center rounded-lg bg-electric text-xs font-black text-white">A</span>
+            <span class="text-lg font-extrabold tracking-tight text-electric">AIADVERTS</span>
+          </div>
+          <p class="mt-3 text-base font-medium text-text-light/75">
             We Make Your Brand Impossible to Ignore.
           </p>
-          <p class="mt-3 text-sm text-text-light/55">Powered by AI. Built for South Africa. 🇿🇦</p>
+          <p class="mt-2 text-sm text-text-light/45">Powered by AI. Built for South Africa. 🇿🇦</p>
         </div>
 
         <nav aria-label="Footer quick links">
-          <p class="text-sm font-bold uppercase tracking-wide text-text-light">Quick Links</p>
+          <p class="text-xs font-bold uppercase tracking-widest text-text-light/60">Quick Links</p>
           <ul class="mt-4 space-y-2">
-            {
-              navLinks.map((link) => (
-                <li>
-                  <a
-                    href={link.href}
-                    aria-label={`Go to ${link.label} section`}
-                    class="text-sm text-text-light/65 transition-colors hover:text-electric"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))
-            }
+            {navLinks.map((link) => (
+              <li>
+                <a
+                  href={link.href}
+                  aria-label={`Go to ${link.label} section`}
+                  class="nav-link text-sm text-text-light/55 transition-colors hover:text-electric"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
 
         <div>
-          <p class="text-sm font-bold uppercase tracking-wide text-text-light">Get In Touch</p>
-          <ul class="mt-4 space-y-2 text-sm text-text-light/65">
+          <p class="text-xs font-bold uppercase tracking-widest text-text-light/60">Get In Touch</p>
+          <ul class="mt-4 space-y-2.5 text-sm text-text-light/55">
             <li>
               <a href={EMAIL} class="transition-colors hover:text-electric" aria-label="Email Aiadverts">
                 vip@webafy.co.za
               </a>
             </li>
             <li>
-              <a
-                href={WHATSAPP}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="transition-colors hover:text-electric"
-                aria-label="Message Aiadverts on WhatsApp"
-              >
+              <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-electric" aria-label="Message Aiadverts on WhatsApp">
                 WhatsApp Us
               </a>
             </li>
-            <li class="text-text-light/55">Durban, KwaZulu-Natal — Serving all of South Africa</li>
-            <li class="text-text-light/55">Durban, KwaZulu-Natal, South Africa</li>
+            <li>Durban, KwaZulu-Natal — Serving all of South Africa</li>
           </ul>
         </div>
       </div>
 
-      <div class="mt-12 border-t border-white/10 pt-6">
-        <p class="text-center text-sm text-text-light/50">
-          © 2026 Aiadverts. All rights reserved.
-        </p>
+      <div class="mt-12 flex flex-col items-center gap-3 border-t border-white/8 pt-6 sm:flex-row sm:justify-between">
+        <p class="text-sm text-text-light/35">© 2026 Aiadverts. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="https://www.instagram.com/aiadverts" target="_blank" rel="noopener noreferrer" aria-label="Aiadverts on Instagram" class="text-text-light/35 transition-colors hover:text-electric">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.facebook.com/aiadverts" target="_blank" rel="noopener noreferrer" aria-label="Aiadverts on Facebook" class="text-text-light/35 transition-colors hover:text-electric">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@aiadverts" target="_blank" rel="noopener noreferrer" aria-label="Aiadverts on TikTok" class="text-text-light/35 transition-colors hover:text-electric">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.07a8.16 8.16 0 0 0 4.77 1.52V7.15a4.85 4.85 0 0 1-1-.46z"/></svg>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
-  <!-- Floating WhatsApp button -->
+
+  <!-- Floating WhatsApp button with glow pulse -->
   <a
-    href="https://wa.me/27695600708"
+    href={WHATSAPP}
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Chat with Aiadverts on WhatsApp"
-    class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-xl shadow-[#25D366]/40 transition-transform duration-200 hover:scale-110 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#25D366]/50"
+    class="wa-float fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-xl shadow-[#25D366]/40 transition-transform duration-200 hover:scale-110 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#25D366]/50"
   >
     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32" fill="white" aria-hidden="true">
       <path d="M16.003 2.667C8.636 2.667 2.667 8.636 2.667 16c0 2.363.634 4.573 1.737 6.484L2.667 29.333l6.993-1.716A13.267 13.267 0 0 0 16.003 29.333C23.367 29.333 29.333 23.364 29.333 16S23.367 2.667 16.003 2.667zm0 2.4c5.864 0 10.93 5.064 10.93 10.933s-5.066 10.933-10.93 10.933a10.9 10.9 0 0 1-5.536-1.503l-.396-.24-4.15 1.018 1.05-3.987-.263-.413A10.893 10.893 0 0 1 5.07 16c0-5.869 5.066-10.933 10.933-10.933zm-3.21 5.6c-.2 0-.527.075-.803.375-.276.3-1.054 1.03-1.054 2.512s1.08 2.914 1.23 3.115c.15.2 2.097 3.278 5.12 4.472 2.521.994 3.035.796 3.582.746.547-.05 1.766-.72 2.015-1.416.25-.695.25-1.29.175-1.415-.075-.125-.275-.2-.576-.35-.3-.15-1.766-.87-2.04-.97-.275-.1-.475-.15-.675.15-.2.3-.775.97-.95 1.17-.175.2-.35.224-.65.075-.3-.15-1.267-.467-2.413-1.49-.892-.796-1.494-1.778-1.669-2.078-.175-.3-.019-.462.132-.611.135-.134.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.663-1.638-.918-2.238-.238-.578-.487-.506-.675-.515l-.576-.01z"/>
@@ -699,10 +777,10 @@ const faqs = [
 
 <script>
   // ---- Mobile menu toggle ----
-  const toggle = document.getElementById('menu-toggle')
-  const menu = document.getElementById('mobile-menu')
+  const toggle   = document.getElementById('menu-toggle')
+  const menu     = document.getElementById('mobile-menu')
   const openIcon = document.getElementById('menu-open-icon')
-  const closeIcon = document.getElementById('menu-close-icon')
+  const closeIcon= document.getElementById('menu-close-icon')
 
   function setMenu(open: boolean) {
     if (!menu || !toggle) return
