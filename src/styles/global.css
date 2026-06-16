@@ -183,16 +183,10 @@ body {
 .accordion-item[data-open="true"] .accordion-panel { grid-template-rows: 1fr; }
 .accordion-item[data-open="true"] .accordion-icon { transform: rotate(45deg); }
 
-/* ---- Section wave dividers ---- */
-.wave-divider {
-  display: block;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-.wave-divider svg {
-  display: block;
-  width: 100%;
+/* ---- Section separator ---- */
+.section-sep {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(0,102,255,0.18), transparent);
 }
 
 /* ---- Popular pricing card glow ---- */
