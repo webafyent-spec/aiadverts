@@ -17,7 +17,7 @@ const marqueeBrands = [
   'Scentimental',
   'True Organic',
   'Onikuma',
-  'Pizza Boyz',
+  'Sizzles',
   'Cubed Coffee',
   'Marcos Jewellers'
 ]
@@ -560,19 +560,29 @@ const statCards = [
 
         </div>
 
-        <!-- YouTube short below the grid -->
-        <div class="mt-6 overflow-hidden rounded-2xl">
-          <div class="relative mx-auto aspect-[9/16] max-w-xs overflow-hidden rounded-2xl bg-bg-dark sm:aspect-video sm:max-w-none">
-            <iframe
-              src="https://www.youtube.com/embed/Iim0XWCyd8A"
-              title="True Organic — AI video advert by Aiadverts South Africa"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              loading="lazy"
-              class="absolute inset-0 h-full w-full border-0"
-            ></iframe>
-          </div>
-          <p class="mt-3 text-center text-sm font-medium text-text-dark/50">True Organic · AI Video Advert</p>
+        <!-- Video shorts row -->
+        <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
+          {[
+            { src: 'https://www.youtube.com/embed/Iim0XWCyd8A', client: 'True Organic', label: 'Hers · AI Video Advert' },
+            { src: 'https://www.youtube.com/embed/lajBr7Uc9B8', client: 'True Organic', label: 'His · AI Video Advert' },
+            { src: 'https://www.youtube.com/embed/N15hc2WlgHY', client: 'Sizzles',      label: 'Smash Burger · AI Video Advert' },
+          ].map((video) => (
+            <div>
+              <div class="relative aspect-[9/16] overflow-hidden rounded-2xl bg-bg-dark">
+                <iframe
+                  src={video.src}
+                  title={`${video.client} — ${video.label} by Aiadverts South Africa`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  loading="lazy"
+                  class="absolute inset-0 h-full w-full border-0"
+                ></iframe>
+              </div>
+              <p class="mt-2.5 text-center text-xs font-semibold uppercase tracking-widest text-text-dark/45">
+                <span class="text-electric">{video.client}</span> · {video.label}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
