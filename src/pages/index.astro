@@ -560,27 +560,43 @@ const statCards = [
 
         </div>
 
-        <!-- Video shorts row -->
-        <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <!-- Video shorts — facade pattern: poster shown, iframe loads on play -->
+        <div class="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-3">
           {[
-            { src: 'https://www.youtube.com/embed/Iim0XWCyd8A', client: 'True Organic', label: 'Hers · AI Video Advert' },
-            { src: 'https://www.youtube.com/embed/lajBr7Uc9B8', client: 'True Organic', label: 'His · AI Video Advert' },
-            { src: 'https://www.youtube.com/embed/N15hc2WlgHY', client: 'Sizzles',      label: 'Smash Burger · AI Video Advert' },
+            { id: 'Iim0XWCyd8A', client: 'True Organic', label: 'Hers' },
+            { id: 'lajBr7Uc9B8', client: 'True Organic', label: 'His' },
+            { id: 'N15hc2WlgHY', client: 'Sizzles',      label: 'Smash Burger' },
           ].map((video) => (
-            <div>
-              <div class="relative aspect-[9/16] overflow-hidden rounded-2xl bg-bg-dark">
-                <iframe
-                  src={video.src}
-                  title={`${video.client} — ${video.label} by Aiadverts South Africa`}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
+            <div class="group flex flex-col gap-3">
+              <div
+                class="yt-facade relative aspect-[9/16] cursor-pointer overflow-hidden rounded-2xl bg-bg-dark"
+                data-id={video.id}
+                data-title={`${video.client} — ${video.label} AI advert by Aiadverts South Africa`}
+              >
+                <!-- Poster thumbnail (YouTube max-res) -->
+                <img
+                  src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`}
+                  alt={`${video.client} ${video.label} — AI video advert by Aiadverts`}
+                  class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
-                  class="absolute inset-0 h-full w-full border-0"
-                ></iframe>
+                  decoding="async"
+                />
+                <!-- Dark gradient overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+                <!-- Custom play button -->
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <span class="flex h-16 w-16 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-md transition-all duration-300 group-hover:scale-110 group-hover:border-white/50 group-hover:bg-white/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="white" aria-hidden="true" style="margin-left:3px">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                  </span>
+                </div>
+                <!-- Label bottom -->
+                <div class="absolute inset-x-0 bottom-0 p-5">
+                  <p class="text-xs font-bold uppercase tracking-widest text-electric">{video.client}</p>
+                  <p class="mt-0.5 text-base font-bold text-white">{video.label}</p>
+                </div>
               </div>
-              <p class="mt-2.5 text-center text-xs font-semibold uppercase tracking-widest text-text-dark/45">
-                <span class="text-electric">{video.client}</span> · {video.label}
-              </p>
             </div>
           ))}
         </div>
@@ -887,6 +903,25 @@ const statCards = [
       const isOpen = item.getAttribute('data-open') === 'true'
       item.setAttribute('data-open', String(!isOpen))
       btn.setAttribute('aria-expanded', String(!isOpen))
+    })
+  })
+
+  // ---- YouTube facade: swap poster for iframe on click ----
+  document.querySelectorAll<HTMLElement>('.yt-facade').forEach((facade) => {
+    facade.addEventListener('click', () => {
+      const id    = facade.dataset.id
+      const title = facade.dataset.title ?? ''
+      if (!id) return
+      const iframe = document.createElement('iframe')
+      iframe.src         = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`
+      iframe.title       = title
+      iframe.allow       = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+      iframe.allowFullscreen = true
+      iframe.className   = 'absolute inset-0 h-full w-full border-0'
+      // Fade out poster content, drop in iframe
+      facade.innerHTML = ''
+      facade.appendChild(iframe)
+      facade.classList.remove('cursor-pointer')
     })
   })
 </script>
