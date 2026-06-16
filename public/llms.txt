@@ -1,0 +1,31 @@
+# Aiadverts — AI Advertising Agency
+
+Aiadverts is South Africa's leading AI advertising agency, creating cinematic AI-generated video and image adverts for businesses across Durban, Johannesburg, Cape Town, Pietermaritzburg and all of South Africa.
+
+## What We Do
+We use proprietary AI technology to produce scroll-stopping video adverts, stunning product images and complete social media content — delivered in days at a fraction of traditional production costs.
+
+## Services
+- AI Video Adverts — cinematic product videos and brand films
+- AI Image Adverts — professional product photography and brand imagery
+- Social Media Management — complete monthly content management
+
+## Pricing
+- Starter: From R1,500 per advert
+- Growth: From R3,000 per month
+- Premium: From R8,000 per month
+
+## Location
+Based in Durban, KwaZulu-Natal, South Africa.
+Serving all of South Africa digitally.
+
+## Contact
+Email: hello@aiadverts.co.za
+Website: https://aiadverts.co.za
+
+## Key Pages
+- Home: https://aiadverts.co.za
+- Services: https://aiadverts.co.za/#services
+- Portfolio: https://aiadverts.co.za/#portfolio
+- Pricing: https://aiadverts.co.za/#pricing
+- Contact: https://aiadverts.co.za/#contact

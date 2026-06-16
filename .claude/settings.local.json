@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init *)",
+      "Bash(git checkout *)",
+      "Bash(git remote *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(git add *)",
+      "Bash(git -c user.name=\"webafyent\" -c user.email=\"webafyent@gmail.com\" commit -m \"Initial build — Aiadverts website\")"
+    ]
+  }
+}

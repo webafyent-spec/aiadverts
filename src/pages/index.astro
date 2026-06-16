@@ -1,0 +1,722 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+const navLinks = [
+  { href: '#home', label: 'Home' },
+  { href: '#services', label: 'Services' },
+  { href: '#portfolio', label: 'Portfolio' },
+  { href: '#pricing', label: 'Pricing' },
+  { href: '#faq', label: 'FAQ' },
+  { href: '#contact', label: 'Contact' }
+]
+
+const WHATSAPP = 'https://wa.me/27000000000'
+const EMAIL = 'mailto:hello@aiadverts.co.za'
+
+const marqueeBrands = [
+  'Scentimental',
+  'True Organic',
+  'Onikuma',
+  'Pizza Boyz',
+  'Cubed Coffee',
+  'Marcos Jewellers'
+]
+
+const services = [
+  {
+    icon: '🎬',
+    title: 'AI Video Adverts',
+    body: 'Cinematic product videos, brand films and social media reels that stop the scroll. Created using our proprietary AI production pipeline — trusted by brands across Durban, Johannesburg and Cape Town.'
+  },
+  {
+    icon: '📸',
+    title: 'AI Image Adverts',
+    body: 'Stunning product photography and creative brand imagery. Indistinguishable from a professional studio shoot. Available to businesses across South Africa.'
+  },
+  {
+    icon: '📱',
+    title: 'Social Media Management',
+    body: 'Consistent, professional content posted across all your platforms every week. We handle everything so you can focus on your business.'
+  }
+]
+
+const steps = [
+  {
+    num: '01',
+    title: 'Brief Us',
+    body: 'Tell us about your brand, your product and what you want to achieve. Takes 10 minutes.'
+  },
+  {
+    num: '02',
+    title: 'We Create',
+    body: 'Our team produces your cinematic AI adverts using our advanced proprietary AI pipeline. Delivered in days, not weeks.'
+  },
+  {
+    num: '03',
+    title: 'You Post and Grow',
+    body: 'Receive content ready to post. Watch your engagement, reach and sales grow immediately.'
+  }
+]
+
+const portfolio = [
+  { name: 'Scentimental', industry: 'Fragrance' },
+  { name: 'True Organic', industry: 'Skincare' },
+  { name: 'Onikuma', industry: 'Gaming' },
+  { name: 'Pizza Boyz', industry: 'Food' },
+  { name: 'Cubed Coffee', industry: 'Food and Beverage' },
+  { name: 'Marcos Jewellers', industry: 'Jewellery' }
+]
+
+const pricing = [
+  {
+    name: 'Starter',
+    price: 'From R1,500',
+    blurb: 'Perfect for a single cinematic AI advert package.',
+    features: ['1 AI Video Advert', '3 AI Images', '2 Revisions', 'Delivered in 3-5 days'],
+    popular: false
+  },
+  {
+    name: 'Growth',
+    price: 'From R3,000/mo',
+    blurb: 'Consistent monthly AI content that grows your brand.',
+    features: ['4 AI Video Adverts', '10 AI Images', 'Weekly posting', 'Monthly report'],
+    popular: true
+  },
+  {
+    name: 'Premium',
+    price: 'From R8,000/mo',
+    blurb: 'Full AI campaign management across all platforms.',
+    features: ['8 AI Video Adverts', '20 AI Images', 'Full management', 'Strategy session', 'Priority support'],
+    popular: false
+  }
+]
+
+const whyItems = [
+  { title: 'Faster than traditional production', body: 'Days, not weeks.' },
+  { title: 'A fraction of the cost', body: 'Professional quality at South African prices.' },
+  { title: 'Cinematic quality', body: 'Your brand deserves to look incredible.' },
+  { title: 'AI powered — future proof', body: 'The most advanced AI advertising technology.' },
+  {
+    title: 'South African — we understand your market',
+    body: 'We know Durban, Johannesburg and Cape Town consumer behaviour — built into every advert.'
+  },
+  { title: 'No contracts — start small, scale fast', body: 'Try one advert. If you love it, we grow together.' }
+]
+
+const faqs = [
+  {
+    q: 'What is AI advertising?',
+    a: 'AI advertising uses artificial intelligence to create professional video and image adverts — producing cinematic quality content in days at a fraction of traditional production costs.'
+  },
+  {
+    q: 'How much do AI adverts cost in South Africa?',
+    a: 'Our adverts start from R1,500 for a single cinematic video or image package. Monthly content packages start from R3,000 per month.'
+  },
+  {
+    q: 'How long does it take to create an AI advert?',
+    a: 'Most adverts are delivered within 3 to 5 business days from receiving your brief and brand assets.'
+  },
+  {
+    q: 'What businesses can use AI adverts?',
+    a: 'Any business with a product or service to promote. We have created adverts for fragrance brands, skincare companies, restaurants, gaming brands, jewellers and more across South Africa.'
+  },
+  {
+    q: 'Do I need to provide video or photography?',
+    a: 'No. We create everything from scratch — you only need to share your product details, brand assets and what you want to achieve.'
+  },
+  {
+    q: 'Which areas in South Africa do you serve?',
+    a: 'We serve businesses across all of South Africa including Durban, Johannesburg, Cape Town, Pietermaritzburg and Pretoria. All work delivered digitally so location is never a barrier.'
+  }
+]
+---
+
+<Layout>
+  <!-- Skip link -->
+  <a
+    href="#main"
+    class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-electric focus:px-4 focus:py-2 focus:text-text-light focus:font-semibold"
+  >
+    Skip to main content
+  </a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="fixed inset-x-0 top-0 z-50">
+    <nav
+      aria-label="Primary navigation"
+      class="mx-auto flex max-w-7xl items-center justify-between gap-4 border-b border-white/10 bg-bg-dark/70 px-5 py-3 backdrop-blur-xl sm:px-8"
+    >
+      <a href="#home" aria-label="Aiadverts home" class="text-xl font-extrabold tracking-tight text-electric">
+        AIADVERTS
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="hidden items-center gap-7 lg:flex">
+        {
+          navLinks.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                aria-label={`Go to ${link.label} section`}
+                class="text-sm font-medium text-text-light/80 transition-colors hover:text-electric"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <div class="flex items-center gap-2">
+        <a
+          href={WHATSAPP}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Get a free demo advert from Aiadverts"
+          class="hidden rounded-full bg-electric px-5 py-2.5 text-sm font-semibold text-text-light shadow-lg shadow-electric/30 transition-transform hover:scale-105 sm:inline-block"
+        >
+          Get a Free Demo
+        </a>
+
+        <!-- Hamburger (mobile) -->
+        <button
+          id="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          class="grid h-11 w-11 place-items-center rounded-lg text-text-light lg:hidden"
+        >
+          <svg id="menu-open-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg id="menu-close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+            <line x1="6" y1="18" x2="18" y2="6"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div
+      id="mobile-menu"
+      class="hidden border-b border-white/10 bg-bg-dark/95 backdrop-blur-xl lg:hidden"
+    >
+      <ul class="mx-auto flex max-w-7xl flex-col gap-1 px-5 py-4">
+        {
+          navLinks.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                aria-label={`Go to ${link.label} section`}
+                class="mobile-link block rounded-lg px-3 py-3 text-base font-medium text-text-light/90 transition-colors hover:bg-white/5 hover:text-electric"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+        <li class="pt-2">
+          <a
+            href={WHATSAPP}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Get a free demo advert from Aiadverts"
+            class="mobile-link block rounded-full bg-electric px-5 py-3 text-center text-base font-semibold text-text-light"
+          >
+            Get a Free Demo
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section
+      id="home"
+      class="hero-gradient relative flex min-h-[100svh] items-center overflow-hidden"
+    >
+      <!-- Particles -->
+      <div aria-hidden="true" class="pointer-events-none absolute inset-0">
+        <span class="particle" style="width:10px;height:10px;left:8%;top:22%;animation-delay:0s"></span>
+        <span class="particle" style="width:16px;height:16px;left:20%;top:65%;animation-delay:1.5s"></span>
+        <span class="particle" style="width:8px;height:8px;left:38%;top:30%;animation-delay:3s"></span>
+        <span class="particle" style="width:14px;height:14px;left:55%;top:70%;animation-delay:0.8s"></span>
+        <span class="particle" style="width:10px;height:10px;left:72%;top:25%;animation-delay:2.2s"></span>
+        <span class="particle" style="width:18px;height:18px;left:85%;top:60%;animation-delay:4s"></span>
+        <span class="particle" style="width:9px;height:9px;left:90%;top:35%;animation-delay:1.1s"></span>
+        <span class="particle" style="width:12px;height:12px;left:48%;top:50%;animation-delay:2.8s"></span>
+      </div>
+
+      <div class="relative mx-auto w-full max-w-5xl px-5 py-28 text-center sm:px-8">
+        <span
+          class="mb-6 inline-block rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-text-light/80 backdrop-blur"
+        >
+          AI Advertising Agency · South Africa 🇿🇦
+        </span>
+
+        <h1 class="mx-auto max-w-4xl text-4xl font-extrabold leading-[1.08] text-text-light sm:text-6xl lg:text-7xl">
+          AI Adverts That Make Your Brand Impossible to Ignore
+        </h1>
+
+        <p class="mx-auto mt-6 max-w-2xl text-base text-text-light/70 sm:text-xl">
+          We create cinematic AI-generated video and image adverts for South African businesses —
+          in days, not weeks, at a fraction of traditional costs.
+        </p>
+
+        <div class="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+          <a
+            href="#portfolio"
+            aria-label="See our portfolio of AI adverts"
+            class="w-full rounded-full bg-electric px-8 py-4 text-base font-semibold text-text-light shadow-xl shadow-electric/30 transition-transform hover:scale-105 sm:w-auto"
+          >
+            See Our Work
+          </a>
+          <a
+            href={WHATSAPP}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contact Aiadverts on WhatsApp"
+            class="w-full rounded-full border-2 border-white/40 px-8 py-4 text-base font-semibold text-text-light transition-colors hover:border-white hover:bg-white/10 sm:w-auto"
+          >
+            WhatsApp Us Now
+          </a>
+        </div>
+
+        <!-- Crawlable hidden location text -->
+        <span class="sr-only">
+          AI advertising agency serving Durban, Johannesburg, Cape Town and all of South Africa
+        </span>
+      </div>
+    </section>
+
+    <!-- ============ SOCIAL PROOF BAR ============ -->
+    <section aria-label="Trusted by South African businesses" class="bg-bg-light py-12">
+      <p class="px-5 text-center text-lg font-semibold text-navy sm:text-xl">
+        Trusted by businesses across South Africa 🇿🇦
+      </p>
+      <div class="marquee-wrap mt-8 overflow-hidden" aria-hidden="true">
+        <div class="marquee-track gap-12 pr-12">
+          {
+            [...marqueeBrands, ...marqueeBrands].map((brand) => (
+              <span class="whitespace-nowrap text-xl font-bold tracking-tight text-navy/50 sm:text-2xl">
+                {brand}
+              </span>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEM & SOLUTION ============ -->
+    <section id="about" class="bg-text-light py-20 sm:py-28">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-16">
+        <div>
+          <h2 class="text-3xl font-extrabold leading-tight text-navy sm:text-4xl">
+            Traditional Advertising is Broken
+          </h2>
+          <div class="mt-6 space-y-4 text-base leading-relaxed text-text-dark/70 sm:text-lg">
+            <p>
+              Most South African businesses face the same problem. Professional video production
+              costs R15,000 to R40,000 per shoot. Takes weeks to deliver. And the result? Content
+              that looks exactly like everyone else's.
+            </p>
+            <p>
+              There is a better way. Aiadverts uses proprietary AI technology to create cinematic,
+              scroll-stopping adverts for businesses in Durban, Johannesburg, Cape Town,
+              Pietermaritzburg and across South Africa.
+            </p>
+            <p class="font-semibold text-navy">Faster. More affordable. More creative.</p>
+          </div>
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-3 lg:grid-cols-1">
+          {
+            [
+              { stat: 'R15,000+', label: 'Average traditional video shoot cost' },
+              { stat: '3-5 Days', label: 'Our average delivery time' },
+              { stat: '70%', label: 'Average cost saving vs traditional' }
+            ].map((card) => (
+              <div class="rounded-2xl bg-electric p-6 text-text-light shadow-xl shadow-electric/20">
+                <p class="text-3xl font-extrabold sm:text-4xl">{card.stat}</p>
+                <p class="mt-2 text-sm font-medium text-text-light/85">{card.label}</p>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="services" class="bg-bg-light py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <h2 class="text-center text-3xl font-extrabold text-navy sm:text-4xl">
+          What We Create For Your Business
+        </h2>
+        <div class="mt-14 grid gap-8 md:grid-cols-3">
+          {
+            services.map((service) => (
+              <article class="group rounded-2xl bg-text-light p-8 shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-electric/25">
+                <div class="text-4xl" aria-hidden="true">{service.icon}</div>
+                <h3 class="mt-5 text-xl font-bold text-navy">{service.title}</h3>
+                <p class="mt-3 text-base leading-relaxed text-text-dark/70">{service.body}</p>
+                <a
+                  href="#contact"
+                  aria-label={`Learn more about ${service.title}`}
+                  class="mt-5 inline-flex items-center gap-1 font-semibold text-electric transition-colors group-hover:gap-2"
+                >
+                  Learn more →
+                </a>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section aria-labelledby="how-heading" class="bg-bg-dark py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <h2 id="how-heading" class="text-center text-3xl font-extrabold text-text-light sm:text-4xl">
+          How It Works
+        </h2>
+
+        <div class="relative mt-16 grid gap-12 md:grid-cols-3 md:gap-8">
+          <!-- Connecting line (desktop) -->
+          <div
+            aria-hidden="true"
+            class="absolute left-0 right-0 top-7 hidden h-px bg-gradient-to-r from-transparent via-electric/40 to-transparent md:block"
+          >
+          </div>
+          {
+            steps.map((step) => (
+              <div class="relative text-center md:text-left">
+                <div class="mx-auto grid h-14 w-14 place-items-center rounded-full bg-electric text-lg font-extrabold text-text-light md:mx-0">
+                  {step.num}
+                </div>
+                <h3 class="mt-5 text-xl font-bold text-text-light">{step.title}</h3>
+                <p class="mt-3 text-base leading-relaxed text-text-light/65">{step.body}</p>
+              </div>
+            ))
+          }
+        </div>
+
+        <p class="mt-14 text-center text-lg font-semibold text-amber">
+          No long contracts. No complicated briefs. No waiting months.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <section id="portfolio" class="bg-text-light py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <h2 class="text-center text-3xl font-extrabold text-navy sm:text-4xl">
+          Real Adverts. Real Brands. Real Results.
+        </h2>
+        <p class="mx-auto mt-4 max-w-2xl text-center text-base text-text-dark/65 sm:text-lg">
+          Every advert below was created entirely using our proprietary AI technology — no cameras,
+          no studios, no traditional costs.
+        </p>
+
+        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {
+            portfolio.map((item) => (
+              <article
+                aria-label={`${item.name} — ${item.industry} AI advert by Aiadverts South Africa`}
+                class="group relative aspect-[4/5] overflow-hidden rounded-2xl bg-bg-dark"
+              >
+                <!-- Dark placeholder backdrop -->
+                <div class="absolute inset-0 bg-gradient-to-br from-navy/60 via-bg-dark to-bg-dark"></div>
+
+                <!-- Play button -->
+                <div class="absolute inset-0 grid place-items-center">
+                  <span class="grid h-16 w-16 place-items-center rounded-full bg-white/10 backdrop-blur transition-transform duration-300 group-hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </span>
+                </div>
+
+                <!-- Labels -->
+                <div class="absolute inset-x-0 bottom-0 p-5">
+                  <p class="text-lg font-bold text-text-light">{item.name}</p>
+                  <p class="text-sm font-medium text-text-light/60">{item.industry}</p>
+                </div>
+
+                <!-- Hover overlay -->
+                <div class="absolute inset-0 grid place-items-center bg-electric/90 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <span class="text-lg font-bold text-text-light">View Project</span>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section id="pricing" class="bg-bg-light py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <h2 class="text-center text-3xl font-extrabold text-navy sm:text-4xl">
+          Transparent Pricing for Every Budget
+        </h2>
+        <p class="mx-auto mt-4 max-w-2xl text-center text-base text-text-dark/65 sm:text-lg">
+          Every South African business deserves world-class advertising regardless of size or budget.
+        </p>
+
+        <div class="mt-14 grid items-start gap-8 lg:grid-cols-3">
+          {
+            pricing.map((plan) => (
+              <div
+                class={`relative rounded-2xl bg-text-light p-8 shadow-md ${
+                  plan.popular
+                    ? 'ring-2 ring-electric shadow-2xl shadow-electric/25 lg:-translate-y-4'
+                    : ''
+                }`}
+              >
+                {plan.popular && (
+                  <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-amber px-4 py-1 text-xs font-bold uppercase tracking-wide text-text-dark">
+                    Most Popular
+                  </span>
+                )}
+                <h3 class="text-xl font-bold text-navy">{plan.name}</h3>
+                <p class="mt-3 text-3xl font-extrabold text-navy">{plan.price}</p>
+                <p class="mt-3 text-sm text-text-dark/65">{plan.blurb}</p>
+                <ul class="mt-6 space-y-3">
+                  {plan.features.map((feature) => (
+                    <li class="flex items-start gap-2 text-sm text-text-dark/80">
+                      <svg class="mt-0.5 shrink-0 text-electric" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href={WHATSAPP}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Get started with the ${plan.name} plan`}
+                  class={`mt-8 block rounded-full px-6 py-3.5 text-center text-base font-semibold transition-transform hover:scale-105 ${
+                    plan.popular
+                      ? 'bg-electric text-text-light shadow-lg shadow-electric/40'
+                      : 'border-2 border-electric text-electric hover:bg-electric hover:text-text-light'
+                  }`}
+                >
+                  Get Started
+                </a>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY AIADVERTS ============ -->
+    <section aria-labelledby="why-heading" class="bg-bg-dark py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <h2 id="why-heading" class="text-center text-3xl font-extrabold text-text-light sm:text-4xl">
+          Why South African Businesses Choose Aiadverts
+        </h2>
+
+        <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {
+            whyItems.map((item) => (
+              <div class="flex gap-4">
+                <svg class="mt-1 shrink-0 text-electric" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <div>
+                  <h3 class="text-lg font-bold text-text-light">{item.title}</h3>
+                  <p class="mt-1 text-base text-text-light/65">{item.body}</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section id="faq" class="bg-text-light py-20 sm:py-28">
+      <div class="mx-auto max-w-3xl px-5 sm:px-8">
+        <h2 class="text-center text-3xl font-extrabold text-navy sm:text-4xl">
+          Frequently Asked Questions
+        </h2>
+
+        <div class="mt-12 space-y-4">
+          {
+            faqs.map((faq, i) => (
+              <div class="accordion-item overflow-hidden rounded-2xl border border-navy/10 bg-bg-light" data-open="false">
+                <h3>
+                  <button
+                    type="button"
+                    class="accordion-trigger flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
+                    aria-expanded="false"
+                    aria-controls={`faq-panel-${i}`}
+                    id={`faq-trigger-${i}`}
+                  >
+                    <span class="text-base font-semibold text-navy sm:text-lg">{faq.q}</span>
+                    <svg class="accordion-icon shrink-0 text-electric transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                      <line x1="12" y1="5" x2="12" y2="19" />
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                    </svg>
+                  </button>
+                </h3>
+                <div id={`faq-panel-${i}`} role="region" aria-labelledby={`faq-trigger-${i}`} class="accordion-panel">
+                  <div>
+                    <p class="px-6 pb-5 text-base leading-relaxed text-text-dark/70">{faq.a}</p>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="bg-bg-dark py-20 sm:py-28">
+      <div class="mx-auto max-w-3xl px-5 text-center sm:px-8">
+        <h2 class="text-3xl font-extrabold text-text-light sm:text-4xl">
+          Ready to See What AI Can Do For Your Brand?
+        </h2>
+        <p class="mx-auto mt-5 max-w-2xl text-base text-text-light/75 sm:text-lg">
+          Get a free demo advert created for your business before you spend a single rand.
+        </p>
+
+        <div class="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+          <a
+            href={WHATSAPP}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contact Aiadverts on WhatsApp"
+            class="w-full rounded-full bg-electric px-8 py-4 text-base font-semibold text-text-light shadow-xl shadow-electric/30 transition-transform hover:scale-105 sm:w-auto"
+          >
+            💬 WhatsApp Us Now
+          </a>
+          <a
+            href={EMAIL}
+            aria-label="Send Aiadverts an email"
+            class="w-full rounded-full border-2 border-white/40 px-8 py-4 text-base font-semibold text-text-light transition-colors hover:border-white hover:bg-white/10 sm:w-auto"
+          >
+            ✉️ Send Us an Email
+          </a>
+        </div>
+
+        <p class="mt-6 text-sm text-text-light/55">
+          No commitment. No cost. Just see what is possible.
+        </p>
+
+        <span class="sr-only">
+          Aiadverts — AI Advertising Agency, Durban, KwaZulu-Natal, South Africa. Serving
+          Johannesburg, Cape Town, Pietermaritzburg and all of South Africa.
+        </span>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-bg-dark pb-10 pt-16">
+    <div class="mx-auto max-w-7xl px-5 sm:px-8">
+      <div class="grid gap-10 md:grid-cols-3">
+        <div>
+          <p class="text-xl font-extrabold tracking-tight text-electric">AIADVERTS</p>
+          <p class="mt-3 text-base font-medium text-text-light/80">
+            We Make Your Brand Impossible to Ignore.
+          </p>
+          <p class="mt-3 text-sm text-text-light/55">Powered by AI. Built for South Africa. 🇿🇦</p>
+        </div>
+
+        <nav aria-label="Footer quick links">
+          <p class="text-sm font-bold uppercase tracking-wide text-text-light">Quick Links</p>
+          <ul class="mt-4 space-y-2">
+            {
+              navLinks.map((link) => (
+                <li>
+                  <a
+                    href={link.href}
+                    aria-label={`Go to ${link.label} section`}
+                    class="text-sm text-text-light/65 transition-colors hover:text-electric"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+
+        <div>
+          <p class="text-sm font-bold uppercase tracking-wide text-text-light">Get In Touch</p>
+          <ul class="mt-4 space-y-2 text-sm text-text-light/65">
+            <li>
+              <a href={EMAIL} class="transition-colors hover:text-electric" aria-label="Email Aiadverts">
+                hello@aiadverts.co.za
+              </a>
+            </li>
+            <li>
+              <a
+                href={WHATSAPP}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="transition-colors hover:text-electric"
+                aria-label="Message Aiadverts on WhatsApp"
+              >
+                WhatsApp Us
+              </a>
+            </li>
+            <li class="text-text-light/55">Durban, KwaZulu-Natal — Serving all of South Africa</li>
+            <li class="text-text-light/55">Durban, KwaZulu-Natal, South Africa</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 border-t border-white/10 pt-6">
+        <p class="text-center text-sm text-text-light/50">
+          © 2026 Aiadverts. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</Layout>
+
+<script>
+  // ---- Mobile menu toggle ----
+  const toggle = document.getElementById('menu-toggle')
+  const menu = document.getElementById('mobile-menu')
+  const openIcon = document.getElementById('menu-open-icon')
+  const closeIcon = document.getElementById('menu-close-icon')
+
+  function setMenu(open: boolean) {
+    if (!menu || !toggle) return
+    menu.classList.toggle('hidden', !open)
+    toggle.setAttribute('aria-expanded', String(open))
+    toggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu')
+    openIcon?.classList.toggle('hidden', open)
+    closeIcon?.classList.toggle('hidden', !open)
+  }
+
+  toggle?.addEventListener('click', () => {
+    setMenu(menu?.classList.contains('hidden') ?? true)
+  })
+
+  document.querySelectorAll('.mobile-link').forEach((link) => {
+    link.addEventListener('click', () => setMenu(false))
+  })
+
+  // ---- FAQ accordion ----
+  document.querySelectorAll<HTMLButtonElement>('.accordion-trigger').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.accordion-item')
+      if (!item) return
+      const isOpen = item.getAttribute('data-open') === 'true'
+      item.setAttribute('data-open', String(!isOpen))
+      btn.setAttribute('aria-expanded', String(!isOpen))
+    })
+  })
+</script>
