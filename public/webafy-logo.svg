@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 48" role="img" aria-label="Webafy logo">
+  <!-- W mark -->
+  <!-- Left teal arm -->
+  <polygon points="6,8 16,8 26,36 20,36" fill="#2ABFBF"/>
+  <!-- Left inner arm -->
+  <polygon points="20,36 26,36 32,16 38,36" fill="#1A3A5C"/>
+  <!-- Right arm -->
+  <polygon points="38,36 44,36 50,8 44,8" fill="#1A3A5C"/>
+  <!-- Pixel scatter (left side) -->
+  <rect x="0"  y="10" width="4" height="4" fill="#2ABFBF" opacity="0.7"/>
+  <rect x="2"  y="18" width="3" height="3" fill="#2ABFBF" opacity="0.5"/>
+  <rect x="5"  y="26" width="2" height="2" fill="#2ABFBF" opacity="0.35"/>
+  <rect x="1"  y="32" width="2" height="2" fill="#2ABFBF" opacity="0.2"/>
+  <!-- Text: WEBAFY -->
+  <text x="58" y="34" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" fill="#1A3A5C" letter-spacing="1">WEBAFY</text>
+</svg>
