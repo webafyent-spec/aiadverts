@@ -1,188 +1,122 @@
 ---
 import '../styles/global.css'
 
-const organizationSchema = {
+const schemaGraph = {
   '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: 'Aiadverts',
-  alternateName: 'AI Adverts South Africa',
-  url: 'https://aiadverts.co.za',
-  logo: 'https://aiadverts.co.za/logo.svg',
-  description:
-    'Aiadverts creates cinematic AI-generated video and image adverts for South African businesses across Durban, Johannesburg, Cape Town and Pietermaritzburg.',
-  foundingDate: '2024',
-  areaServed: [
-    'Durban',
-    'Johannesburg',
-    'Cape Town',
-    'Pietermaritzburg',
-    'Pretoria',
-    'KwaZulu-Natal',
-    'Gauteng',
-    'Western Cape',
-    'South Africa'
-  ],
-  knowsAbout: [
-    'AI video advertising',
-    'AI image advertising',
-    'Cinematic product adverts',
-    'Social media content creation',
-    'Digital marketing South Africa',
-    'AI content generation',
-    'Brand advertising'
-  ],
-  contactPoint: {
-    '@type': 'ContactPoint',
-    contactType: 'customer service',
-    email: 'vip@webafy.co.za',
-    availableLanguage: 'English',
-    areaServed: 'ZA'
-  },
-  sameAs: [
-    'https://www.instagram.com/aiadverts',
-    'https://www.facebook.com/aiadverts',
-    'https://www.tiktok.com/@aiadverts'
-  ]
-}
-
-const localBusinessSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Aiadverts',
-  description:
-    'AI advertising agency creating cinematic video and image adverts for South African businesses',
-  url: 'https://aiadverts.co.za',
-  email: 'hello@aiadverts.co.za',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Durban',
-    addressRegion: 'KwaZulu-Natal',
-    addressCountry: 'ZA'
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: -29.8587,
-    longitude: 31.0218
-  },
-  areaServed: [
-    { '@type': 'City', name: 'Durban' },
-    { '@type': 'City', name: 'Johannesburg' },
-    { '@type': 'City', name: 'Cape Town' },
-    { '@type': 'City', name: 'Pietermaritzburg' },
-    { '@type': 'Country', name: 'South Africa' }
-  ],
-  priceRange: 'R1,500 - R8,000',
-  currenciesAccepted: 'ZAR',
-  paymentAccepted: 'EFT, Credit Card',
-  openingHours: 'Mo-Fr 08:00-17:00'
-}
-
-const webSiteSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  name: 'Aiadverts',
-  url: 'https://aiadverts.co.za',
-  description: 'AI advertising agency for South African businesses',
-  inLanguage: 'en-ZA',
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: 'https://aiadverts.co.za/?s={search_term_string}',
-    'query-input': 'required name=search_term_string'
-  }
-}
-
-const serviceSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'AI Video Adverts South Africa',
-  description: 'Cinematic AI-generated video adverts for South African businesses',
-  provider: {
-    '@type': 'Organization',
-    name: 'Aiadverts',
-    url: 'https://aiadverts.co.za'
-  },
-  areaServed: 'South Africa',
-  availableChannel: {
-    '@type': 'ServiceChannel',
-    serviceUrl: 'https://aiadverts.co.za'
-  },
-  offers: {
-    '@type': 'Offer',
-    price: '1500',
-    priceCurrency: 'ZAR',
-    priceSpecification: {
-      '@type': 'PriceSpecification',
-      minPrice: '1500',
-      maxPrice: '8000',
-      priceCurrency: 'ZAR'
-    }
-  }
-}
-
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
+  '@graph': [
     {
-      '@type': 'Question',
-      name: 'What is AI advertising?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'AI advertising uses artificial intelligence to create professional video and image adverts — producing cinematic quality content in days at a fraction of traditional production costs.'
+      '@type': ['ProfessionalService', 'Organization'],
+      '@id': 'https://aiadverts.co.za/#organization',
+      name: 'Aiadverts',
+      alternateName: 'AI Adverts South Africa',
+      url: 'https://aiadverts.co.za/',
+      logo: 'https://aiadverts.co.za/og-image.jpg',
+      image: 'https://aiadverts.co.za/og-image.jpg',
+      description: 'Aiadverts creates cinematic AI-generated video and image adverts for South African businesses across Durban, Johannesburg, Cape Town and Pietermaritzburg.',
+      foundingDate: '2024',
+      telephone: '+27695600708',
+      email: 'vip@webafy.co.za',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Durban',
+        addressRegion: 'KwaZulu-Natal',
+        addressCountry: 'ZA'
+      },
+      geo: { '@type': 'GeoCoordinates', latitude: -29.8587, longitude: 31.0218 },
+      areaServed: [
+        { '@type': 'City', name: 'Durban' },
+        { '@type': 'City', name: 'Johannesburg' },
+        { '@type': 'City', name: 'Cape Town' },
+        { '@type': 'City', name: 'Pietermaritzburg' },
+        { '@type': 'City', name: 'Pretoria' },
+        { '@type': 'City', name: 'Gqeberha' },
+        { '@type': 'City', name: 'Bloemfontein' },
+        { '@type': 'City', name: 'East London' },
+        { '@type': 'Country', name: 'South Africa' }
+      ],
+      knowsAbout: ['AI video advertising','AI image advertising','Cinematic product adverts','Social media content creation','Digital marketing South Africa','AI content generation','Brand advertising'],
+      priceRange: 'R1,500 - R8,000',
+      currenciesAccepted: 'ZAR',
+      paymentAccepted: 'EFT, Credit Card',
+      openingHoursSpecification: {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'],
+        opens: '08:00',
+        closes: '17:00'
+      },
+      contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'customer service',
+        telephone: '+27695600708',
+        email: 'vip@webafy.co.za',
+        availableLanguage: 'English',
+        areaServed: 'ZA'
+      },
+      sameAs: ['https://www.instagram.com/aiadverts','https://www.facebook.com/aiadverts','https://www.tiktok.com/@aiadverts'],
+      parentOrganization: { '@type': 'Organization', name: 'Webafy', url: 'https://www.webafy.co.za' },
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'AI Advertising Packages',
+        itemListElement: [
+          { '@type': 'Offer', name: 'Starter', description: '1 AI video advert, 3 AI images, 2 revisions — delivered in 3–5 days', price: '1500', priceCurrency: 'ZAR', priceSpecification: { '@type': 'UnitPriceSpecification', price: '1500', priceCurrency: 'ZAR', unitText: 'once-off' } },
+          { '@type': 'Offer', name: 'Growth', description: '4 AI video adverts, 10 AI images, weekly posting, monthly report', price: '3000', priceCurrency: 'ZAR', priceSpecification: { '@type': 'UnitPriceSpecification', price: '3000', priceCurrency: 'ZAR', unitText: 'month' } },
+          { '@type': 'Offer', name: 'Premium', description: '8 AI video adverts, 20 AI images, full management, strategy session, priority support', price: '8000', priceCurrency: 'ZAR', priceSpecification: { '@type': 'UnitPriceSpecification', price: '8000', priceCurrency: 'ZAR', unitText: 'month' } }
+        ]
       }
     },
     {
-      '@type': 'Question',
-      name: 'How much do AI adverts cost in South Africa?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Our adverts start from R1,500 for a single cinematic video or image package. Monthly content packages start from R3,000 per month.'
-      }
+      '@type': 'WebSite',
+      '@id': 'https://aiadverts.co.za/#website',
+      name: 'Aiadverts',
+      url: 'https://aiadverts.co.za/',
+      description: 'AI advertising agency for South African businesses',
+      inLanguage: 'en-ZA',
+      publisher: { '@id': 'https://aiadverts.co.za/#organization' }
     },
     {
-      '@type': 'Question',
-      name: 'How long does it take to create an AI advert?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Most adverts are delivered within 3 to 5 business days from receiving your brief and brand assets.'
-      }
+      '@type': 'Service',
+      name: 'AI Video Adverts South Africa',
+      description: 'Cinematic AI-generated video adverts and AI video ads for South African businesses',
+      provider: { '@id': 'https://aiadverts.co.za/#organization' },
+      areaServed: 'South Africa',
+      offers: { '@type': 'Offer', price: '1500', priceCurrency: 'ZAR', priceSpecification: { '@type': 'PriceSpecification', minPrice: '1500', maxPrice: '8000', priceCurrency: 'ZAR' } }
     },
     {
-      '@type': 'Question',
-      name: 'What businesses can use AI adverts?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Any business with a product or service to promote. We have created adverts for fragrance brands, skincare companies, restaurants, gaming brands, jewellers and more across South Africa.'
-      }
+      '@type': 'Service',
+      name: 'AI Image Adverts South Africa',
+      description: 'AI product photography and professional brand imagery for South African businesses',
+      provider: { '@id': 'https://aiadverts.co.za/#organization' },
+      areaServed: 'South Africa',
+      offers: { '@type': 'Offer', price: '1500', priceCurrency: 'ZAR' }
     },
     {
-      '@type': 'Question',
-      name: 'Do I need to provide video or photography?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'No. We create everything from scratch — you only need to share your product details, brand assets and what you want to achieve.'
-      }
+      '@type': 'Service',
+      name: 'Social Media Management South Africa',
+      description: 'AI-powered social media advertising and monthly content management for South African businesses',
+      provider: { '@id': 'https://aiadverts.co.za/#organization' },
+      areaServed: 'South Africa',
+      offers: { '@type': 'Offer', price: '3000', priceCurrency: 'ZAR', priceSpecification: { '@type': 'UnitPriceSpecification', price: '3000', priceCurrency: 'ZAR', unitText: 'month' } }
     },
     {
-      '@type': 'Question',
-      name: 'Which areas in South Africa do you serve?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'We serve businesses across all of South Africa including Durban, Johannesburg, Cape Town, Pietermaritzburg and Pretoria. All work delivered digitally so location is never a barrier.'
-      }
-    }
-  ]
-}
-
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://aiadverts.co.za' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://aiadverts.co.za/#services' },
-    { '@type': 'ListItem', position: 3, name: 'Portfolio', item: 'https://aiadverts.co.za/#portfolio' },
-    { '@type': 'ListItem', position: 4, name: 'Pricing', item: 'https://aiadverts.co.za/#pricing' },
-    { '@type': 'ListItem', position: 5, name: 'Contact', item: 'https://aiadverts.co.za/#contact' }
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'What is AI advertising?', acceptedAnswer: { '@type': 'Answer', text: 'AI advertising uses artificial intelligence to create professional video and image adverts — producing cinematic quality content in days at a fraction of traditional production costs.' } },
+        { '@type': 'Question', name: 'How much do AI adverts cost in South Africa?', acceptedAnswer: { '@type': 'Answer', text: 'Our adverts start from R1,500 for a single cinematic video or image package. Monthly content packages start from R3,000 per month.' } },
+        { '@type': 'Question', name: 'How long does it take to create an AI advert?', acceptedAnswer: { '@type': 'Answer', text: 'Most adverts are delivered within 3 to 5 business days from receiving your brief and brand assets.' } },
+        { '@type': 'Question', name: 'What businesses can use AI adverts?', acceptedAnswer: { '@type': 'Answer', text: 'Any business with a product or service to promote. We have created adverts for fragrance brands, skincare companies, restaurants, gaming brands, jewellers and more across South Africa.' } },
+        { '@type': 'Question', name: 'Do I need to provide video or photography?', acceptedAnswer: { '@type': 'Answer', text: 'No. We create everything from scratch — you only need to share your product details, brand assets and what you want to achieve.' } },
+        { '@type': 'Question', name: 'Which areas in South Africa do you serve?', acceptedAnswer: { '@type': 'Answer', text: 'We serve businesses across all of South Africa including Durban, Johannesburg, Cape Town, Pietermaritzburg and Pretoria. All work delivered digitally so location is never a barrier.' } },
+        { '@type': 'Question', name: 'Are AI adverts effective for South African businesses?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. AI adverts deliver the same scroll-stopping cinematic quality as traditional production at around 70% lower cost, which means businesses can test more creative variations and post more consistently — the two biggest drivers of social media advertising results.' } },
+        { '@type': 'Question', name: 'Can AI adverts be used on Facebook, Instagram, TikTok and YouTube?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Every advert is delivered in platform-ready formats for Facebook, Instagram, TikTok, YouTube and WhatsApp, including the correct aspect ratios for feeds, reels and stories.' } },
+        { '@type': 'Question', name: 'What is the difference between an AI advertising agency and a traditional agency?', acceptedAnswer: { '@type': 'Answer', text: 'A traditional agency needs cameras, crews, studios and weeks of production. An AI advertising agency like Aiadverts generates cinematic video and imagery with AI, cutting delivery to 3–5 days and cost by around 70%, with unlimited creative flexibility.' } },
+        { '@type': 'Question', name: 'Do you work with businesses outside Durban and KwaZulu-Natal?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Everything is delivered digitally, so we serve businesses in Johannesburg, Cape Town, Pretoria, Gqeberha, Bloemfontein and every other city in South Africa exactly as we do in Durban and Pietermaritzburg.' } }
+      ]
+    },
+    { '@type': 'VideoObject', name: 'True Organic Hers — AI Video Advert', description: 'Cinematic AI-generated video advert for True Organic, created by Aiadverts South Africa.', thumbnailUrl: 'https://i.ytimg.com/vi/Iim0XWCyd8A/maxresdefault.jpg', embedUrl: 'https://www.youtube.com/embed/Iim0XWCyd8A', uploadDate: '2026-01-01', publisher: { '@id': 'https://aiadverts.co.za/#organization' } },
+    { '@type': 'VideoObject', name: 'True Organic His — AI Video Advert', description: 'Cinematic AI-generated video advert for True Organic, created by Aiadverts South Africa.', thumbnailUrl: 'https://i.ytimg.com/vi/lajBr7Uc9B8/maxresdefault.jpg', embedUrl: 'https://www.youtube.com/embed/lajBr7Uc9B8', uploadDate: '2026-01-01', publisher: { '@id': 'https://aiadverts.co.za/#organization' } },
+    { '@type': 'VideoObject', name: 'Sizzles Smash Burger — AI Video Advert', description: 'Cinematic AI-generated video advert for Sizzles, created by Aiadverts South Africa.', thumbnailUrl: 'https://i.ytimg.com/vi/N15hc2WlgHY/maxresdefault.jpg', embedUrl: 'https://www.youtube.com/embed/N15hc2WlgHY', uploadDate: '2026-01-01', publisher: { '@id': 'https://aiadverts.co.za/#organization' } },
+    { '@type': 'VideoObject', name: 'Onikuma Gaming Headset — AI Video Advert', description: 'Cinematic AI-generated video advert for Onikuma, created by Aiadverts South Africa.', thumbnailUrl: 'https://i.ytimg.com/vi/l_HrGP0kO5w/maxresdefault.jpg', embedUrl: 'https://www.youtube.com/embed/l_HrGP0kO5w', uploadDate: '2026-01-01', publisher: { '@id': 'https://aiadverts.co.za/#organization' } },
+    { '@type': 'VideoObject', name: 'Marcos Jewellers Luxury Diamond Ring — AI Video Advert', description: 'Cinematic AI-generated video advert for Marcos Jewellers, created by Aiadverts South Africa.', thumbnailUrl: 'https://i.ytimg.com/vi/bv-1yxtq8iY/maxresdefault.jpg', embedUrl: 'https://www.youtube.com/embed/bv-1yxtq8iY', uploadDate: '2026-01-01', publisher: { '@id': 'https://aiadverts.co.za/#organization' } }
   ]
 }
 ---
@@ -193,36 +127,41 @@ const breadcrumbSchema = {
     <meta charset="UTF-8" />
 
     <!-- Primary Meta Tags -->
-    <title>AI Adverts South Africa — Cinematic AI Advertising Agency | Aiadverts</title>
-    <meta name="title" content="AI Adverts South Africa — Cinematic AI Advertising Agency | Aiadverts" />
+    <title>AI Adverts South Africa | Cinematic AI Ads | Aiadverts</title>
+    <meta name="title" content="AI Adverts South Africa | Cinematic AI Ads | Aiadverts" />
     <meta
       name="description"
-      content="Aiadverts creates cinematic AI-generated video and image adverts for South African businesses. Fast, affordable and stunning. Serving Durban, Johannesburg, Cape Town, Pietermaritzburg and all of South Africa."
+      content="Cinematic AI-generated video & image adverts for South African businesses. From R1,500, delivered in 3–5 days. Durban, Joburg, Cape Town & nationwide."
     />
     <meta
       name="keywords"
-      content="AI adverts South Africa, AI advertising agency Durban, AI video ads South Africa, cinematic adverts South Africa, social media advertising AI, AI content creation South Africa, AI adverts Johannesburg, AI advertising Cape Town, digital marketing agency Durban, video ads South Africa, AI marketing South Africa, affordable advertising South Africa, social media management Durban, content creation agency South Africa, AI adverts KZN, AI advertising KwaZulu-Natal"
+      content="AI adverts South Africa, AI advertising agency Durban, AI video ads South Africa, cinematic adverts South Africa, AI content creation South Africa, AI advertising KwaZulu-Natal, AI adverts Johannesburg, AI advertising Cape Town"
     />
     <meta name="author" content="Aiadverts" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="msvalidate.01" content="883BC2848341F97D8A4C77A9C4A85256" />
-    <link rel="canonical" href="https://aiadverts.co.za" />
+    <link rel="canonical" href="https://aiadverts.co.za/" />
 
-    <!-- GEO META TAGS — Critical for local SEO -->
+    <!-- GEO META TAGS -->
     <meta name="geo.placename" content="Durban, Pietermaritzburg, Johannesburg, Cape Town, KwaZulu-Natal, South Africa" />
     <meta name="geo.position" content="-29.8587;31.0218" />
-    <meta name="geo.region" content="ZA-KN" />
+    <meta name="geo.region" content="ZA-KZN" />
     <meta name="ICBM" content="-29.8587, 31.0218" />
+
+    <!-- Dublin Core -->
     <meta name="DC.title" content="Aiadverts — AI Advertising Agency South Africa" />
     <meta name="DC.description" content="Cinematic AI-generated video and image adverts for South African businesses" />
     <meta name="DC.subject" content="AI Advertising, Digital Marketing, South Africa" />
     <meta name="DC.coverage" content="South Africa" />
     <meta name="DC.language" content="en-ZA" />
+    <meta name="DC.publisher" content="Webafy" />
+    <meta name="DC.creator" content="Aiadverts" />
+    <meta name="DC.identifier" content="https://aiadverts.co.za/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://aiadverts.co.za" />
-    <meta property="og:title" content="AI Adverts South Africa — Cinematic AI Advertising | Aiadverts" />
+    <meta property="og:url" content="https://aiadverts.co.za/" />
+    <meta property="og:title" content="AI Adverts South Africa | Cinematic AI Ads | Aiadverts" />
     <meta
       property="og:description"
       content="We create cinematic AI-generated video and image adverts for South African businesses. Fast, affordable and impossible to ignore."
@@ -236,8 +175,8 @@ const breadcrumbSchema = {
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://aiadverts.co.za" />
-    <meta name="twitter:title" content="AI Adverts South Africa | Aiadverts" />
+    <meta name="twitter:url" content="https://aiadverts.co.za/" />
+    <meta name="twitter:title" content="AI Adverts South Africa | Cinematic AI Ads | Aiadverts" />
     <meta
       name="twitter:description"
       content="Cinematic AI-generated video and image adverts for South African businesses. Fast, affordable, stunning."
@@ -276,13 +215,8 @@ const breadcrumbSchema = {
       />
     </noscript>
 
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
-    <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
-    <script type="application/ld+json" set:html={JSON.stringify(webSiteSchema)} />
-    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
-    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
-    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <!-- JSON-LD Structured Data — unified @graph -->
+    <script type="application/ld+json" set:html={JSON.stringify(schemaGraph)} />
   </head>
   <body>
     <slot />

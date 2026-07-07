@@ -24,3 +24,6 @@ pnpm-debug.log*
 Thumbs.db
 .vscode/
 .idea/
+
+# Local assets folder (raw source files, not deployed)
+Assets/
