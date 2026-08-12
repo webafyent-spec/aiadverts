@@ -36,4 +36,5 @@ Website: https://aiadverts.co.za
 - Services: https://aiadverts.co.za/#services
 - Portfolio: https://aiadverts.co.za/#portfolio
 - Pricing: https://aiadverts.co.za/#pricing
+- Blog: https://aiadverts.co.za/blog
 - Contact: https://aiadverts.co.za/#contact

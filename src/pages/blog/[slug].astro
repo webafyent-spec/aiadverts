@@ -1,0 +1,149 @@
+---
+import { getCollection, render } from 'astro:content'
+import Layout from '../../layouts/Layout.astro'
+import Header from '../../components/Header.astro'
+import Footer from '../../components/Footer.astro'
+import { SITE_URL, WHATSAPP } from '../../lib/site'
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog')
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post }
+  }))
+}
+
+const { post } = Astro.props
+const { Content } = await render(post)
+
+const dateFmt = (d: Date) =>
+  d.toLocaleDateString('en-ZA', { year: 'numeric', month: 'long', day: 'numeric' })
+
+const canonical = `${SITE_URL}/blog/${post.id}`
+const ogImage = `${SITE_URL}${post.data.ogImage}`
+
+const wordCount = post.body?.split(/\s+/).length ?? 400
+const readingMinutes = Math.max(1, Math.round(wordCount / 200))
+
+const allPosts = (await getCollection('blog'))
+  .filter((p) => p.id !== post.id)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 2)
+
+const breadcrumbSchema = {
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE_URL}/blog` },
+    { '@type': 'ListItem', position: 3, name: post.data.title, item: canonical }
+  ]
+}
+
+const articleSchema = {
+  '@type': 'BlogPosting',
+  '@id': `${canonical}#article`,
+  headline: post.data.title,
+  description: post.data.description,
+  image: ogImage,
+  datePublished: post.data.pubDate.toISOString(),
+  dateModified: (post.data.updatedDate ?? post.data.pubDate).toISOString(),
+  author: { '@id': `${SITE_URL}/#organization` },
+  publisher: { '@id': `${SITE_URL}/#organization` },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  inLanguage: 'en-ZA',
+  keywords: post.data.tags.join(', ')
+}
+---
+
+<Layout
+  title={`${post.data.title} | Aiadverts`}
+  description={post.data.description}
+  canonical={canonical}
+  ogType="article"
+  ogImage={ogImage}
+  extraSchema={[breadcrumbSchema, articleSchema]}
+>
+  <Header />
+
+  <main id="main" class="bg-text-light pb-20 pt-32 sm:pt-40">
+    <article class="mx-auto max-w-3xl px-5 sm:px-8">
+      <nav aria-label="Breadcrumb" class="mb-6 flex flex-wrap items-center gap-2 text-xs text-text-dark/45">
+        <a href="/" class="hover:text-electric">Home</a>
+        <span aria-hidden="true">/</span>
+        <a href="/blog" class="hover:text-electric">Blog</a>
+        <span aria-hidden="true">/</span>
+        <span class="text-navy/70">{post.data.title}</span>
+      </nav>
+
+      <div class="flex flex-wrap gap-2">
+        {post.data.tags.map((tag) => (
+          <span class="rounded-full bg-electric/10 px-3 py-1 text-xs font-bold uppercase tracking-wide text-electric">
+            {tag}
+          </span>
+        ))}
+      </div>
+
+      <h1 class="mt-4 text-3xl font-black leading-tight text-navy sm:text-4xl">
+        {post.data.title}
+      </h1>
+
+      <div class="mt-4 flex items-center gap-3 text-sm text-text-dark/50">
+        <span class="font-semibold text-navy/70">{post.data.author}</span>
+        <span aria-hidden="true">·</span>
+        <time datetime={post.data.pubDate.toISOString()}>{dateFmt(post.data.pubDate)}</time>
+        <span aria-hidden="true">·</span>
+        <span>{readingMinutes} min read</span>
+      </div>
+
+      <div class="section-sep my-8"></div>
+
+      <div class="blog-prose">
+        <Content />
+      </div>
+
+      <div class="mt-14 rounded-2xl border border-electric/15 bg-electric/5 p-7 text-center sm:p-9">
+        <h2 class="text-xl font-black text-navy sm:text-2xl">Ready to see this in action for your brand?</h2>
+        <p class="mx-auto mt-2 max-w-md text-sm text-text-dark/60">
+          Get a free demo advert created for your business before you spend a single rand.
+        </p>
+        <a
+          href={WHATSAPP}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Contact Aiadverts on WhatsApp"
+          class="mt-5 inline-block rounded-full bg-electric px-7 py-3.5 text-sm font-bold text-text-light shadow-lg shadow-electric/30 transition-all hover:scale-105"
+        >
+          💬 WhatsApp Us Now
+        </a>
+      </div>
+
+      {allPosts.length > 0 && (
+        <div class="mt-14">
+          <p class="text-xs font-bold uppercase tracking-widest text-electric">Keep Reading</p>
+          <div class="mt-4 grid gap-4 sm:grid-cols-2">
+            {allPosts.map((p) => (
+              <a
+                href={`/blog/${p.id}`}
+                aria-label={`Read: ${p.data.title}`}
+                class="group rounded-2xl border border-navy/8 bg-bg-light p-5 transition-all hover:border-electric/30 hover:shadow-md"
+              >
+                <h3 class="text-base font-bold text-navy transition-colors group-hover:text-electric">
+                  {p.data.title}
+                </h3>
+                <p class="mt-1.5 text-sm leading-relaxed text-text-dark/55">{p.data.description}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <div class="mt-10">
+        <a href="/blog" class="inline-flex items-center gap-1.5 text-sm font-bold text-electric hover:gap-3 transition-all">
+          <span aria-hidden="true">←</span> Back to all articles
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+</Layout>

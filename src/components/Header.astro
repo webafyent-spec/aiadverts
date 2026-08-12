@@ -1,0 +1,112 @@
+---
+import { navLinks, WHATSAPP } from '../lib/site'
+---
+
+<header class="fixed inset-x-0 top-0 z-50">
+  <nav
+    aria-label="Primary navigation"
+    class="mx-auto flex max-w-7xl items-center justify-between gap-4 border-b border-white/10 bg-bg-dark/75 px-5 py-3 backdrop-blur-xl sm:px-8"
+  >
+    <!-- Logo -->
+    <a href="/" aria-label="Aiadverts home" class="flex items-center gap-2">
+      <span class="grid h-8 w-8 place-items-center rounded-lg bg-electric text-xs font-black text-white">A</span>
+      <span class="text-lg font-extrabold tracking-tight text-electric">AIADVERTS</span>
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="hidden items-center gap-7 lg:flex">
+      {navLinks.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            aria-label={`Go to ${link.label} section`}
+            class="nav-link text-sm font-medium text-text-light/80 transition-colors hover:text-electric"
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <div class="flex items-center gap-2">
+      <a
+        href={WHATSAPP}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Get a free demo advert from Aiadverts"
+        class="hidden rounded-full bg-electric px-5 py-2.5 text-sm font-semibold text-text-light shadow-lg shadow-electric/30 transition-all hover:scale-105 hover:shadow-electric/50 sm:inline-block"
+      >
+        Get a Free Demo
+      </a>
+
+      <!-- Hamburger -->
+      <button
+        id="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        class="grid h-11 w-11 place-items-center rounded-lg text-text-light lg:hidden"
+      >
+        <svg id="menu-open-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+        <svg id="menu-close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden border-b border-white/10 bg-bg-dark/95 backdrop-blur-xl lg:hidden">
+    <ul class="mx-auto flex max-w-7xl flex-col gap-1 px-5 py-4">
+      {navLinks.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            aria-label={`Go to ${link.label} section`}
+            class="mobile-link block rounded-lg px-3 py-3 text-base font-medium text-text-light/90 transition-colors hover:bg-white/5 hover:text-electric"
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+      <li class="pt-2">
+        <a
+          href={WHATSAPP}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Get a free demo advert from Aiadverts"
+          class="mobile-link block rounded-full bg-electric px-5 py-3 text-center text-base font-semibold text-text-light"
+        >
+          Get a Free Demo
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<script>
+  const toggle    = document.getElementById('menu-toggle')
+  const menu      = document.getElementById('mobile-menu')
+  const openIcon  = document.getElementById('menu-open-icon')
+  const closeIcon = document.getElementById('menu-close-icon')
+
+  function setMenu(open: boolean) {
+    if (!menu || !toggle) return
+    menu.classList.toggle('hidden', !open)
+    toggle.setAttribute('aria-expanded', String(open))
+    toggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu')
+    openIcon?.classList.toggle('hidden', open)
+    closeIcon?.classList.toggle('hidden', !open)
+  }
+
+  toggle?.addEventListener('click', () => {
+    setMenu(menu?.classList.contains('hidden') ?? true)
+  })
+
+  document.querySelectorAll('.mobile-link').forEach((link) => {
+    link.addEventListener('click', () => setMenu(false))
+  })
+</script>

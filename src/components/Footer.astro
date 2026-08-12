@@ -1,0 +1,92 @@
+---
+import { navLinks, WHATSAPP, EMAIL } from '../lib/site'
+---
+
+<footer class="bg-bg-dark pb-10 pt-16">
+  <div class="mx-auto max-w-7xl px-5 sm:px-8">
+    <div class="grid gap-10 md:grid-cols-3">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="grid h-8 w-8 place-items-center rounded-lg bg-electric text-xs font-black text-white">A</span>
+          <span class="text-lg font-extrabold tracking-tight text-electric">AIADVERTS</span>
+        </div>
+        <p class="mt-3 text-base font-medium text-text-light/75">
+          We Make Your Brand Impossible to Ignore.
+        </p>
+        <p class="mt-2 text-sm text-text-light/45">Powered by AI. Built for South Africa. 🇿🇦</p>
+      </div>
+
+      <nav aria-label="Footer quick links">
+        <p class="text-xs font-bold uppercase tracking-widest text-text-light/60">Quick Links</p>
+        <ul class="mt-4 space-y-2">
+          {navLinks.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                aria-label={`Go to ${link.label} section`}
+                class="nav-link text-sm text-text-light/55 transition-colors hover:text-electric"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <div>
+        <p class="text-xs font-bold uppercase tracking-widest text-text-light/60">Get In Touch</p>
+        <ul class="mt-4 space-y-2.5 text-sm text-text-light/55">
+          <li>
+            <a href={EMAIL} class="transition-colors hover:text-electric" aria-label="Email Aiadverts">
+              vip@webafy.co.za
+            </a>
+          </li>
+          <li>
+            <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-electric" aria-label="Message Aiadverts on WhatsApp">
+              WhatsApp · 069 560 0708
+            </a>
+          </li>
+          <li>Durban · PMB · Johannesburg · Cape Town</li>
+          <li>KwaZulu-Natal — Serving all of South Africa</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 flex flex-col items-center gap-3 border-t border-white/8 pt-6 sm:flex-row sm:justify-between">
+      <p class="text-sm text-text-light/35">© 2026 Aiadverts. All rights reserved.</p>
+
+      <!-- Powered by Webafy -->
+      <a
+        href="https://www.webafy.co.za"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Website built by Webafy"
+        class="group flex items-center gap-2 rounded-full border border-white/8 bg-white/4 px-3 py-1.5 transition-all hover:border-white/20 hover:bg-white/8"
+      >
+        <span class="text-xs text-text-light/35 transition-colors group-hover:text-text-light/60">Powered by</span>
+        <img
+          src="/webafy-logo.jpeg"
+          alt="Webafy"
+          width="90"
+          height="90"
+          loading="lazy"
+          decoding="async"
+          class="h-8 w-auto transition-opacity"
+          style="mix-blend-mode:screen;opacity:0.75;filter:brightness(1.15) contrast(1.1)"
+        />
+      </a>
+
+      <div class="flex items-center gap-4">
+        <a href="https://www.instagram.com/aiadverts" target="_blank" rel="noopener noreferrer" aria-label="Aiadverts on Instagram" class="text-text-light/35 transition-colors hover:text-electric">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.facebook.com/aiadverts" target="_blank" rel="noopener noreferrer" aria-label="Aiadverts on Facebook" class="text-text-light/35 transition-colors hover:text-electric">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@aiadverts" target="_blank" rel="noopener noreferrer" aria-label="Aiadverts on TikTok" class="text-text-light/35 transition-colors hover:text-electric">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.07a8.16 8.16 0 0 0 4.77 1.52V7.15a4.85 4.85 0 0 1-1-.46z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

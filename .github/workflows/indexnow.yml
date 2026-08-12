@@ -1,0 +1,28 @@
+name: Notify IndexNow
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Submit URLs to IndexNow (Bing)
+        run: |
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "host": "aiadverts.co.za",
+              "key": "0c4236ff38a9413191d55cf5a5baf16f",
+              "keyLocation": "https://aiadverts.co.za/0c4236ff38a9413191d55cf5a5baf16f.txt",
+              "urlList": [
+                "https://aiadverts.co.za/",
+                "https://aiadverts.co.za/blog",
+                "https://aiadverts.co.za/blog/ai-advertising-agency-durban",
+                "https://aiadverts.co.za/blog/ai-video-ads-cost-south-africa",
+                "https://aiadverts.co.za/blog/ai-vs-traditional-video-production"
+              ]
+            }'

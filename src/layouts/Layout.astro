@@ -1,9 +1,26 @@
 ---
 import '../styles/global.css'
+import WhatsAppFloat from '../components/WhatsAppFloat.astro'
 
-const schemaGraph = {
-  '@context': 'https://schema.org',
-  '@graph': [
+interface Props {
+  title?: string
+  description?: string
+  canonical?: string
+  ogType?: string
+  ogImage?: string
+  extraSchema?: unknown[]
+}
+
+const {
+  title = 'AI Adverts South Africa | Cinematic AI Ads | Aiadverts',
+  description = 'Cinematic AI-generated video & image adverts for South African businesses. From R1,500, delivered in 3–5 days. Durban, Joburg, Cape Town & nationwide.',
+  canonical = 'https://aiadverts.co.za/',
+  ogType = 'website',
+  ogImage = 'https://aiadverts.co.za/og-image.jpg',
+  extraSchema = []
+} = Astro.props
+
+const baseGraph = [
     {
       '@type': ['ProfessionalService', 'Organization'],
       '@id': 'https://aiadverts.co.za/#organization',
@@ -117,7 +134,11 @@ const schemaGraph = {
     { '@type': 'VideoObject', name: 'Sizzles Smash Burger — AI Video Advert', description: 'Cinematic AI-generated video advert for Sizzles, created by Aiadverts South Africa.', thumbnailUrl: 'https://i.ytimg.com/vi/N15hc2WlgHY/maxresdefault.jpg', embedUrl: 'https://www.youtube.com/embed/N15hc2WlgHY', uploadDate: '2026-01-01', publisher: { '@id': 'https://aiadverts.co.za/#organization' } },
     { '@type': 'VideoObject', name: 'Onikuma Gaming Headset — AI Video Advert', description: 'Cinematic AI-generated video advert for Onikuma, created by Aiadverts South Africa.', thumbnailUrl: 'https://i.ytimg.com/vi/l_HrGP0kO5w/maxresdefault.jpg', embedUrl: 'https://www.youtube.com/embed/l_HrGP0kO5w', uploadDate: '2026-01-01', publisher: { '@id': 'https://aiadverts.co.za/#organization' } },
     { '@type': 'VideoObject', name: 'Marcos Jewellers Luxury Diamond Ring — AI Video Advert', description: 'Cinematic AI-generated video advert for Marcos Jewellers, created by Aiadverts South Africa.', thumbnailUrl: 'https://i.ytimg.com/vi/bv-1yxtq8iY/maxresdefault.jpg', embedUrl: 'https://www.youtube.com/embed/bv-1yxtq8iY', uploadDate: '2026-01-01', publisher: { '@id': 'https://aiadverts.co.za/#organization' } }
-  ]
+]
+
+const schemaGraph = {
+  '@context': 'https://schema.org',
+  '@graph': [...baseGraph, ...extraSchema]
 }
 ---
 
@@ -127,12 +148,9 @@ const schemaGraph = {
     <meta charset="UTF-8" />
 
     <!-- Primary Meta Tags -->
-    <title>AI Adverts South Africa | Cinematic AI Ads | Aiadverts</title>
-    <meta name="title" content="AI Adverts South Africa | Cinematic AI Ads | Aiadverts" />
-    <meta
-      name="description"
-      content="Cinematic AI-generated video & image adverts for South African businesses. From R1,500, delivered in 3–5 days. Durban, Joburg, Cape Town & nationwide."
-    />
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
     <meta
       name="keywords"
       content="AI adverts South Africa, AI advertising agency Durban, AI video ads South Africa, cinematic adverts South Africa, AI content creation South Africa, AI advertising KwaZulu-Natal, AI adverts Johannesburg, AI advertising Cape Town"
@@ -140,7 +158,9 @@ const schemaGraph = {
     <meta name="author" content="Aiadverts" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="msvalidate.01" content="883BC2848341F97D8A4C77A9C4A85256" />
-    <link rel="canonical" href="https://aiadverts.co.za/" />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en-za" href={canonical} />
+    <link rel="alternate" hreflang="x-default" href={canonical} />
 
     <!-- GEO META TAGS -->
     <meta name="geo.placename" content="Durban, Pietermaritzburg, Johannesburg, Cape Town, KwaZulu-Natal, South Africa" />
@@ -149,39 +169,33 @@ const schemaGraph = {
     <meta name="ICBM" content="-29.8587, 31.0218" />
 
     <!-- Dublin Core -->
-    <meta name="DC.title" content="Aiadverts — AI Advertising Agency South Africa" />
-    <meta name="DC.description" content="Cinematic AI-generated video and image adverts for South African businesses" />
+    <meta name="DC.title" content={title} />
+    <meta name="DC.description" content={description} />
     <meta name="DC.subject" content="AI Advertising, Digital Marketing, South Africa" />
     <meta name="DC.coverage" content="South Africa" />
     <meta name="DC.language" content="en-ZA" />
     <meta name="DC.publisher" content="Webafy" />
     <meta name="DC.creator" content="Aiadverts" />
-    <meta name="DC.identifier" content="https://aiadverts.co.za/" />
+    <meta name="DC.identifier" content={canonical} />
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://aiadverts.co.za/" />
-    <meta property="og:title" content="AI Adverts South Africa | Cinematic AI Ads | Aiadverts" />
-    <meta
-      property="og:description"
-      content="We create cinematic AI-generated video and image adverts for South African businesses. Fast, affordable and impossible to ignore."
-    />
-    <meta property="og:image" content="https://aiadverts.co.za/og-image.jpg" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Aiadverts — AI Advertising Agency South Africa" />
+    <meta property="og:image:alt" content={title} />
     <meta property="og:locale" content="en_ZA" />
     <meta property="og:site_name" content="Aiadverts" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://aiadverts.co.za/" />
-    <meta name="twitter:title" content="AI Adverts South Africa | Cinematic AI Ads | Aiadverts" />
-    <meta
-      name="twitter:description"
-      content="Cinematic AI-generated video and image adverts for South African businesses. Fast, affordable, stunning."
-    />
-    <meta name="twitter:image" content="https://aiadverts.co.za/og-image.jpg" />
+    <meta name="twitter:url" content={canonical} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
 
     <!-- Mobile and Performance -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -220,5 +234,6 @@ const schemaGraph = {
   </head>
   <body>
     <slot />
+    <WhatsAppFloat />
   </body>
 </html>

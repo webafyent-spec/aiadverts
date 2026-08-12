@@ -1,0 +1,97 @@
+---
+import { getCollection } from 'astro:content'
+import Layout from '../../layouts/Layout.astro'
+import Header from '../../components/Header.astro'
+import Footer from '../../components/Footer.astro'
+import { SITE_URL } from '../../lib/site'
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+)
+
+const dateFmt = (d: Date) =>
+  d.toLocaleDateString('en-ZA', { year: 'numeric', month: 'long', day: 'numeric' })
+
+const title = 'AI Advertising Blog | Aiadverts South Africa'
+const description = 'Insights on AI video advertising, pricing and content strategy for South African businesses — from the team behind Aiadverts.'
+const canonical = `${SITE_URL}/blog`
+
+const breadcrumbSchema = {
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: canonical }
+  ]
+}
+
+const blogSchema = {
+  '@type': 'Blog',
+  '@id': `${canonical}/#blog`,
+  name: 'Aiadverts Blog',
+  url: canonical,
+  publisher: { '@id': `${SITE_URL}/#organization` },
+  blogPost: posts.map((p) => ({
+    '@type': 'BlogPosting',
+    headline: p.data.title,
+    url: `${SITE_URL}/blog/${p.id}`
+  }))
+}
+---
+
+<Layout title={title} description={description} canonical={canonical} extraSchema={[breadcrumbSchema, blogSchema]}>
+  <Header />
+
+  <main id="main" class="bg-text-light pb-20 pt-32 sm:pt-40">
+    <div class="mx-auto max-w-5xl px-5 sm:px-8">
+      <nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-xs text-text-dark/45">
+        <a href="/" class="hover:text-electric">Home</a>
+        <span aria-hidden="true">/</span>
+        <span class="text-navy/70">Blog</span>
+      </nav>
+
+      <div class="text-center">
+        <span class="text-xs font-bold uppercase tracking-widest text-electric">Insights</span>
+        <h1 class="mt-3 text-3xl font-black text-navy sm:text-5xl">
+          AI Advertising Blog
+        </h1>
+        <p class="mx-auto mt-4 max-w-2xl text-base text-text-dark/60 sm:text-lg">
+          Practical guides on AI video advertising, pricing and content strategy for South African businesses.
+        </p>
+      </div>
+
+      <div class="mt-14 grid gap-6 sm:grid-cols-2">
+        {posts.map((post) => (
+          <a
+            href={`/blog/${post.id}`}
+            aria-label={`Read: ${post.data.title}`}
+            class="group flex flex-col rounded-2xl border border-navy/8 bg-bg-light p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-electric/10"
+          >
+            <div class="flex flex-wrap gap-2">
+              {post.data.tags.slice(0, 2).map((tag) => (
+                <span class="rounded-full bg-electric/10 px-3 py-1 text-xs font-bold uppercase tracking-wide text-electric">
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <h2 class="mt-4 text-xl font-bold text-navy transition-colors group-hover:text-electric">
+              {post.data.title}
+            </h2>
+            <p class="mt-2.5 flex-1 text-sm leading-relaxed text-text-dark/60">
+              {post.data.description}
+            </p>
+            <div class="mt-5 flex items-center justify-between border-t border-navy/8 pt-4">
+              <time datetime={post.data.pubDate.toISOString()} class="text-xs font-medium text-text-dark/45">
+                {dateFmt(post.data.pubDate)}
+              </time>
+              <span class="inline-flex items-center gap-1.5 text-sm font-bold text-electric transition-all group-hover:gap-3">
+                Read more <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
