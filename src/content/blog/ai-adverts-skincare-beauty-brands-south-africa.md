@@ -1,7 +1,7 @@
 ---
 title: "How AI Product Photography Is Helping South African Skincare Brands Compete"
 description: "Studio-quality product photography and video used to cost skincare brands a fortune. Here's how AI is changing that for South African beauty brands."
-pubDate: 2026-03-10
+pubDate: 2026-08-13
 tags: ["AI product photography", "skincare marketing South Africa", "AI image adverts"]
 ---
 
