@@ -1,7 +1,7 @@
 ---
 title: "AI Video Ads for Restaurants: How South African Food Brands Are Getting Noticed"
 description: "Drone shots, sizzling close-ups, cinematic food reveals — see how AI video advertising is helping South African restaurants and food brands compete on social media without a production crew."
-pubDate: 2026-08-13
+pubDate: 2026-08-15
 tags: ["AI video ads for restaurants", "food marketing South Africa", "AI content creation South Africa"]
 ---
 
