@@ -11,9 +11,9 @@ Every business eventually faces this decision: book a traditional video shoot, o
 
 **Traditional production** requires a crew, equipment hire, a location and post-production editing. Even a modest shoot in South Africa runs R15,000–R40,000, and that's before revisions.
 
-**AI production** starts from R2,500 for a single advert, or from R6,000/month for a package of multiple videos. The cost structure removes the physical production layer entirely — see our [full pricing breakdown](/#pricing).
+**AI production** starts from R3,000 for a single advert, or from R8,500/month for a package of multiple videos. The cost structure removes the physical production layer entirely — see our [full pricing breakdown](/#pricing).
 
-**Winner for most small businesses:** AI, simply on accessibility. A R2,500 entry point means testing video advertising isn't a major financial commitment.
+**Winner for most small businesses:** AI, simply on accessibility. A R3,000 entry point means testing video advertising isn't a major financial commitment.
 
 ## Turnaround Time
 

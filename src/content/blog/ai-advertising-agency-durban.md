@@ -36,6 +36,6 @@ Whether you're in Durban CBD, Umhlanga, Pietermaritzburg or serving customers ac
 
 ## What This Means for Your Marketing Budget
 
-If you've been putting off professional video advertising because of cost or turnaround time, that constraint has changed. A single AI video advert now starts from [R2,500](/#pricing), with monthly content packages for businesses that want a consistent posting cadence rather than a one-off campaign.
+If you've been putting off professional video advertising because of cost or turnaround time, that constraint has changed. A single AI video advert now starts from [R3,000](/#pricing), with monthly content packages for businesses that want a consistent posting cadence rather than a one-off campaign.
 
 Ready to see what this looks like for your brand? [Get a free demo advert](https://wa.me/27695600708) before you spend a single rand — see the quality for yourself first.

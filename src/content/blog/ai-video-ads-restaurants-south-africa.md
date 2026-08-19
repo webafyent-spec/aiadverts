@@ -30,7 +30,7 @@ What that means in practice:
 - **Delivery in 3–5 business days**, so a new menu item or weekend special can be advertised before the moment passes
 - **Multiple platform formats** — Reels, TikTok, YouTube Shorts and WhatsApp Status — from the same core content
 
-See what's included at each tier on our [pricing page](/#pricing), starting from R2,500 for a single advert.
+See what's included at each tier on our [pricing page](/#pricing), starting from R3,000 for a single advert.
 
 ## Why Consistency Matters More Than One Big Shoot
 

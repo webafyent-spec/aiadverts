@@ -21,13 +21,13 @@ That price point puts consistent video advertising out of reach for most small a
 
 At Aiadverts, pricing is structured around how much content your business actually needs:
 
-**Starter — R2,500 once-off**
+**Starter — R3,000 once-off**
 1 AI video advert, 3 AI images, 2 revisions, delivered in 3–5 days. Ideal for testing the format or a single product launch.
 
-**Growth — R6,000/month**
+**Growth — R8,500/month**
 3 AI video adverts, 10 AI images, weekly posting and a monthly performance report. Built for businesses that want a consistent content cadence.
 
-**Premium — R10,000/month**
+**Premium — R18,000/month**
 7 AI video adverts, 20 AI images, full campaign management, a strategy session and priority support. Suited to brands running an always-on content operation across multiple platforms.
 
 See the full breakdown on our [pricing page](/#pricing).

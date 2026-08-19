@@ -23,7 +23,7 @@ With AI image generation, that same level of texture and lighting control is ach
 - **Multiple lighting and surface variations** from a single product — cream jars shot on linen, oak, marble or stone without a single physical reshoot
 - **Video adverts to match** — the same product brought to life in cinematic AI video for Reels, TikTok and Stories
 
-See the [full pricing breakdown](/#pricing) for what's included at each package level, starting from R2,500 for a single advert.
+See the [full pricing breakdown](/#pricing) for what's included at each package level, starting from R3,000 for a single advert.
 
 ## Why This Matters More for Beauty Than Most Categories
 
