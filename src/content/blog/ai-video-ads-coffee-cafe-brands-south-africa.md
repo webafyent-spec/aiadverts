@@ -25,7 +25,7 @@ Done properly, a monthly content shoot for a café or coffee brand costs R8,000�
 
 ## AI Production for the Coffee Category
 
-We've produced AI video content for [Cubed Coffee](/#portfolio), creating visuals that communicate the product and the brand at a level that holds up alongside the specialist coffee content audiences see from international brands.
+We've produced AI video content for specialty coffee brands in South Africa, creating visuals that communicate the product and the brand at a level that holds up alongside the specialist coffee content audiences see from international brands.
 
 What AI production delivers for coffee and café brands:
 
