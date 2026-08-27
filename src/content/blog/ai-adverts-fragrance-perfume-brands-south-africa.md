@@ -24,7 +24,7 @@ Producing that at any volume traditionally means a dedicated creative team: a di
 
 We're a South African agency for AI adverts, and fragrance is one of the categories where AI production closes the gap between what small brands need and what traditional production can realistically deliver.
 
-We've produced AI video and image content for [Scentimental](/#portfolio), a South African fragrance brand, creating editorial-quality visuals that communicate the brand's aesthetic at a level that holds up in the same feed as international perfume content.
+We've produced AI video and image content for South African fragrance brands, creating editorial-quality visuals that communicate the brand's aesthetic at a level that holds up in the same feed as international perfume content.
 
 What AI production delivers for fragrance and perfume brands:
 
