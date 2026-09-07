@@ -531,6 +531,7 @@ const statCards = [
             class="flex gap-4 overflow-x-auto pb-4 [scrollbar-width:none] [scroll-snap-type:x_mandatory] [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:hidden"
           >
             {[
+              { id: 'AAqpK1cze4Y', client: 'AI Advert',        label: 'Leave It to the Professionals' },
               { id: 'esmbzZ0Ma_E', client: 'Jaguar',           label: 'Car Advert' },
               { id: 'Aaq7eORATCE', client: 'Perfume Brand',    label: 'Brand Film' },
               { id: 'Iim0XWCyd8A', client: 'True Organic',     label: 'Hers' },
@@ -580,7 +581,7 @@ const statCards = [
 
           <!-- Scroll dots -->
           <div id="carousel-dots" class="mt-5 flex justify-center gap-2" aria-hidden="true">
-            {[0,1,2,3,4,5,6,7,8,9,10,11,12].map((i) => (
+            {[0,1,2,3,4,5,6,7,8,9,10,11,12,13].map((i) => (
               <button
                 data-dot={i}
                 class={`carousel-dot h-1.5 rounded-full transition-all duration-300 ${i === 0 ? 'w-6 bg-electric' : 'w-1.5 bg-navy/20'}`}
