@@ -23,7 +23,8 @@ const urlList = [
   'https://aiadverts.co.za/blog/ai-video-ads-gyms-fitness-brands-south-africa',
   'https://aiadverts.co.za/blog/ai-product-images-ecommerce-south-africa',
   'https://aiadverts.co.za/blog/how-to-brief-an-ai-advert-south-africa',
-  'https://aiadverts.co.za/blog/ai-adverts-professional-services-south-africa'
+  'https://aiadverts.co.za/blog/ai-adverts-professional-services-south-africa',
+  'https://aiadverts.co.za/blog/ai-adverts-spas-salons-wellness-south-africa'
 ]
 
 // Only run in Vercel's production build, not local dev builds
