@@ -2,6 +2,7 @@
 title: "AI Video Production vs Traditional Shoots: What South African Businesses Should Know"
 description: "A practical comparison of AI video production and traditional video shoots — cost, turnaround, quality and flexibility — for South African businesses deciding between the two."
 pubDate: 2026-02-24
+category: guides
 tags: ["AI content creation South Africa", "video production", "advertising agency"]
 ---
 
@@ -13,7 +14,7 @@ Every business eventually faces this decision: book a traditional video shoot, o
 
 **AI production** starts from R3,000 for a single advert, or from R8,500/month for a package of multiple videos. The cost structure removes the physical production layer entirely — see our [full pricing breakdown](/#pricing).
 
-**Winner for most small businesses:** AI, simply on accessibility. A R3,000 entry point means testing video advertising isn't a major financial commitment.
+**Winner for most small businesses:** AI, simply on accessibility. A R3,000 entry point means testing video advertising isn't a major financial commitment. Our [guide to AI video ad costs in South Africa](/blog/ai-video-ads-cost-south-africa) breaks down what each package includes.
 
 ## Turnaround Time
 
@@ -41,8 +42,8 @@ This is where the comparison gets more nuanced. A traditional shoot with an expe
 
 ## Which Should You Choose?
 
-If your business needs regular, affordable content — weekly social posts, product launches, seasonal campaigns — AI production is built for that cadence in a way traditional shoots aren't. If you need a one-off brand film with real locations and talent for a major campaign, traditional production still has its place.
+If your business needs regular, affordable content — [weekly social posts](/blog/ai-social-media-management-small-business-south-africa), product launches, seasonal campaigns — AI production is built for that cadence in a way traditional shoots aren't. If you need a one-off brand film with real locations and talent for a major campaign, traditional production still has its place.
 
 Most South African small businesses fall firmly into the first category. That's why AI content creation in South Africa has grown from a novelty to the default choice for consistent, professional advertising on a realistic budget.
 
-Not sure which fits your business? [Get a free demo advert](https://wa.me/27695600708) and judge the quality yourself before deciding.
+Not sure which fits your business? Read [how to brief an AI advert](/blog/how-to-brief-an-ai-advert-south-africa) to see what we'd need from you, then [get a free demo advert](https://wa.me/27695600708) and judge the quality yourself before deciding.

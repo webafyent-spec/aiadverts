@@ -2,6 +2,7 @@
 title: "AI Video Ads for Car Dealerships and Automotive Brands in South Africa"
 description: "Car marketing has always relied on cinematic production. See how South African dealerships and automotive brands are using AI video to produce showroom-quality adverts without a full production crew."
 pubDate: 2026-09-10
+category: services
 tags: ["AI video ads car dealerships South Africa", "automotive marketing South Africa", "South African agency for AI adverts"]
 ---
 
@@ -19,7 +20,7 @@ The visual grammar of car advertising is specific and technically demanding:
 - Interior detail shots requiring controlled lighting to avoid glare and reflection
 - Post-production colour grading to give the footage the cinematic, premium feel associated with car commercials
 
-A single vehicle video shoot produced to that standard easily runs R15,000–R35,000. For a dealership marketing dozens of vehicles, or a brand running seasonal campaigns across a full model range, that cost structure makes consistent video marketing impractical at scale.
+A single vehicle video shoot produced to that standard easily runs R15,000–R35,000 — compare that with [what AI video ads cost](/blog/ai-video-ads-cost-south-africa). For a dealership marketing dozens of vehicles, or a brand running seasonal campaigns across a full model range, that cost structure makes consistent video marketing impractical at scale.
 
 ## How AI Production Changes Automotive Marketing
 
@@ -39,7 +40,7 @@ See the full [pricing breakdown](/#pricing), starting from R3,000 for a single v
 
 Most dealerships have historically produced one polished video — for a flagship vehicle or a major campaign — while the rest of the inventory relies on standard listing photos. That approach leaves most of a dealership's stock competing on price and specs alone, without the visual storytelling that actually drives interest and enquiries.
 
-AI production removes the cost barrier that forces that trade-off. Instead of one hero video a quarter, a dealership can produce video content across its full range — meaning every vehicle gets a shot at standing out, not just the ones that happened to justify a production budget.
+AI production removes the cost barrier that forces that trade-off. Instead of one hero video a quarter, a dealership can produce video content across its full range — meaning every vehicle gets a shot at standing out, not just the ones that happened to justify a production budget. It's the same logic [estate agents are applying to property listings](/blog/ai-video-ads-real-estate-south-africa).
 
 ## Getting Started
 

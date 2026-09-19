@@ -2,6 +2,7 @@
 title: "WhatsApp Status Video Ads: The Overlooked Advertising Channel for South African Businesses"
 description: "WhatsApp is the most-used app in South Africa, and Status is where people already watch short video. Here's how South African businesses can use AI video adverts on WhatsApp Status."
 pubDate: 2026-09-19
+category: guides
 tags: ["WhatsApp Status video ads South Africa", "WhatsApp marketing South Africa", "South African agency for AI adverts"]
 ---
 
@@ -234,7 +235,7 @@ Here is what a Status advert looks like on a phone. Pick an industry, tap the ri
 
 The reason more businesses don't use Status well isn't awareness — it's content. Status is a daily-habit channel, which means it rewards fresh, regular posting. But most small businesses either post the same product photo repeatedly, or share unpolished phone footage that doesn't reflect the quality of what they're selling.
 
-Producing enough polished video to post consistently on Status, on top of everything else a business needs content for, is where traditional production falls short. A single shoot doesn't stretch across weeks of daily posting.
+Producing enough polished video to post consistently on Status, on top of everything else a business needs content for, is where [traditional production falls short](/blog/ai-vs-traditional-video-production). A single shoot doesn't stretch across weeks of daily posting.
 
 ## How AI Video Adverts Fit Status
 
@@ -252,7 +253,7 @@ See the full [pricing breakdown](/#pricing), starting from R3,000 for a single a
 
 ## Who Benefits Most
 
-Status is especially effective for businesses that already sell through direct relationships: local service providers, retailers with a regular customer base, salons, restaurants, tradespeople, real estate agents and small online sellers. If your customers already message you on WhatsApp to enquire or order, Status is a natural extension of a channel you're already using.
+Status is especially effective for businesses that already sell through direct relationships: local service providers, retailers with a regular customer base, [salons](/blog/ai-adverts-spas-salons-wellness-south-africa), restaurants, [tradespeople](/blog/ai-adverts-professional-services-south-africa), [real estate agents](/blog/ai-video-ads-real-estate-south-africa) and [small online sellers](/blog/ai-product-images-ecommerce-south-africa). If your customers already message you on WhatsApp to enquire or order, Status is a natural extension of a channel you're already using.
 
 ## Getting Started
 

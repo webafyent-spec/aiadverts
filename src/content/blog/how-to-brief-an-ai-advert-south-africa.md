@@ -2,6 +2,7 @@
 title: "How to Brief an AI Advert: A Guide for South African Businesses"
 description: "The quality of an AI-generated advert depends heavily on the brief behind it. Here's exactly what South African businesses need to prepare to get the best results from AI video and image adverts."
 pubDate: 2026-09-02
+category: guides
 tags: ["how to brief an AI advert", "AI advertising South Africa", "South African agency for AI adverts"]
 ---
 
@@ -27,7 +28,7 @@ Is this for a product launch, a seasonal promotion, brand awareness, or driving 
 
 ### 4. Where It's Going to Run
 
-A video for Instagram Reels needs different pacing and framing than one for a website hero banner or a WhatsApp Status update. Telling us the platform upfront means the advert is built correctly the first time, rather than reformatted after the fact.
+A video for Instagram Reels needs different pacing and framing than one for a website hero banner or a [WhatsApp Status update](/blog/whatsapp-status-video-ads-south-africa). Telling us the platform upfront means the advert is built correctly the first time, rather than reformatted after the fact.
 
 ### 5. Examples You Like
 
@@ -35,7 +36,7 @@ If you've seen an advert — yours, a competitor's, or something completely unre
 
 ### 6. Any Non-Negotiables
 
-Specific claims that must appear, compliance requirements, things that absolutely cannot be shown or implied. Better to flag these upfront than catch them in revisions.
+Specific claims that must appear, compliance requirements (especially common for [professional services](/blog/ai-adverts-professional-services-south-africa) and [education providers](/blog/ai-adverts-education-training-south-africa)), and things that absolutely cannot be shown or implied. Better to flag these upfront than catch them in revisions.
 
 ## What You Don't Need to Worry About
 
@@ -43,7 +44,7 @@ You don't need professional copywriting, a shot list, a storyboard, or technical
 
 ## What Happens After You Send a Brief
 
-Once we have your product references, brand assets and goals, we get to work producing the advert. Most projects are delivered within 3–5 business days, and every package includes revisions if the first draft needs adjustment. See the full [pricing breakdown](/#pricing) for what's included at each tier.
+Once we have your product references, brand assets and goals, we get to work producing the advert. Most projects are delivered within 3–5 business days, and every package includes revisions if the first draft needs adjustment. See [what AI video ads cost](/blog/ai-video-ads-cost-south-africa) for what's included at each tier.
 
 ## Getting Started
 

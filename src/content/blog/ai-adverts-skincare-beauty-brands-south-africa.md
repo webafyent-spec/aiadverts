@@ -2,6 +2,7 @@
 title: "How AI Product Photography Is Helping South African Skincare Brands Compete"
 description: "Studio-quality product photography and video used to cost skincare brands a fortune. Here's how AI is changing that for South African beauty brands."
 pubDate: 2026-08-13
+category: beauty-lifestyle
 tags: ["AI product photography", "skincare marketing South Africa", "AI image adverts"]
 ---
 
@@ -21,13 +22,13 @@ With AI image generation, that same level of texture and lighting control is ach
 
 - **Studio-quality close-ups** of texture, packaging and ingredients, generated on demand
 - **Multiple lighting and surface variations** from a single product — cream jars shot on linen, oak, marble or stone without a single physical reshoot
-- **Video adverts to match** — the same product brought to life in cinematic AI video for Reels, TikTok and Stories
+- **Video adverts to match** — the same product brought to life in cinematic AI video for Reels, TikTok, Stories and [WhatsApp Status](/blog/whatsapp-status-video-ads-south-africa)
 
 See the [full pricing breakdown](/#pricing) for what's included at each package level, starting from R3,000 for a single advert.
 
 ## Why This Matters More for Beauty Than Most Categories
 
-Skincare buyers make decisions almost entirely on visual trust signals — texture, cleanliness, ingredient quality communicated through the shot itself. A flat, poorly lit product photo undermines a genuinely good product before a customer ever reads the label. AI imagery closes that gap for brands that can't yet justify a R15,000+ studio budget every time they want new content.
+Skincare buyers make decisions almost entirely on visual trust signals — texture, cleanliness, ingredient quality communicated through the shot itself. A flat, poorly lit product photo undermines a genuinely good product before a customer ever reads the label. AI imagery closes that gap for brands that can't yet justify a R15,000+ studio budget every time they want new content. The same is true in [fragrance](/blog/ai-adverts-fragrance-perfume-brands-south-africa) and [spa and salon marketing](/blog/ai-adverts-spas-salons-wellness-south-africa), where the visual has to sell something the customer can't experience through a screen.
 
 It also solves the consistency problem. A single studio session gives you one lighting setup, one surface, one mood. AI production lets a brand maintain a consistent visual identity across dozens of pieces of content — the same premium look, applied every time a new product or campaign needs assets — without the recurring studio cost.
 

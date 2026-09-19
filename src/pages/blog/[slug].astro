@@ -25,10 +25,23 @@ const ogImage = `${SITE_URL}${post.data.ogImage}`
 const wordCount = post.body?.split(/\s+/).length ?? 400
 const readingMinutes = Math.max(1, Math.round(wordCount / 200))
 
-const allPosts = (await getCollection('blog'))
+// Related posts rotate through the same category starting after this post, so
+// every post gets inbound links instead of all links piling onto the newest ones.
+const RELATED_COUNT = 4
+const everyPost = (await getCollection('blog')).sort(
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf() || a.id.localeCompare(b.id)
+)
+const rotateAfter = <T,>(list: T[], i: number) => [...list.slice(i + 1), ...list.slice(0, i + 1)]
+const siblings = everyPost.filter((p) => p.data.category === post.data.category)
+const related = rotateAfter(siblings, siblings.findIndex((p) => p.id === post.id))
   .filter((p) => p.id !== post.id)
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0, 2)
+  .slice(0, RELATED_COUNT - 1)
+const isGuide = post.data.category === 'guides'
+const fillPool = everyPost.filter(
+  (p) => p.id !== post.id && !related.includes(p) && (p.data.category === 'guides') !== isGuide
+)
+const fillStart = everyPost.findIndex((p) => p.id === post.id) % Math.max(fillPool.length, 1)
+const allPosts = [...related, ...rotateAfter(fillPool, fillStart - 1)].slice(0, RELATED_COUNT)
 
 const breadcrumbSchema = {
   '@type': 'BreadcrumbList',

@@ -2,6 +2,7 @@
 title: "AI Social Media Management for Small Businesses in South Africa"
 description: "Posting consistently on social media is one of the hardest things for a small business to sustain. Here's how AI social media management is making it practical for South African businesses."
 pubDate: 2026-08-28
+category: guides
 tags: ["AI social media management South Africa", "social media for small business South Africa", "South African agency for AI adverts"]
 ---
 
@@ -17,7 +18,7 @@ Running a social media presence that builds a real audience requires more than j
 
 - A regular supply of high-quality visual content — photos and videos that represent the brand accurately
 - A posting schedule that's consistent enough for platforms to favour the account algorithmically
-- Platform-specific formatting — what works on TikTok is different from what works on Instagram Stories or Facebook
+- Platform-specific formatting — what works on TikTok is different from what works on Instagram Stories, Facebook or [WhatsApp Status](/blog/whatsapp-status-video-ads-south-africa)
 - Captions, hashtags and timing that reflect current platform behaviour
 - Reporting on what's working so the content strategy can improve over time
 
@@ -33,7 +34,7 @@ Our [Growth package](/#pricing) at R8,500/month includes 3 AI video adverts, 10 
 
 ## What This Looks Like in Practice
 
-A café introducing a new seasonal menu doesn't have to book a photographer. A skincare brand launching a new product doesn't need a studio day. A jeweller adding pieces to a collection doesn't wait three weeks for content. The brief goes in, the content comes back, and it goes out on schedule — without interrupting the business.
+A [café introducing a new seasonal menu](/blog/ai-video-ads-coffee-cafe-brands-south-africa) doesn't have to book a photographer. A [skincare brand launching a new product](/blog/ai-adverts-skincare-beauty-brands-south-africa) doesn't need a studio day. A [jeweller adding pieces to a collection](/blog/ai-product-photography-jewellery-south-africa) doesn't wait three weeks for content. A [gym launching a new class](/blog/ai-video-ads-gyms-fitness-brands-south-africa) doesn't need to film its members. The brief goes in, the content comes back, and it goes out on schedule — without interrupting the business.
 
 That's the shift that makes consistent social media management realistic for a small business: removing the production bottleneck that causes everything else to stall.
 

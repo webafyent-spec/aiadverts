@@ -2,6 +2,7 @@
 title: "AI Adverts for Fragrance and Perfume Brands in South Africa"
 description: "Fragrance is one of the hardest products to market visually — you're selling a scent through a screen. Here's how South African perfume brands are using AI adverts to do it effectively."
 pubDate: 2026-08-27
+category: beauty-lifestyle
 tags: ["AI adverts fragrance South Africa", "perfume marketing South Africa", "South African agency for AI adverts"]
 ---
 
@@ -18,7 +19,7 @@ The visual grammar of fragrance content is well-established: soft light, rich te
 - Short-form video with cinematic grading and motion that feels premium on Reels and TikTok
 - Consistency across every piece of content, so the brand reads the same whether it's a product shot or a lifestyle sequence
 
-Producing that at any volume traditionally means a dedicated creative team: a director, a stylist, a photographer, a location or set, post-production. For a single campaign, that's a significant investment. For a brand that needs new content every month, it becomes a structural problem.
+Producing that at any volume traditionally means a dedicated creative team: a director, a stylist, a photographer, a location or set, post-production. For a single campaign, that's a significant investment. For a brand that needs new content every month, it becomes a structural problem. Our [comparison of AI and traditional production](/blog/ai-vs-traditional-video-production) covers the trade-offs in more detail.
 
 ## How AI Production Solves It
 
@@ -39,7 +40,7 @@ See the full [pricing breakdown](/#pricing) for what's included, starting from R
 
 What makes fragrance marketing particularly well-suited to AI production is that the content is mood-driven rather than literal. You're not showing the product in use — you're building an emotional world around it. That kind of content is exactly what AI production excels at: atmosphere, texture, light, movement. The things that make a fragrance brand feel aspirational rather than generic.
 
-For a South African perfume brand building its presence on Instagram, TikTok or in WhatsApp Status campaigns, that consistency is the difference between a feed that reads as premium and one that reads as inconsistent, regardless of how good the actual product is.
+For a South African perfume brand building its presence on Instagram, TikTok or in [WhatsApp Status campaigns](/blog/whatsapp-status-video-ads-south-africa), that consistency is the difference between a feed that reads as premium and one that reads as inconsistent, regardless of how good the actual product is.
 
 ## Getting Started
 

@@ -5,6 +5,7 @@ import sitemap from '@astrojs/sitemap'
 // https://astro.build/config
 export default defineConfig({
   site: 'https://aiadverts.co.za',
+  trailingSlash: 'never',
   integrations: [sitemap()],
   compressHTML: true,
   build: {

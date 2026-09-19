@@ -1,4 +1,5 @@
 ---
+import { getEntry } from 'astro:content'
 import Layout from '../layouts/Layout.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
@@ -17,17 +18,20 @@ const services = [
   {
     icon: '🎬',
     title: 'AI Video Adverts',
-    body: 'Cinematic AI video ads that stop the scroll — product films, brand reels and social media content created using our proprietary AI production pipeline. Trusted by brands across Durban, Johannesburg and Cape Town.'
+    body: 'Cinematic AI video ads that stop the scroll — product films, brand reels and social media content created using our proprietary AI production pipeline. Trusted by brands across Durban, Johannesburg and Cape Town.',
+    guide: { href: '/blog/ai-vs-traditional-video-production', label: 'AI vs traditional video production' }
   },
   {
     icon: '📸',
     title: 'AI Image Adverts',
-    body: 'Stunning product photography and creative brand imagery. Indistinguishable from a professional studio shoot. Available to businesses across South Africa.'
+    body: 'Stunning product photography and creative brand imagery. Indistinguishable from a professional studio shoot. Available to businesses across South Africa.',
+    guide: { href: '/blog/ai-product-images-ecommerce-south-africa', label: 'AI product images for online stores' }
   },
   {
     icon: '📱',
     title: 'Social Media Management',
-    body: 'AI-powered social media advertising posted consistently across all your platforms every week. We handle everything — content, captions, scheduling — so you can focus on your business.'
+    body: 'AI-powered social media advertising posted consistently across all your platforms every week. We handle everything — content, captions, scheduling — so you can focus on your business.',
+    guide: { href: '/blog/ai-social-media-management-small-business-south-africa', label: 'How AI social media management works' }
   }
 ]
 
@@ -56,6 +60,18 @@ const portfolio = [
   { name: 'Premium Botanical Serum',  category: 'True Organic',  tag: 'Studio Close-Up',          img: '/portfolio/to5.webp' },
   { name: 'Hydration Booster',        category: 'True Organic',  tag: 'Pristine Natural Light',   img: '/portfolio/toad.webp' },
 ]
+
+const featuredGuides = await Promise.all(
+  [
+    'ai-video-ads-cost-south-africa',
+    'how-to-brief-an-ai-advert-south-africa',
+    'whatsapp-status-video-ads-south-africa'
+  ].map(async (id) => {
+    const entry = await getEntry('blog', id)
+    if (!entry) throw new Error(`Featured guide not found: ${id}`)
+    return entry
+  })
+)
 
 const pricing = [
   {
@@ -301,11 +317,10 @@ const statCards = [
               <h3 class="mt-5 text-xl font-bold text-navy">{service.title}</h3>
               <p class="mt-3 text-base leading-relaxed text-text-dark/65">{service.body}</p>
               <a
-                href="#contact"
-                aria-label={`Learn more about ${service.title}`}
+                href={service.guide.href}
                 class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-electric transition-all group-hover:gap-3"
               >
-                Learn more <span aria-hidden="true">→</span>
+                {service.guide.label} <span aria-hidden="true">→</span>
               </a>
             </article>
           ))}
@@ -729,6 +744,45 @@ const statCards = [
               </div>
             </div>
           ))}
+        </div>
+      </div>
+    </section>
+
+    <div aria-hidden="true" class="section-sep"></div>
+
+    <!-- ============ GUIDES ============ -->
+    <section aria-labelledby="guides-heading" class="bg-bg-light py-20 sm:py-24">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <div class="text-center">
+          <span class="text-xs font-bold uppercase tracking-widest text-electric">Guides</span>
+          <h2 id="guides-heading" class="mt-3 text-3xl font-black text-navy sm:text-4xl">
+            Before You Get Started
+          </h2>
+        </div>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          {featuredGuides.map((guide) => (
+            <a
+              href={`/blog/${guide.id}`}
+              class="group flex flex-col rounded-2xl border border-navy/8 bg-text-light p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-electric/10"
+            >
+              <h3 class="text-lg font-bold text-navy transition-colors group-hover:text-electric">
+                {guide.data.title}
+              </h3>
+              <p class="mt-2.5 flex-1 text-sm leading-relaxed text-text-dark/60">
+                {guide.data.description}
+              </p>
+              <span class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-electric transition-all group-hover:gap-3">
+                Read the guide <span aria-hidden="true">→</span>
+              </span>
+            </a>
+          ))}
+        </div>
+
+        <div class="mt-10 text-center">
+          <a href="/blog" class="inline-flex items-center gap-1.5 text-sm font-bold text-navy transition-all hover:gap-3 hover:text-electric">
+            See all articles <span aria-hidden="true">→</span>
+          </a>
         </div>
       </div>
     </section>

@@ -2,12 +2,13 @@
 title: "AI Adverts for Tutoring Centres, Online Courses and Training Academies in South Africa"
 description: "Education marketing has to build trust fast. See how South African tutoring centres, training academies and online course creators are using AI video to communicate credibility and drive enrolments."
 pubDate: 2026-09-17
+category: services
 tags: ["AI adverts education South Africa", "tutoring marketing South Africa", "South African agency for AI adverts"]
 ---
 
 Parents choosing a tutoring centre and adults choosing a course or training programme are making the same underlying calculation: is this worth my money and my time, and can I trust the people delivering it? That trust has to be built almost entirely through marketing before anyone ever sits in a class or logs into a course — and for education businesses, that's historically been one of the hardest categories to market visually.
 
-Unlike a product brand, an education business isn't selling something you can photograph. There's no jar, no plate, no vehicle. What's being sold is an outcome — better grades, a new skill, a career change — which makes the marketing brief closer to a professional services problem than a product one, but with an added layer: education buyers specifically need to feel confident before they commit.
+Unlike a product brand, an education business isn't selling something you can photograph. There's no jar, no plate, no vehicle. What's being sold is an outcome — better grades, a new skill, a career change — which makes the marketing brief closer to a [professional services](/blog/ai-adverts-professional-services-south-africa) problem than a product one, but with an added layer: education buyers specifically need to feel confident before they commit.
 
 ## Why Education Marketing Is Its Own Challenge
 
@@ -28,10 +29,10 @@ As a South African agency for AI adverts, education is a category where AI produ
 What AI video production delivers for tutoring centres, academies and course creators:
 
 - **Message-first video** built around a clear outcome — better results, a new qualification, a practical skill — rather than a physical product or even real classroom footage
-- **Privacy-safe production** — no need to film or get consent from real students to produce content that still feels credible and specific
+- **Privacy-safe production** — no need to film or get consent from real students to produce content that still feels credible and specific, the same constraint [vet practices face with client pets](/blog/ai-video-ads-pet-care-vet-grooming-south-africa)
 - **Trust-building visual style** suited to the tone parents and adult learners respond to, without needing testimonial footage on day one
 - **Fast turnaround** for new intakes, subjects or course launches — 3–5 business days, so marketing keeps pace with the academic calendar rather than lagging behind it
-- **Affordable entry point** — a single advert starts from R3,000, well within reach for tutoring centres and smaller training businesses
+- **Affordable entry point** — [a single advert starts from R3,000](/blog/ai-video-ads-cost-south-africa), well within reach for tutoring centres and smaller training businesses
 
 See the full [pricing breakdown](/#pricing) for what's included at each tier.
 

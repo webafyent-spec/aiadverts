@@ -3,6 +3,7 @@
   "outputDirectory": "dist",
   "installCommand": "npm install",
   "framework": "astro",
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",

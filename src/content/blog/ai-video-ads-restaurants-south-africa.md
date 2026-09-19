@@ -2,6 +2,7 @@
 title: "AI Video Ads for Restaurants: How South African Food Brands Are Getting Noticed"
 description: "Drone shots, sizzling close-ups, cinematic food reveals — see how AI video advertising is helping South African restaurants and food brands compete on social media without a production crew."
 pubDate: 2026-08-15
+category: food-hospitality
 tags: ["AI video ads for restaurants", "food marketing South Africa", "AI content creation South Africa"]
 ---
 
@@ -17,7 +18,7 @@ A proper food and restaurant video shoot involves several moving parts most peop
 - A drone operator if you want aerial establishing shots of the location
 - Editing time to cut everything into short-form content
 
-Put together, that's easily R15,000–R30,000 for a single day of content — and most restaurants need new content every week to stay visible.
+Put together, that's easily R15,000–R30,000 for a single day of content — and most restaurants need new content every week to stay visible. Compare that with [what AI video ads cost](/blog/ai-video-ads-cost-south-africa).
 
 ## How AI Changes the Economics
 
@@ -36,10 +37,10 @@ See what's included at each tier on our [pricing page](/#pricing), starting from
 
 A single traditional shoot gives a restaurant a burst of content that runs out within weeks. Social platforms reward posting frequency — restaurants that post consistently outperform those that post once a month, regardless of production value. AI production makes weekly content realistic on a food business's actual margins, rather than something reserved for one seasonal campaign.
 
-That's the real advantage for South African food brands: not just cheaper content, but content frequent enough to actually build an audience.
+That's the real advantage for South African food brands: not just cheaper content, but content frequent enough to actually build an audience. Restaurants that also host functions can use the same approach for [event and venue marketing](/blog/ai-video-ads-events-weddings-venues-south-africa).
 
 ## Getting Started
 
-Whether you're running a restaurant, food trailer, café or specialty food brand in Durban, Pietermaritzburg or anywhere in South Africa, this is worth testing against your current content.
+Whether you're running a restaurant, food trailer, [café](/blog/ai-video-ads-coffee-cafe-brands-south-africa) or specialty food brand in [Durban](/blog/ai-advertising-agency-durban), Pietermaritzburg or anywhere in South Africa, this is worth testing against your current content.
 
 [Get a free demo advert](https://wa.me/27695600708) for your menu or signature dish and see the quality before spending a single rand.

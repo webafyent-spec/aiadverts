@@ -2,6 +2,7 @@
 title: "AI Adverts for Lawyers, Accountants and Trades: Marketing Professional Services in South Africa"
 description: "Professional services and trades businesses have historically struggled to market themselves visually. See how AI video adverts are helping South African law firms, accountants and tradespeople get noticed online."
 pubDate: 2026-09-07
+category: services
 tags: ["AI adverts professional services South Africa", "marketing for accountants and lawyers South Africa", "South African agency for AI adverts"]
 ---
 
@@ -29,7 +30,7 @@ What AI production delivers for services and trades businesses:
 - **Message-first video** built around a clear value proposition — a benefit, an outcome, a reason to call — rather than a product shot
 - **Professional, trustworthy visual style** that suits legal, financial and technical services without needing to film staff, offices or client work
 - **Local relevance** — content built for a South African audience, in a tone that fits how local clients actually search for and choose a service provider
-- **Fast turnaround** — a campaign concept goes from brief to finished video in 3–5 business days
+- **Fast turnaround** — a campaign concept goes from [brief](/blog/how-to-brief-an-ai-advert-south-africa) to finished video in 3–5 business days
 - **Affordable entry point** — a single advert campaign starts from R3,000, well below what a traditional video production crew would charge a services business for a comparable result
 
 See the full [pricing breakdown](/#pricing) for what's included at each tier.
@@ -38,7 +39,7 @@ See the full [pricing breakdown](/#pricing) for what's included at each tier.
 
 The insight that makes AI adverts work for services businesses is that most service marketing isn't actually about showing the service — it's about communicating a message clearly enough that it sticks. "Pay less tax." "We fix it right the first time." "Legal help you can actually understand." A well-produced video built around that single message does more to build trust and generate enquiries than a photo of an office or a headshot ever will.
 
-That's a fundamentally different brief from a product advert, and it's one AI production handles well — because the strength of the content comes from the message and the craft of the video, not from having something physical to point a camera at.
+That's a fundamentally different brief from a product advert, and it's one AI production handles well — because the strength of the content comes from the message and the craft of the video, not from having something physical to point a camera at. The same thinking applies to [tutoring centres and training academies](/blog/ai-adverts-education-training-south-africa).
 
 ## Who This Is For
 

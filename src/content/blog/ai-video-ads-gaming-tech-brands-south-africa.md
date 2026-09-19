@@ -2,6 +2,7 @@
 title: "How South African Gaming and Tech Brands Are Using AI Video Ads to Win on Social"
 description: "Gaming and tech peripherals live or die on product visuals. See how AI video advertising is helping South African brands like Onikuma compete with international marketing budgets."
 pubDate: 2026-08-25
+category: products-retail
 tags: ["AI video ads gaming South Africa", "tech brand marketing South Africa", "AI adverts South Africa"]
 ---
 
@@ -38,12 +39,12 @@ See what's included at each tier on the [pricing page](/#pricing), starting from
 
 Gaming culture moves fast. A product drop, a tournament moment, a trending audio — the window where a piece of content can ride relevance is short. Traditional video production isn't built for that cadence: booking a crew, scheduling a shoot day, and waiting three weeks for post-production means missing the moment.
 
-AI production compresses that cycle dramatically. A brief submitted this week becomes a finished, platform-ready video before the weekend. For a brand dropping a new SKU or responding to a trend, that speed is the difference between being part of the conversation and being late to it.
+AI production compresses that cycle dramatically. A brief submitted this week becomes a finished, platform-ready video before the weekend. For a brand dropping a new SKU or responding to a trend, that speed is the difference between being part of the conversation and being late to it. [Fashion brands](/blog/ai-adverts-fashion-clothing-brands-south-africa) chasing TikTok trends are in the same position.
 
 ## Beyond Gaming: Any Tech or Consumer Electronics Brand
 
 The same dynamics apply across consumer electronics broadly — accessories, audio, smart home devices, lifestyle tech. Any product where the visual quality of the marketing directly influences purchase intent, and where traditional production costs have made consistent high-quality content impractical.
 
-If you're running a gaming, tech or consumer electronics brand in South Africa — whether you're a distributor, a direct-to-consumer brand or a retailer with your own product lines — this is worth a look before your next product launch.
+If you're running a gaming, tech or consumer electronics brand in South Africa — whether you're a distributor, a [direct-to-consumer brand](/blog/ai-product-images-ecommerce-south-africa) or a retailer with your own product lines — this is worth a look before your next product launch.
 
 [Get a free demo advert](https://wa.me/27695600708) for one of your products. No cost, no commitment — just a sample at the quality level before you make a decision.

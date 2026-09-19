@@ -10,6 +10,7 @@ const blog = defineCollection({
     updatedDate: z.date().optional(),
     author: z.string().default('Aiadverts'),
     tags: z.array(z.string()).default([]),
+    category: z.enum(['guides', 'beauty-lifestyle', 'food-hospitality', 'services', 'products-retail']),
     ogImage: z.string().default('/og-image.jpg')
   })
 })

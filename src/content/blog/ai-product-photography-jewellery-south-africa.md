@@ -2,6 +2,7 @@
 title: "Why South African Jewellery Brands Are Switching to AI Product Photography"
 description: "High-end jewellery photography has always required specialist equipment and careful lighting. See how AI is giving South African jewellers studio-quality imagery without the studio cost."
 pubDate: 2026-08-19
+category: beauty-lifestyle
 tags: ["AI product photography jewellery", "jewellery marketing South Africa", "AI adverts South Africa"]
 ---
 
@@ -19,7 +20,7 @@ A single well-lit jewellery image that communicates the piece accurately — the
 - Post-processing to remove fingerprints, lint and tool marks invisible to the naked eye
 - Multiple angles and lighting setups to cover rings, pendants, bracelets and earrings consistently
 
-A half-day shoot for a collection of ten pieces — done properly — is rarely under R8,000. For a brand that releases new pieces regularly, that number compounds fast.
+A half-day shoot for a collection of ten pieces — done properly — is rarely under R8,000. For a brand that releases new pieces regularly, that number compounds fast. It's the same problem [fragrance brands](/blog/ai-adverts-fragrance-perfume-brands-south-africa) run into with glass, liquid and light.
 
 ## AI Changes the Economics Without Compromising the Look
 
@@ -40,10 +41,10 @@ One of the less obvious challenges for jewellery brands is maintaining visual co
 
 AI production creates a repeatable style. The lighting mood, background treatment and framing that defined the first batch of images can be applied directly to new pieces — meaning a brand's imagery stays coherent whether you're photographing one piece or fifty.
 
-For jewellers building an e-commerce presence or a strong Instagram feed, that consistency reads as quality even before a customer looks at the product itself.
+For jewellers building an [e-commerce presence](/blog/ai-product-images-ecommerce-south-africa) or a strong Instagram feed, that consistency reads as quality even before a customer looks at the product itself.
 
 ## Who This Is For
 
-If you're running a jewellery business in Durban, Johannesburg, Cape Town or anywhere in South Africa — whether you're an established fine jeweller, a growing fashion jewellery brand or an artisan maker — and professional imagery has been a recurring cost or a bottleneck, AI production is worth testing before committing to another shoot.
+If you're running a jewellery business in Durban, Johannesburg, Cape Town or anywhere in South Africa — whether you're an established fine jeweller, a growing [fashion](/blog/ai-adverts-fashion-clothing-brands-south-africa) jewellery brand or an artisan maker — and professional imagery has been a recurring cost or a bottleneck, AI production is worth testing before committing to another shoot.
 
 [Get a free demo](https://wa.me/27695600708) for one of your pieces. No commitment, no cost — just a look at what the imagery actually looks like against your current content.
