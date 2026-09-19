@@ -20,7 +20,7 @@ A proper listing video — the kind that gets shared and drives real enquiries �
 - Editing time to cut raw footage into a polished, shareable video
 - Turnaround that fits the listing timeline — which is rarely the timeline a production schedule allows for
 
-Booking that for a single listing can run R5,000–R15,000 depending on property size and location. For an agent managing multiple listings at once, or a developer marketing an entire complex, that cost and turnaround time becomes the bottleneck that slows down how fast listings get real market exposure.
+Booking that for a single listing can run R5,000–R15,000 depending on property size and location. For an agent managing multiple listings at once, or a developer marketing an entire complex, that cost and turnaround time becomes the bottleneck that slows down how fast listings get real market exposure. Builders, renovators and solar installers face a similar problem showing off finished work, which we cover in [AI video ads for home improvement businesses](/blog/ai-video-ads-solar-home-improvement-south-africa).
 
 ## How AI Production Changes Listing Marketing
 

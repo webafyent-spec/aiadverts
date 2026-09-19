@@ -22,7 +22,11 @@ const dateFmt = (d: Date) =>
 const canonical = `${SITE_URL}/blog/${post.id}`
 const ogImage = `${SITE_URL}${post.data.ogImage}`
 
-const wordCount = post.body?.split(/\s+/).length ?? 400
+// Strip embedded widget code so interactive posts don't report inflated reading times
+const proseText = (post.body ?? '')
+  .replace(/<(style|script)[\s\S]*?<\/\1>/gi, ' ')
+  .replace(/<[^>]+>/g, ' ')
+const wordCount = proseText.split(/\s+/).filter(Boolean).length || 400
 const readingMinutes = Math.max(1, Math.round(wordCount / 200))
 
 // Related posts rotate through the same category starting after this post, so

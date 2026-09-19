@@ -43,6 +43,6 @@ That's a fundamentally different brief from a product advert, and it's one AI pr
 
 ## Who This Is For
 
-If you run a law firm, accounting practice, financial services business, medical practice, or a trade business — plumbing, electrical, construction, home services — anywhere in South Africa, and you've assumed video advertising isn't built for your industry, this is worth a second look.
+If you run a law firm, accounting practice, financial services business, medical practice, or a trade business — plumbing, electrical, [construction and home improvement](/blog/ai-video-ads-solar-home-improvement-south-africa) — anywhere in South Africa, and you've assumed video advertising isn't built for your industry, this is worth a second look.
 
 [Get a free demo advert](https://wa.me/27695600708) built around your business and its core message. No cost, no commitment — see what a services-focused advert actually looks like before you decide.
