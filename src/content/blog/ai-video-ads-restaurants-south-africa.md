@@ -41,6 +41,6 @@ That's the real advantage for South African food brands: not just cheaper conten
 
 ## Getting Started
 
-Whether you're running a restaurant, food trailer, [café](/blog/ai-video-ads-coffee-cafe-brands-south-africa) or specialty food brand in [Durban](/blog/ai-advertising-agency-durban), Pietermaritzburg or anywhere in South Africa, this is worth testing against your current content.
+Whether you're running a restaurant, food trailer, [café](/blog/ai-video-ads-coffee-cafe-brands-south-africa), [wine estate or craft brewery](/blog/ai-video-ads-wine-estates-breweries-south-africa) or specialty food brand in [Durban](/blog/ai-advertising-agency-durban), Pietermaritzburg or anywhere in South Africa, this is worth testing against your current content.
 
 [Get a free demo advert](https://wa.me/27695600708) for your menu or signature dish and see the quality before spending a single rand.

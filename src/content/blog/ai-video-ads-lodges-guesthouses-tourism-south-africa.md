@@ -40,7 +40,7 @@ See the full [pricing breakdown](/#pricing), starting from R3,000 for a single a
 
 Large hotel groups and established lodges often have marketing budgets and in-house content pipelines that independent guesthouses and boutique properties simply don't. That imbalance shows up directly in booking platforms and social media — the properties with the best content get seen first, regardless of the actual quality of the stay.
 
-AI production narrows that gap. An independent lodge or guesthouse can produce content at a visual standard that competes with much larger operators, without needing their marketing budget or in-house team. Properties that also host functions can apply the same approach to [wedding and event marketing](/blog/ai-video-ads-events-weddings-venues-south-africa).
+AI production narrows that gap. An independent lodge or guesthouse can produce content at a visual standard that competes with much larger operators, without needing their marketing budget or in-house team. Properties that also host functions can apply the same approach to [wedding and event marketing](/blog/ai-video-ads-events-weddings-venues-south-africa), and estates with a cellar door to [wine and drinks campaigns](/blog/ai-video-ads-wine-estates-breweries-south-africa).
 
 ## Getting Started
 
