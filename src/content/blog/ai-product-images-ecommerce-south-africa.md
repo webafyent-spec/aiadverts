@@ -40,7 +40,7 @@ See the full [pricing breakdown](/#pricing), starting from R3,000 for a single p
 
 The businesses that feel this problem most acutely aren't the smallest stores — they're the ones scaling. A store with five products can usually absorb a single good photoshoot. A store with fifty products, restocking monthly and running paid ads on top of organic content, hits a point where traditional photography can't keep pace without either slowing down growth or blowing out the marketing budget.
 
-AI production removes that ceiling. Catalogue growth and content production scale together instead of content becoming the bottleneck that limits how fast a store can add new lines. We cover category-specific versions of this for [furniture and home décor](/blog/ai-product-images-furniture-home-decor-south-africa), [jewellery](/blog/ai-product-photography-jewellery-south-africa) and [fashion](/blog/ai-adverts-fashion-clothing-brands-south-africa).
+AI production removes that ceiling. Catalogue growth and content production scale together instead of content becoming the bottleneck that limits how fast a store can add new lines. We cover category-specific versions of this for [furniture and home décor](/blog/ai-product-images-furniture-home-decor-south-africa), [jewellery](/blog/ai-product-photography-jewellery-south-africa), [packaged food](/blog/ai-product-adverts-food-brands-retail-south-africa) and [fashion](/blog/ai-adverts-fashion-clothing-brands-south-africa).
 
 ## Getting Started
 

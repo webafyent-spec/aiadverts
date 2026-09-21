@@ -168,7 +168,7 @@ That is worth raising at briefing stage rather than after a campaign is built. T
 
 For most producers, the answer stretches well beyond social media:
 
-- **Trade and distributor decks**, where strong imagery helps a range win shelf space
+- **Trade and distributor decks**, where strong imagery helps a range win shelf space, the same challenge [packaged food brands](/blog/ai-product-adverts-food-brands-retail-south-africa) face when they launch into retail
 - **Online stores and marketplaces**, where a bottle competes as a thumbnail against a hundred others, the same problem [every online store](/blog/ai-product-images-ecommerce-south-africa) faces
 - **Restaurant and venue partners**, who need assets to promote a wine or beer they have just listed, and often run [their own food content](/blog/ai-video-ads-restaurants-south-africa) alongside it
 - **Tasting rooms and estate tourism**, where the same campaign supports bookings and visits, much like [lodges and guesthouses](/blog/ai-video-ads-lodges-guesthouses-tourism-south-africa) market a property
