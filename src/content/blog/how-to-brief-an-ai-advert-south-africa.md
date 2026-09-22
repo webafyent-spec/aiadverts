@@ -44,7 +44,7 @@ You don't need professional copywriting, a shot list, a storyboard, or technical
 
 ## What Happens After You Send a Brief
 
-Once we have your product references, brand assets and goals, we get to work producing the advert. Most projects are delivered within 3–5 business days, and every package includes revisions if the first draft needs adjustment. See [what AI video ads cost](/blog/ai-video-ads-cost-south-africa) for what's included at each tier.
+Once we have your product references, brand assets and goals, we get to work producing the advert. Most projects are delivered within 3–5 business days, and every package includes revisions if the first draft needs adjustment. See [what AI video ads cost](/blog/ai-video-ads-cost-south-africa) for what's included at each tier. Planning around a sale date? Our [festive season planner](/blog/black-friday-festive-season-adverts-south-africa) works backwards from your launch day.
 
 ## Getting Started
 

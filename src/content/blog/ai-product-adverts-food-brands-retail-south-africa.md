@@ -197,7 +197,7 @@ What that means in practice:
 
 - **Appetite and occasion shots** built around the product, from a sizzling braai to a Sunday lunch table, without a food stylist or set
 - **A full range from one brief**, so every flavour in the line gets the same standard of imagery rather than just the bestseller
-- **Promotional assets on retail timelines**, delivered in 3–5 business days, so in-store promotions have marketing behind them on the day they start
+- **Promotional assets on retail timelines**, delivered in 3–5 business days, so in-store promotions have marketing behind them on the day they start (our [festive season planner](/blog/black-friday-festive-season-adverts-south-africa) shows how far ahead to begin)
 - **Recipe and serving reels** that give shoppers a reason to buy, not just a picture of the pack
 - **Formats for every channel**: Reels, TikTok, [WhatsApp Status](/blog/whatsapp-status-video-ads-south-africa) and product images for [online stores and marketplaces](/blog/ai-product-images-ecommerce-south-africa)
 
