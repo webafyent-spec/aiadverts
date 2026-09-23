@@ -8,7 +8,7 @@ tags: ["AI advertising agency Durban", "Durban marketing", "KwaZulu-Natal"]
 
 If you run a business in Durban, you've felt the squeeze. Traditional video production costs R15,000 to R40,000 per shoot, needs a crew, a studio, and two to three weeks before you see a finished product. By the time the advert is ready, the moment it was meant to capture has often passed.
 
-That's the gap an **AI advertising agency in Durban** exists to close.
+That's the gap an **AI advertising agency in Durban** exists to close. Our [guide to AI advertising in South Africa](/blog/ai-advertising-south-africa-guide) covers how it works, what it costs and where it runs.
 
 ## The Old Way Doesn't Fit Small Business Budgets
 

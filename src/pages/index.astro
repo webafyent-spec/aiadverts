@@ -3,7 +3,7 @@ import { getEntry } from 'astro:content'
 import Layout from '../layouts/Layout.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
-import { WHATSAPP, EMAIL } from '../lib/site'
+import { SITE_URL, WHATSAPP, EMAIL } from '../lib/site'
 
 const marqueeBrands = [
   'Scentimental',
@@ -63,8 +63,8 @@ const portfolio = [
 
 const featuredGuides = await Promise.all(
   [
+    'ai-advertising-south-africa-guide',
     'ai-video-ads-cost-south-africa',
-    'how-to-brief-an-ai-advert-south-africa',
     'whatsapp-status-video-ads-south-africa'
   ].map(async (id) => {
     const entry = await getEntry('blog', id)
@@ -154,9 +154,27 @@ const statCards = [
   { icon: '⚡', stat: '3–5 Days', label: 'Our average delivery time' },
   { icon: '📉', stat: '70%',      label: 'Average cost saving vs traditional' }
 ]
+
+// Homepage-only structured data: FAQ schema is generated from the visible FAQs so the two never drift
+const homeSchema = [
+  {
+    '@type': 'FAQPage',
+    '@id': `${SITE_URL}/#faq`,
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a }
+    }))
+  },
+  { '@type': 'VideoObject', name: 'True Organic Hers — AI Video Advert', description: 'Cinematic AI-generated video advert for True Organic, created by Aiadverts South Africa.', thumbnailUrl: 'https://i.ytimg.com/vi/Iim0XWCyd8A/maxresdefault.jpg', embedUrl: 'https://www.youtube.com/embed/Iim0XWCyd8A', uploadDate: '2026-01-01', publisher: { '@id': 'https://aiadverts.co.za/#organization' } },
+  { '@type': 'VideoObject', name: 'True Organic His — AI Video Advert', description: 'Cinematic AI-generated video advert for True Organic, created by Aiadverts South Africa.', thumbnailUrl: 'https://i.ytimg.com/vi/lajBr7Uc9B8/maxresdefault.jpg', embedUrl: 'https://www.youtube.com/embed/lajBr7Uc9B8', uploadDate: '2026-01-01', publisher: { '@id': 'https://aiadverts.co.za/#organization' } },
+  { '@type': 'VideoObject', name: 'Sizzles Smash Burger — AI Video Advert', description: 'Cinematic AI-generated video advert for Sizzles, created by Aiadverts South Africa.', thumbnailUrl: 'https://i.ytimg.com/vi/N15hc2WlgHY/maxresdefault.jpg', embedUrl: 'https://www.youtube.com/embed/N15hc2WlgHY', uploadDate: '2026-01-01', publisher: { '@id': 'https://aiadverts.co.za/#organization' } },
+  { '@type': 'VideoObject', name: 'Onikuma Gaming Headset — AI Video Advert', description: 'Cinematic AI-generated video advert for Onikuma, created by Aiadverts South Africa.', thumbnailUrl: 'https://i.ytimg.com/vi/l_HrGP0kO5w/maxresdefault.jpg', embedUrl: 'https://www.youtube.com/embed/l_HrGP0kO5w', uploadDate: '2026-01-01', publisher: { '@id': 'https://aiadverts.co.za/#organization' } },
+  { '@type': 'VideoObject', name: 'Marcos Jewellers Luxury Diamond Ring — AI Video Advert', description: 'Cinematic AI-generated video advert for Marcos Jewellers, created by Aiadverts South Africa.', thumbnailUrl: 'https://i.ytimg.com/vi/bv-1yxtq8iY/maxresdefault.jpg', embedUrl: 'https://www.youtube.com/embed/bv-1yxtq8iY', uploadDate: '2026-01-01', publisher: { '@id': 'https://aiadverts.co.za/#organization' } },
+]
 ---
 
-<Layout>
+<Layout extraSchema={homeSchema}>
   <!-- Skip link -->
   <a
     href="#main"

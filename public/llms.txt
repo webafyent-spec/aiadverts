@@ -37,4 +37,5 @@ Website: https://aiadverts.co.za
 - Portfolio: https://aiadverts.co.za/#portfolio
 - Pricing: https://aiadverts.co.za/#pricing
 - Blog: https://aiadverts.co.za/blog
+- AI Advertising in South Africa, the complete guide: https://aiadverts.co.za/blog/ai-advertising-south-africa-guide
 - Contact: https://aiadverts.co.za/#contact

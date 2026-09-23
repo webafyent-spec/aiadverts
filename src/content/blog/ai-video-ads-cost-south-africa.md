@@ -6,7 +6,7 @@ category: guides
 tags: ["AI video ads South Africa", "pricing", "advertising cost"]
 ---
 
-Every business owner asks the same question before committing to video advertising: what does it actually cost? For AI-generated video ads in South Africa, the honest answer depends on how much content you need and how often you need it — but the numbers are far more accessible than most people expect.
+Every business owner asks the same question before committing to video advertising: what does it actually cost? For AI-generated video ads in South Africa, the honest answer depends on how much content you need and how often you need it — but the numbers are far more accessible than most people expect. If you're new to the topic, start with our [complete guide to AI advertising in South Africa](/blog/ai-advertising-south-africa-guide).
 
 ## Traditional Production Pricing, For Context
 

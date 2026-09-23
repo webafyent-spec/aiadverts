@@ -6,7 +6,7 @@ category: guides
 tags: ["AI content creation South Africa", "video production", "advertising agency"]
 ---
 
-Every business eventually faces this decision: book a traditional video shoot, or use an AI advertising agency. The right answer depends on what you're trying to achieve — so here's an honest, practical comparison rather than a sales pitch for either side.
+Every business eventually faces this decision: book a traditional video shoot, or use an AI advertising agency. The right answer depends on what you're trying to achieve — so here's an honest, practical comparison rather than a sales pitch for either side. For the bigger picture, see our [complete guide to AI advertising in South Africa](/blog/ai-advertising-south-africa-guide).
 
 ## Cost
 

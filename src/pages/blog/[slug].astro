@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props
-const { Content } = await render(post)
+const { Content, headings } = await render(post)
 
 const dateFmt = (d: Date) =>
   d.toLocaleDateString('en-ZA', { year: 'numeric', month: 'long', day: 'numeric' })
@@ -26,7 +26,8 @@ const ogImage = `${SITE_URL}${post.data.ogImage}`
 const proseText = (post.body ?? '')
   .replace(/<(style|script)[\s\S]*?<\/\1>/gi, ' ')
   .replace(/<[^>]+>/g, ' ')
-const wordCount = proseText.split(/\s+/).filter(Boolean).length || 400
+const faqText = (post.data.faqs ?? []).map((f) => f.q + ' ' + f.a).join(' ')
+const wordCount = (proseText + ' ' + faqText).split(/\s+/).filter(Boolean).length || 400
 const readingMinutes = Math.max(1, Math.round(wordCount / 200))
 
 // Related posts rotate through the same category starting after this post, so
@@ -46,6 +47,22 @@ const fillPool = everyPost.filter(
 )
 const fillStart = everyPost.findIndex((p) => p.id === post.id) % Math.max(fillPool.length, 1)
 const allPosts = [...related, ...rotateAfter(fillPool, fillStart - 1)].slice(0, RELATED_COUNT)
+
+const CATEGORY_LABELS: Record<string, string> = {
+  guides: 'Guides',
+  'beauty-lifestyle': 'Beauty and Lifestyle',
+  'food-hospitality': 'Food and Hospitality',
+  services: 'Services',
+  'products-retail': 'Products and Retail'
+}
+
+const faqs = post.data.faqs ?? []
+const tocItems = post.data.toc
+  ? [
+      ...headings.filter((h) => h.depth === 2).map((h) => ({ slug: h.slug, text: h.text })),
+      ...(faqs.length ? [{ slug: 'faq', text: 'Frequently Asked Questions' }] : [])
+    ]
+  : []
 
 const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
@@ -68,8 +85,24 @@ const articleSchema = {
   publisher: { '@id': `${SITE_URL}/#organization` },
   mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
   inLanguage: 'en-ZA',
-  keywords: post.data.tags.join(', ')
+  keywords: post.data.tags.join(', '),
+  articleSection: CATEGORY_LABELS[post.data.category],
+  wordCount,
+  timeRequired: `PT${readingMinutes}M`,
+  isPartOf: { '@id': `${SITE_URL}/blog#blog` }
 }
+
+const faqSchema = faqs.length
+  ? {
+      '@type': 'FAQPage',
+      '@id': `${canonical}#faq`,
+      mainEntity: faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a }
+      }))
+    }
+  : null
 ---
 
 <Layout
@@ -78,7 +111,7 @@ const articleSchema = {
   canonical={canonical}
   ogType="article"
   ogImage={ogImage}
-  extraSchema={[breadcrumbSchema, articleSchema]}
+  extraSchema={[breadcrumbSchema, articleSchema, ...(faqSchema ? [faqSchema] : [])]}
 >
   <Header />
 
@@ -104,19 +137,48 @@ const articleSchema = {
         {post.data.title}
       </h1>
 
-      <div class="mt-4 flex items-center gap-3 text-sm text-text-dark/50">
+      <div class="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-text-dark/50">
         <span class="font-semibold text-navy/70">{post.data.author}</span>
         <span aria-hidden="true">·</span>
         <time datetime={post.data.pubDate.toISOString()}>{dateFmt(post.data.pubDate)}</time>
+        {post.data.updatedDate && (
+          <>
+            <span aria-hidden="true">·</span>
+            <span>Updated <time datetime={post.data.updatedDate.toISOString()}>{dateFmt(post.data.updatedDate)}</time></span>
+          </>
+        )}
         <span aria-hidden="true">·</span>
         <span>{readingMinutes} min read</span>
       </div>
 
       <div class="section-sep my-8"></div>
 
+      {tocItems.length > 0 && (
+        <nav aria-labelledby="toc-heading" class="blog-toc">
+          <p id="toc-heading" class="blog-toc-title">On this page</p>
+          <ol>
+            {tocItems.map((item) => (
+              <li><a href={`#${item.slug}`}>{item.text}</a></li>
+            ))}
+          </ol>
+        </nav>
+      )}
+
       <div class="blog-prose">
         <Content />
       </div>
+
+      {faqs.length > 0 && (
+        <section id="faq" aria-labelledby="faq-heading" class="blog-faq">
+          <h2 id="faq-heading">Frequently Asked Questions</h2>
+          {faqs.map((f) => (
+            <div class="blog-faq-item">
+              <h3>{f.q}</h3>
+              <p>{f.a}</p>
+            </div>
+          ))}
+        </section>
+      )}
 
       <div class="mt-14 rounded-2xl border border-electric/15 bg-electric/5 p-7 text-center sm:p-9">
         <h2 class="text-xl font-black text-navy sm:text-2xl">Ready to see this in action for your brand?</h2>
