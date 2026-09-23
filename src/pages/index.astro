@@ -153,10 +153,7 @@ const statCards = [
   { icon: '📉', stat: '70%',      label: 'Average cost saving vs traditional' }
 ]
 
-// Portfolio carousel videos. Add each video's real YouTube upload date as
-// uploaded: 'YYYY-MM-DD' (from YouTube Studio > Content); the schema only
-// includes uploadDate once a real date is set.
-const portfolioVideos: { id: string; client: string; label: string; uploaded?: string }[] = [
+const portfolioVideos = [
   { id: 'wLBZ2uQG99g', client: 'Aiadverts',        label: 'Great Work Needs Ads' },
   { id: '58XMdFXMkjo', client: 'Fitness Studio',   label: 'Gym Ad' },
   { id: '2gegd7K49O4', client: 'Fitness Studio',   label: 'No Pain No Gain' },
@@ -195,7 +192,6 @@ const homeSchema = [
     thumbnailUrl: [`https://i.ytimg.com/vi/${v.id}/maxresdefault.jpg`, `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`],
     embedUrl: `https://www.youtube.com/embed/${v.id}`,
     url: `https://www.youtube.com/watch?v=${v.id}`,
-    ...(v.uploaded ? { uploadDate: v.uploaded } : {}),
     publisher: { '@id': `${SITE_URL}/#organization` }
   }))
 ]
