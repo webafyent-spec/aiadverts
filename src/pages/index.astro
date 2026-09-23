@@ -3,7 +3,8 @@ import { getEntry } from 'astro:content'
 import Layout from '../layouts/Layout.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
-import { SITE_URL, WHATSAPP, EMAIL } from '../lib/site'
+import ContactForm from '../components/ContactForm.astro'
+import { SITE_URL, WHATSAPP } from '../lib/site'
 
 const marqueeBrands = [
   'True Organic',
@@ -832,15 +833,16 @@ const homeSchema = [
             💬 WhatsApp Us Now
           </a>
           <a
-            href={EMAIL}
-            aria-label="Send Aiadverts an email"
+            href="#contact-form"
             class="w-full rounded-full border-2 border-white/25 px-8 py-4 text-base font-bold text-text-light transition-all hover:border-white/60 hover:bg-white/8 sm:w-auto"
           >
-            ✉️ Send Us an Email
+            ✉️ Send Us a Message
           </a>
         </div>
 
         <p class="mt-6 text-sm text-text-light/40">No commitment. No cost. Just see what is possible.</p>
+
+        <ContactForm />
 
         <span class="sr-only">
           Aiadverts — the leading AI advertising agency in Durban, KwaZulu-Natal, South Africa.

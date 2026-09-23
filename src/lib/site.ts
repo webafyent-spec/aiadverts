@@ -1,6 +1,7 @@
 export const SITE_URL = 'https://aiadverts.co.za'
 export const WHATSAPP  = 'https://wa.me/27695600708'
-export const EMAIL     = 'mailto:vip@webafy.co.za'
+export const WHATSAPP_DISPLAY = '069 560 0708'
+export const CONTACT_EMAIL = 'vip@webafy.co.za'
 
 export const navLinks = [
   { href: '/#home',      label: 'Home' },

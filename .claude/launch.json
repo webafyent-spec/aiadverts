@@ -4,8 +4,19 @@
     {
       "name": "aiadverts-dev",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
       "port": 4321
+    },
+    {
+      "name": "forms-harness",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "tests/serve-forms.mjs"
+      ],
+      "port": 4400
     }
   ]
 }

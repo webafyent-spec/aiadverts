@@ -1,5 +1,5 @@
 ---
-import { navLinks, WHATSAPP, EMAIL } from '../lib/site'
+import { navLinks, WHATSAPP, CONTACT_EMAIL } from '../lib/site'
 ---
 
 <footer class="bg-bg-dark pb-10 pt-16">
@@ -37,10 +37,9 @@ import { navLinks, WHATSAPP, EMAIL } from '../lib/site'
         <p class="text-xs font-bold uppercase tracking-widest text-text-light/60">Get In Touch</p>
         <ul class="mt-4 space-y-2.5 text-sm text-text-light/55">
           <li>
-            <a href={EMAIL} class="transition-colors hover:text-electric" aria-label="Email Aiadverts">
-              vip@webafy.co.za
-            </a>
+            <a href="/#contact-form" class="transition-colors hover:text-electric">Send us a message</a>
           </li>
+          <li class="select-all">{CONTACT_EMAIL}</li>
           <li>
             <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-electric" aria-label="Message Aiadverts on WhatsApp">
               WhatsApp · 069 560 0708

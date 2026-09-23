@@ -1,0 +1,74 @@
+---
+import { WHATSAPP, WHATSAPP_DISPLAY, CONTACT_EMAIL } from '../lib/site'
+
+// Field names here must match the "contact" entry in api/_lib/forms.js exactly.
+const inputClass =
+  'mt-2 w-full rounded-2xl border border-white/12 bg-white/5 px-4 py-3 text-base text-text-light placeholder:text-text-light/30 transition-colors focus:border-electric focus:bg-white/8 focus:outline-none focus:ring-2 focus:ring-electric/30'
+const labelClass = 'block text-xs font-bold uppercase tracking-widest text-text-light/60'
+---
+
+<form
+  id="contact-form"
+  data-form="contact"
+  action="/api/contact"
+  method="post"
+  data-fallback-whatsapp={WHATSAPP_DISPLAY}
+  data-fallback-whatsapp-url={WHATSAPP}
+  data-fallback-email={CONTACT_EMAIL}
+  class="contact-form mx-auto mt-12 max-w-2xl rounded-3xl border border-white/8 bg-white/3 p-6 text-left shadow-2xl shadow-black/30 sm:p-8"
+>
+  <input type="hidden" name="_form" value="contact" />
+
+  <p class="text-lg font-black text-text-light">Or send us a message</p>
+  <p class="mt-1 text-sm text-text-light/50">Fields marked * are required.</p>
+
+  <div class="mt-6 grid gap-5 sm:grid-cols-2">
+    <div>
+      <label for="cf-name" class={labelClass}>Name *</label>
+      <input id="cf-name" name="name" type="text" required maxlength="100" autocomplete="name" class={inputClass} />
+    </div>
+    <div>
+      <label for="cf-email" class={labelClass}>Email *</label>
+      <input id="cf-email" name="email" type="email" required maxlength="254" autocomplete="email" class={inputClass} />
+    </div>
+    <div>
+      <label for="cf-phone" class={labelClass}>Phone or WhatsApp</label>
+      <input id="cf-phone" name="phone" type="tel" maxlength="30" autocomplete="tel" class={inputClass} />
+    </div>
+    <div>
+      <label for="cf-business" class={labelClass}>Business name</label>
+      <input id="cf-business" name="business" type="text" maxlength="120" autocomplete="organization" class={inputClass} />
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <label for="cf-message" class={labelClass}>Message *</label>
+    <textarea
+      id="cf-message"
+      name="message"
+      required
+      maxlength="5000"
+      rows="5"
+      placeholder="Tell us about your business and what you'd like to advertise."
+      class={`${inputClass} resize-y`}
+    ></textarea>
+  </div>
+
+  <div class="form-hp" aria-hidden="true">
+    <label for="cf-website">Leave this field empty</label>
+    <input id="cf-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+  </div>
+
+  <button
+    type="submit"
+    class="form-submit mt-6 w-full rounded-full bg-electric px-8 py-4 text-base font-bold text-text-light shadow-xl shadow-electric/30 transition-all hover:scale-[1.02] hover:shadow-electric/55 sm:w-auto"
+  >
+    Send Message
+  </button>
+
+  <div data-form-status class="form-status" aria-live="polite" hidden></div>
+</form>
+
+<script>
+  import '../scripts/forms'
+</script>
