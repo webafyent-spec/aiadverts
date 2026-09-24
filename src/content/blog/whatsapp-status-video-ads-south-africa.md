@@ -16,7 +16,7 @@ A few things make Status a particularly strong channel for South African busines
 
 - **Near-universal usage** — WhatsApp is installed on the overwhelming majority of South African smartphones, so reach isn't limited to a particular demographic
 - **A warm audience** — the people who see your Status are people who already have your number, which means existing customers, leads and contacts rather than cold traffic
-- **Vertical video suits it perfectly** — Status is a full-screen, portrait format, identical to Reels and TikTok, so the same content works across all three
+- **Vertical video suits it perfectly** — Status is a full-screen, portrait format, identical to Reels and TikTok, so the same content works across all three (our [video ad sizes guide](/blog/social-media-video-ad-sizes) has the exact dimensions)
 - **Direct response is one tap away** — a viewer can reply to a Status directly, turning an advert into a conversation immediately
 - **No ad spend required** — posting to Status is free, which makes it a practical channel for businesses without a paid advertising budget
 

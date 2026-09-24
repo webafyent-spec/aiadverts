@@ -236,7 +236,7 @@ A good AI advert is made for the platform it will run on. The same idea gets cut
 
 ### Facebook and Instagram (Meta ads)
 
-Meta ads remain the backbone of social media advertising for most South African businesses. AI adverts are delivered as 9:16 vertical video for Instagram Reels and Stories, and 4:5 or 1:1 for Facebook and Instagram feeds. Because producing variations is cheap, you can test several hooks against each other and let the results decide where the budget goes.
+Meta ads remain the backbone of social media advertising for most South African businesses. AI adverts are delivered as 9:16 vertical video for Instagram Reels and Stories, and 4:5 or 1:1 for Facebook and Instagram feeds. Our [video ad sizes guide](/blog/social-media-video-ad-sizes) lists every format and safe zone. Because producing variations is cheap, you can test several hooks against each other and let the results decide where the budget goes.
 
 ### TikTok ads
 

@@ -18,7 +18,7 @@ Running a social media presence that builds a real audience requires more than j
 
 - A regular supply of high-quality visual content — photos and videos that represent the brand accurately
 - A posting schedule that's consistent enough for platforms to favour the account algorithmically
-- Platform-specific formatting — what works on TikTok is different from what works on Instagram Stories, Facebook or [WhatsApp Status](/blog/whatsapp-status-video-ads-south-africa)
+- Platform-specific formatting — what works on TikTok is different from what works on Instagram Stories, Facebook or [WhatsApp Status](/blog/whatsapp-status-video-ads-south-africa), and each has its own [video sizes and safe zones](/blog/social-media-video-ad-sizes)
 - Captions, hashtags and timing that reflect current platform behaviour
 - Reporting on what's working so the content strategy can improve over time
 
