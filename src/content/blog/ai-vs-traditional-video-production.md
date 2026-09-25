@@ -44,6 +44,6 @@ This is where the comparison gets more nuanced. A traditional shoot with an expe
 
 If your business needs regular, affordable content — [weekly social posts](/blog/ai-social-media-management-small-business-south-africa), product launches, seasonal campaigns — AI production is built for that cadence in a way traditional shoots aren't. If you need a one-off brand film with real locations and talent for a major campaign, traditional production still has its place.
 
-Most South African small businesses fall firmly into the first category. That's why AI content creation in South Africa has grown from a novelty to the default choice for consistent, professional advertising on a realistic budget.
+Most South African small businesses fall firmly into the first category. That's why AI content creation in South Africa has grown from a novelty to the default choice for consistent, professional advertising on a realistic budget. Our [buyer's guide to AI ads for business](/blog/ai-ads-for-business-buyers-guide) helps you choose between doing it yourself, a freelancer and an agency.
 
 Not sure which fits your business? Read [how to brief an AI advert](/blog/how-to-brief-an-ai-advert-south-africa) to see what we'd need from you, then [get a free demo advert](https://wa.me/27695600708) and judge the quality yourself before deciding.

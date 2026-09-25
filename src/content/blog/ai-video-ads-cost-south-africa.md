@@ -45,6 +45,6 @@ Every package includes revisions, so you're not paying extra to get the output r
 
 ## Is It Worth It for a Small Business?
 
-If your alternative is not advertising at all, or advertising inconsistently because a proper shoot is out of budget, AI video ads change the calculation. Testing multiple creative directions — different hooks, different formats, different products — costs the same setup effort as producing one video the traditional way. That's a meaningfully different position to market from, whether you're a [restaurant](/blog/ai-video-ads-restaurants-south-africa) testing menu promotions or a [car dealership](/blog/ai-video-ads-car-dealerships-automotive-south-africa) marketing a full inventory.
+If your alternative is not advertising at all, or advertising inconsistently because a proper shoot is out of budget, AI video ads change the calculation. Testing multiple creative directions — different hooks, different formats, different products — costs the same setup effort as producing one video the traditional way. That's a meaningfully different position to market from, whether you're a [restaurant](/blog/ai-video-ads-restaurants-south-africa) testing menu promotions or a [car dealership](/blog/ai-video-ads-car-dealerships-automotive-south-africa) marketing a full inventory. Before you buy, check our list of [questions to ask any AI ads provider](/blog/ai-ads-for-business-buyers-guide).
 
 Want to see actual cost and turnaround for your business? [WhatsApp us](https://wa.me/27695600708) for a free demo advert before committing to anything.

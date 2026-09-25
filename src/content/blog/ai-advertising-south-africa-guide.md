@@ -282,7 +282,7 @@ Search interest in AI video generators has exploded, and plenty of them are free
 - **Time.** The hours of trial and error add up quickly, and that time comes out of running your business.
 - **Everything around the video.** Hooks, pacing, captions, platform formats, ad setup and testing are what make an advert perform, and a generator doesn't do any of it.
 
-An AI advertising agency combines the tools with creative direction, editing, quality control and advertising know-how, and hands you finished adverts that are ready to run.
+An AI advertising agency combines the tools with creative direction, editing, quality control and advertising know-how, and hands you finished adverts that are ready to run. If you're comparing providers, our [buyer's guide to AI ads for business](/blog/ai-ads-for-business-buyers-guide) covers the questions to ask.
 
 ## What AI Advertising Still Can't Do
 
