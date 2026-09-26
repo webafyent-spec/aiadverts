@@ -50,6 +50,6 @@ AI production removes that inconsistency. Every piece of content — whether it'
 
 ## Getting Started
 
-If you're running a fashion, clothing or lifestyle brand in Durban, Johannesburg, Cape Town or anywhere in South Africa and the content volume your brand needs has been out of reach — this is worth a look.
+If you're running a fashion, clothing or lifestyle brand in Durban, Johannesburg, Cape Town or anywhere in South Africa and the content volume your brand needs has been out of reach — this is worth a look. Kids' clothing brands have a few extra considerations, which we cover in our guide to [AI adverts for baby and kids brands](/blog/ai-adverts-baby-kids-brands-south-africa).
 
 [Get a free demo advert](https://wa.me/27695600708) for one of your pieces or looks. No cost, no commitment — just a sample of the quality before you decide.
