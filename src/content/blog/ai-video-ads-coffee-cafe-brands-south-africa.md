@@ -47,6 +47,6 @@ That's the shift that builds an actual audience, rather than just a content libr
 
 ## Who This Is For
 
-If you're running a café, a specialty roaster, a coffee subscription brand or a [hospitality business](/blog/ai-video-ads-lodges-guesthouses-tourism-south-africa) in Durban, Johannesburg, Cape Town or anywhere in South Africa, and you've been relying on phone shots or infrequent professional content to fill your feed — this is worth testing.
+If you're running a café, a specialty roaster, a coffee subscription brand, a [bakery](/blog/ai-adverts-bakeries-cake-businesses-south-africa) or a [hospitality business](/blog/ai-video-ads-lodges-guesthouses-tourism-south-africa) in Durban, Johannesburg, Cape Town or anywhere in South Africa, and you've been relying on phone shots or infrequent professional content to fill your feed — this is worth testing.
 
 [Get a free demo advert](https://wa.me/27695600708) using your product or space. No cost, no commitment — see the quality before you make any decision.

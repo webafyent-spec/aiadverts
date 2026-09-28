@@ -232,6 +232,6 @@ Our guide on [how to brief an AI advert](/blog/how-to-brief-an-ai-advert-south-a
 
 ## Getting Started
 
-If you're a retailer, a restaurant, a salon, an online store or any business planning a Black Friday or festive push, the most useful thing you can do is pick your launch date now and work backwards from it.
+If you're a retailer, a restaurant, a [bakery](/blog/ai-adverts-bakeries-cake-businesses-south-africa), a salon, an online store or any business planning a Black Friday or festive push, the most useful thing you can do is pick your launch date now and work backwards from it.
 
 [Book your festive campaign](https://wa.me/27695600708) and send us your products and offer. We'll build a free demo advert first, so you can see the quality before the season starts.
