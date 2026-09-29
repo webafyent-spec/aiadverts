@@ -250,7 +250,7 @@ Answer four quick questions for a recommendation. It's an honest one: sometimes 
 Whichever route you choose, judge every AI ad against the same checklist:
 
 - **A hook in the first second or two.** People decide almost instantly whether to keep watching.
-- **Your real product, shown accurately.** Wrong packaging, garbled labels or the wrong colour will cost you trust, and can mislead customers.
+- **Your real product, shown accurately.** Wrong packaging, garbled labels or the wrong colour will cost you trust, and can mislead customers. Our [AI product photography guide](/blog/ai-product-photography-south-africa-guide) shows how to check an image before you publish.
 - **One clear offer.** A single message beats a list of everything you sell.
 - **The right shape for the platform.** Vertical 9:16 for Reels, TikTok and WhatsApp Status, 4:5 for feeds, 16:9 for YouTube. Our [video ad sizes guide](/blog/social-media-video-ad-sizes) covers every format and safe zone.
 - **On-screen text or captions,** because many people scroll with the sound off.

@@ -41,7 +41,7 @@ One of the less obvious challenges for jewellery brands is maintaining visual co
 
 AI production creates a repeatable style. The lighting mood, background treatment and framing that defined the first batch of images can be applied directly to new pieces — meaning a brand's imagery stays coherent whether you're photographing one piece or fifty.
 
-For jewellers building an [e-commerce presence](/blog/ai-product-images-ecommerce-south-africa) or a strong Instagram feed, that consistency reads as quality even before a customer looks at the product itself.
+For jewellers building an [e-commerce presence](/blog/ai-product-images-ecommerce-south-africa) or a strong Instagram feed, that consistency reads as quality even before a customer looks at the product itself. Our [complete guide to AI product photography](/blog/ai-product-photography-south-africa-guide) explains how to keep real detail accurate.
 
 ## Who This Is For
 

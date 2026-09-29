@@ -44,6 +44,6 @@ AI production breaks that link. Catalogue growth stops being constrained by how 
 
 ## Getting Started
 
-If you're running a furniture store, home décor brand or interior design business anywhere in South Africa and staging costs have limited how much of your catalogue gets shown properly, this is worth testing against your current range.
+If you're running a furniture store, home décor brand or interior design business anywhere in South Africa and staging costs have limited how much of your catalogue gets shown properly, this is worth testing against your current range. Our [complete guide to AI product photography](/blog/ai-product-photography-south-africa-guide) covers marketplace rules and what to keep as a real photo.
 
 [Get a free demo](https://wa.me/27695600708) using one of your pieces. No cost, no commitment — see the quality against what you're currently using.

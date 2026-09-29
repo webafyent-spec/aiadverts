@@ -47,7 +47,7 @@ The term also covers AI used behind the scenes, like the automated bidding and t
 An AI advertising agency typically produces three kinds of content:
 
 - **AI video ads**: short, cinematic product films, brand reels and promotional clips for social media advertising
-- **AI image ads**: studio-quality AI product photography, lifestyle imagery and campaign visuals
+- **AI image ads**: studio-quality [AI product photography](/blog/ai-product-photography-south-africa-guide), lifestyle imagery and campaign visuals
 - **AI social media content**: a regular supply of posts, reels and stories for your pages, often combined with posting and management
 
 ## How AI Video Ads Are Made
