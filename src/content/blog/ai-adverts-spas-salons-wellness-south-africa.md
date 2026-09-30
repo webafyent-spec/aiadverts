@@ -44,6 +44,6 @@ AI production makes that consistency achievable without needing a full-time cont
 
 ## Getting Started
 
-If you run a spa, salon, wellness studio or beauty practice anywhere in South Africa and your content hasn't matched the premium experience you're actually offering clients, this is worth testing.
+If you run a spa, salon, wellness studio or beauty practice anywhere in South Africa and your content hasn't matched the premium experience you're actually offering clients, this is worth testing. For chair-based businesses, see our guide to [AI adverts for hair salons and barbers](/blog/ai-adverts-hair-salons-barbers-south-africa).
 
 [Get a free demo advert](https://wa.me/27695600708) for one of your treatments or packages. No cost, no commitment — see the quality before your next campaign.

@@ -253,7 +253,7 @@ See the full [pricing breakdown](/#pricing), starting from R3,000 for a single a
 
 ## Who Benefits Most
 
-Status is especially effective for businesses that already sell through direct relationships: local service providers, retailers with a regular customer base, [salons](/blog/ai-adverts-spas-salons-wellness-south-africa), restaurants, [tradespeople](/blog/ai-adverts-professional-services-south-africa), [real estate agents](/blog/ai-video-ads-real-estate-south-africa) and [small online sellers](/blog/ai-product-images-ecommerce-south-africa). If your customers already message you on WhatsApp to enquire or order, Status is a natural extension of a channel you're already using.
+Status is especially effective for businesses that already sell through direct relationships: local service providers, retailers with a regular customer base, [salons](/blog/ai-adverts-spas-salons-wellness-south-africa), [barbers](/blog/ai-adverts-hair-salons-barbers-south-africa), restaurants, [tradespeople](/blog/ai-adverts-professional-services-south-africa), [real estate agents](/blog/ai-video-ads-real-estate-south-africa) and [small online sellers](/blog/ai-product-images-ecommerce-south-africa). If your customers already message you on WhatsApp to enquire or order, Status is a natural extension of a channel you're already using.
 
 ## Getting Started
 
