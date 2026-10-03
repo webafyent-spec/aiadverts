@@ -328,7 +328,7 @@ The big advantage of AI advertising here is testing. Because variations are chea
 5. **Review a free demo.** See your own product as an advert before you commit any budget.
 6. **Launch, measure and improve.** Run a couple of variations, watch the numbers above, and refresh what isn't working.
 
-If you're planning around a big retail moment, our [Black Friday and festive season planner](/blog/black-friday-festive-season-adverts-south-africa) works backwards from your launch date so you brief early enough.
+If you're planning around a big retail moment, our [Black Friday and festive season planner](/blog/black-friday-festive-season-adverts-south-africa) works backwards from your launch date so you brief early enough. For the whole year ahead, see our [South African marketing calendar for 2026/27](/blog/south-african-marketing-calendar-2026-2027).
 
 ## AI Advertising Across South Africa
 

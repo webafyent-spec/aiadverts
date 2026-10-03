@@ -23,7 +23,7 @@ Leaving festive adverts until November creates three problems at once:
 The season is longer and more layered here than the Black Friday headline suggests:
 
 - **Month-end payday.** For many South Africans, pay lands around the 25th, which means Black Friday arrives with fresh spending power and December opens with a second wave.
-- **Black Friday and Cyber Monday.** Friday 27 and Monday 30 November, with deals increasingly starting a week or more earlier.
+- **Black Friday and Cyber Monday.** Friday 27 and Monday 30 November, with deals increasingly starting a week or more earlier. For every other date worth planning around, see our [South African marketing calendar for 2026/27](/blog/south-african-marketing-calendar-2026-2027).
 - **Day of Reconciliation.** Wednesday 16 December is a public holiday, and for many families it marks the start of the long break.
 - **School holidays and travel.** December is peak season for travel, eating out, gifting and entertaining.
 - **Christmas and New Year.** Then the long, quiet stretch that many South Africans only half-jokingly call "Janu-worry", when budgets are tight and value messaging matters most.
