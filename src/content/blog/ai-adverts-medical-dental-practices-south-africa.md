@@ -332,7 +332,7 @@ That is a format AI is well suited to, and it fits the sizes and safe zones in o
 
 ## Related Practices
 
-The same careful approach applies to neighbouring businesses: [spas and wellness](/blog/ai-adverts-spas-salons-wellness-south-africa) businesses that edge into treatment claims, [gyms and fitness brands](/blog/ai-video-ads-gyms-fitness-brands-south-africa) that talk about results, and [pet care and vet practices](/blog/ai-video-ads-pet-care-vet-grooming-south-africa). Our overview of [AI adverts for professional services](/blog/ai-adverts-professional-services-south-africa) covers lawyers, accountants and trades too.
+The same careful approach applies to neighbouring businesses: [spas and wellness](/blog/ai-adverts-spas-salons-wellness-south-africa) businesses that edge into treatment claims, [gyms and fitness brands](/blog/ai-video-ads-gyms-fitness-brands-south-africa) that talk about results, and [pet care and vet practices](/blog/ai-video-ads-pet-care-vet-grooming-south-africa). Financial advisors and insurers face a similar regulatory picture, covered in our guide to [AI adverts for financial services and insurance](/blog/ai-adverts-financial-services-insurance-south-africa). Our overview of [AI adverts for professional services](/blog/ai-adverts-professional-services-south-africa) covers lawyers, accountants and trades too.
 
 ## Getting Started
 
