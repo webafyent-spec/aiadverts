@@ -317,7 +317,7 @@ The point of an advert is results, not views. Whichever platform you use, track 
 - **Cost per lead or per WhatsApp conversation:** often the most honest measure for local businesses that close sales in chat.
 - **Return on ad spend (ROAS):** for online stores, revenue generated per rand spent on advertising.
 
-The big advantage of AI advertising here is testing. Because variations are cheap, you can run three hooks, keep the winner and replace the losers every couple of weeks, which is exactly what [consistent social media management](/blog/ai-social-media-management-small-business-south-africa) is built around.
+The big advantage of AI advertising here is testing (our guide to [A/B testing adverts on a small budget](/blog/ab-test-adverts-small-budget-south-africa) shows how much traffic a fair test needs). Because variations are cheap, you can run three hooks, keep the winner and replace the losers every couple of weeks, which is exactly what [consistent social media management](/blog/ai-social-media-management-small-business-south-africa) is built around.
 
 ## How to Get Started With AI Advertising
 

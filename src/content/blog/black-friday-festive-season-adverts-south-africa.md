@@ -30,7 +30,7 @@ The season is longer and more layered here than the Black Friday headline sugges
 
 ## Plan Your Campaign
 
-Choose a campaign, or enter the date your own adverts need to go live. The planner works backwards from that date, skipping weekends and South African public holidays, and tells you how much time you have from today.
+Choose a campaign, or enter the date your own adverts need to go live. The planner works backwards from that date, skipping weekends and South African public holidays, and tells you how much time you have from today. If you want to test two versions first, see our guide to [A/B testing adverts on a small budget](/blog/ab-test-adverts-small-budget-south-africa).
 
 <div class="pl" data-pl>
 <div class="pl-tabs" role="tablist" aria-label="Choose a campaign">
