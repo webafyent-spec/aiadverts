@@ -31,6 +31,13 @@ const services = [
     title: 'Social Media Management',
     body: 'AI-powered social media advertising posted consistently across all your platforms every week. We handle everything — content, captions, scheduling — so you can focus on your business.',
     guide: { href: '/blog/ai-social-media-management-small-business-south-africa', label: 'How AI social media management works' }
+  },
+  {
+    icon: '✨',
+    title: 'Motion Graphics Videos and Ads',
+    from: 'From R1,499',
+    body: 'Animated explainers, offer adverts, logo animations and social videos built from type, shapes and graphics. Clear, on-brand and ideal for messages that are hard to film.',
+    guide: { href: '/blog/motion-graphics-videos-ads-south-africa', label: 'Motion graphics videos and ads in South Africa' }
   }
 ]
 
@@ -112,7 +119,11 @@ const faqs = [
   },
   {
     q: 'How much do AI adverts cost in South Africa?',
-    a: 'Our adverts start from R3,000 for a single cinematic video or image package. Monthly content packages start from R8,500 per month.'
+    a: 'Our AI adverts start from R3,000 for a single cinematic video or image package. Monthly content packages start from R8,500 per month. Motion graphics videos and ads start from R1,499.'
+  },
+  {
+    q: 'Do you make motion graphics videos?',
+    a: 'Yes. We create motion graphics videos and ads, such as animated explainers, offer adverts, logo animations and social videos, starting from R1,499. The final price depends on length and complexity. They work well alongside AI video adverts, with the AI footage carrying the look and the motion graphics carrying the details.'
   },
   {
     q: 'How long does it take to create an AI advert?',
@@ -351,12 +362,13 @@ const homeSchema = [
           </h2>
         </div>
 
-        <div class="mt-14 grid gap-8 md:grid-cols-3">
+        <div class="mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
           {services.map((service) => (
             <article class="group rounded-2xl bg-text-light p-8 shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-electric/20">
               <!-- Gradient icon circle -->
               <div class="icon-circle" aria-hidden="true">{service.icon}</div>
               <h3 class="mt-5 text-xl font-bold text-navy">{service.title}</h3>
+              {service.from && <p class="mt-1 text-sm font-bold text-electric">{service.from}</p>}
               <p class="mt-3 text-base leading-relaxed text-text-dark/65">{service.body}</p>
               <a
                 href={service.guide.href}
@@ -699,6 +711,28 @@ const homeSchema = [
               </a>
             </div>
           ))}
+        </div>
+
+        <!-- Motion graphics pricing -->
+        <div class="mt-12 flex flex-col items-start gap-5 rounded-2xl border border-electric/20 bg-text-light p-8 shadow-md sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h3 class="text-sm font-bold uppercase tracking-widest text-navy/60">Motion Graphics Videos and Ads</h3>
+            <p class="mt-2 text-3xl font-black text-navy">From R1,499</p>
+            <p class="mt-2 max-w-xl text-sm leading-relaxed text-text-dark/60">
+              Animated explainers, offer adverts, logo animations and social videos built from type, shapes and graphics.
+              The final price depends on length and complexity, so send your brief for a quote.
+            </p>
+            <a href="/blog/motion-graphics-videos-ads-south-africa" class="mt-3 inline-block text-sm font-bold text-electric">How motion graphics work →</a>
+          </div>
+          <a
+            href={WHATSAPP}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Get a motion graphics quote on WhatsApp"
+            class="shrink-0 rounded-full border-2 border-electric px-6 py-3.5 text-center text-base font-bold text-electric transition-all hover:scale-105 hover:bg-electric hover:text-text-light"
+          >
+            Get a Quote
+          </a>
         </div>
       </div>
     </section>

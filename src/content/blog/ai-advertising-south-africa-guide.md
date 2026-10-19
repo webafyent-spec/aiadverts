@@ -293,7 +293,7 @@ AI adverts are not the right answer for everything, and any agency that says oth
 - **Documentary content.** When the point is proving something happened, such as a real installation, a real venue or a real team, film it.
 - **Anything where AI could mislead.** An advert should never imply a product looks, works or performs better than it actually does.
 
-The strongest marketing mix for many businesses uses both: AI production for the frequent, product-led adverts that fill your feed, and occasional real footage where authenticity is the whole point.
+For messages that are about information rather than atmosphere, such as a price, a set of steps or a date, [motion graphics videos](/blog/motion-graphics-videos-ads-south-africa) are often the clearer choice. The strongest marketing mix for many businesses uses both: AI production for the frequent, product-led adverts that fill your feed, and occasional real footage where authenticity is the whole point.
 
 ## Is AI Advertising Legal in South Africa?
 

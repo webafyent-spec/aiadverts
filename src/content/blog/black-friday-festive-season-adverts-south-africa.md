@@ -215,7 +215,7 @@ Choose a campaign, or enter the date your own adverts need to go live. The plann
 One advert isn't a campaign. The businesses that get the most out of the season run a short sequence, each piece doing a different job:
 
 - **A teaser**, a week or so before the sale, so your audience knows something is coming and saves the date
-- **The main offer advert**, clear enough that someone understands the deal in the first two seconds
+- **The main offer advert**, clear enough that someone understands the deal in the first two seconds (offer-led [motion graphics](/blog/motion-graphics-videos-ads-south-africa) suit this well)
 - **A last-chance advert** for the final day or two, which is often where the most sales happen
 - **Versions for every channel**, including [WhatsApp Status](/blog/whatsapp-status-video-ads-south-africa), where your existing customers are already watching
 - **A thank-you or "still available" follow-up**, so the momentum doesn't stop the moment the sale ends

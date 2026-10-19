@@ -13,7 +13,7 @@ interface Props {
 
 const {
   title = 'AI Adverts South Africa | Cinematic AI Ads | Aiadverts',
-  description = 'Cinematic AI-generated video & image adverts for South African businesses. From R3,000, delivered in 3–5 days. Durban, Joburg, Cape Town & nationwide.',
+  description = 'Cinematic AI video & image adverts from R3,000 and motion graphics from R1,499 for South African businesses. Durban, Joburg, Cape Town & nationwide.',
   canonical = 'https://aiadverts.co.za/',
   ogType = 'website',
   ogImage = 'https://aiadverts.co.za/og-image.jpg',
@@ -51,8 +51,8 @@ const baseGraph = [
         { '@type': 'City', name: 'East London' },
         { '@type': 'Country', name: 'South Africa' }
       ],
-      knowsAbout: ['AI video advertising','AI image advertising','Cinematic product adverts','Social media content creation','Digital marketing South Africa','AI content generation','Brand advertising'],
-      priceRange: 'R3,000 - R18,000',
+      knowsAbout: ['AI video advertising','AI image advertising','Cinematic product adverts','Social media content creation','Digital marketing South Africa','AI content generation','Brand advertising','Motion graphics videos','Animated explainer videos'],
+      priceRange: 'R1,499 - R18,000',
       currenciesAccepted: 'ZAR',
       paymentAccepted: 'EFT, Credit Card',
       openingHoursSpecification: {
@@ -77,7 +77,8 @@ const baseGraph = [
         itemListElement: [
           { '@type': 'Offer', name: 'Starter', description: '1 AI video advert, 3 AI images, 2 revisions — delivered in 3–5 days', price: '3000', priceCurrency: 'ZAR', priceSpecification: { '@type': 'UnitPriceSpecification', price: '3000', priceCurrency: 'ZAR', unitText: 'once-off' } },
           { '@type': 'Offer', name: 'Growth', description: '3 AI video adverts, 10 AI images, weekly posting, monthly report', price: '8500', priceCurrency: 'ZAR', priceSpecification: { '@type': 'UnitPriceSpecification', price: '8500', priceCurrency: 'ZAR', unitText: 'month' } },
-          { '@type': 'Offer', name: 'Premium', description: '7 AI video adverts, 20 AI images, full management, strategy session, priority support', price: '18000', priceCurrency: 'ZAR', priceSpecification: { '@type': 'UnitPriceSpecification', price: '18000', priceCurrency: 'ZAR', unitText: 'month' } }
+          { '@type': 'Offer', name: 'Premium', description: '7 AI video adverts, 20 AI images, full management, strategy session, priority support', price: '18000', priceCurrency: 'ZAR', priceSpecification: { '@type': 'UnitPriceSpecification', price: '18000', priceCurrency: 'ZAR', unitText: 'month' } },
+          { '@type': 'Offer', name: 'Motion Graphics Videos and Ads', description: 'Animated explainers, offer adverts, logo animations and social motion graphics videos', price: '1499', priceCurrency: 'ZAR', priceSpecification: { '@type': 'PriceSpecification', minPrice: '1499', priceCurrency: 'ZAR' } }
         ]
       }
     },
@@ -113,6 +114,14 @@ const baseGraph = [
       provider: { '@id': 'https://aiadverts.co.za/#organization' },
       areaServed: 'South Africa',
       offers: { '@type': 'Offer', price: '8500', priceCurrency: 'ZAR', priceSpecification: { '@type': 'UnitPriceSpecification', price: '8500', priceCurrency: 'ZAR', unitText: 'month' } }
+    },
+    {
+      '@type': 'Service',
+      name: 'Motion Graphics Videos and Ads South Africa',
+      description: 'Animated explainers, offer adverts, logo animations and social motion graphics videos for South African businesses',
+      provider: { '@id': 'https://aiadverts.co.za/#organization' },
+      areaServed: 'South Africa',
+      offers: { '@type': 'Offer', price: '1499', priceCurrency: 'ZAR', priceSpecification: { '@type': 'PriceSpecification', minPrice: '1499', priceCurrency: 'ZAR' } }
     },
 ]
 
