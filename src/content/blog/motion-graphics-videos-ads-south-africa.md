@@ -264,4 +264,4 @@ For comparison, AI video and image adverts start from R3,000, with monthly packa
 
 ## Getting Started
 
-Tell us the goal, the platform and what you want people to do, and we'll suggest whether motion graphics, an AI video advert or a mix of both is the best fit. [Message us on WhatsApp](https://wa.me/27695600708) for a quote, with no commitment.
+Looking for inspiration first? See our [motion graphics ideas by industry](/blog/motion-graphics-ideas-south-african-businesses), with a live preview. Then tell us the goal, the platform and what you want people to do, and we'll suggest whether motion graphics, an AI video advert or a mix of both is the best fit. [Message us on WhatsApp](https://wa.me/27695600708) for a quote, with no commitment.
